@@ -1,0 +1,71 @@
+{
+    "home":{
+        "part1":{
+            "title1": "Tutto inizia da un gesto semplice.",
+            "title2": "Tutto inizia da qui.",
+            "title3": "Apri il tuo negozio",
+            "title4": "online",
+            "title5": "Ti bastano 5 minuti",
+            "button1": "Inizia"
+        },
+        "part2":{
+            "left": {
+                "title1": "Cos'è "
+            },
+            "right":{
+                "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "links":[
+                    {
+                        "url": "/",
+                        "text": "Lorem ipsum dolor sit amet"
+                    },
+                    {
+                        "url": "/",
+                        "text": "Lorem ipsum dolor sit amet"
+                    },
+                    {
+                        "url": "/",
+                        "text": "Lorem ipsum dolor sit amet"
+                    }
+                ]
+            }
+        },
+        "part3":{
+            "title1": "Perché scegliere"
+        },
+        "part4":{
+            "left":{
+                "title1": "Il tuo shop",
+                "title2": "online",
+                "title3": "in pochi",
+                "title4": "minuti!",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            "right":{
+                "buttonRound": "Attivo in 5 min"
+            }
+        }
+    },
+    "header":{
+        "sitename": "shopyboom",
+        "login": "Accedi",
+        "items":[
+            {
+                "url": "/4",
+                "text": "Supporto"
+            },
+            {
+                "url": "/3",
+                "text": "Piani"
+            },
+            {
+                "url": "/2",
+                "text": "Funzionalità"
+            },
+            {
+                "url": "/",
+                "text": "Apri negozio"
+            }
+        ]
+    }
+}
