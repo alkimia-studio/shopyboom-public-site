@@ -15,15 +15,16 @@ import modal from '@/components/subComponents/modal.vue'
 import button1 from '@/components/subComponents/button1.vue'
 import appsvg from '@/components/subComponents/appsvg.vue'
 import shape from '@/components/subComponents/shape.vue'
+import shapeContainer from '@/components/subComponents/shapeContainer.vue'
 
 import iconArrowDown from '@/components/icons/iconArrowDown.vue'
 import iconShopyBoom from '@/components/icons/iconShopyBoom.vue'
 
-import shapeWindow from '@/components/shapes/shapeWindow.vue'
-import shapeCircleNumber from '@/components/shapes/shapeCircleNumber.vue'
-import shapePipeStar from '@/components/shapes/shapePipeStar.vue'
+import shapeCircle from '@/components/shapes/shapeCircle.vue'
 import shapeButtonRoundClock from '@/components/shapes/shapeButtonRoundClock.vue'
-import shapeMarketBasket from '@/components/shapes/shapeMarketBasket.vue'
+import shapeButtonRoundPipe from '@/components/shapes/shapeButtonRoundPipe.vue'
+import shapeButtonRoundBrush from '@/components/shapes/shapeButtonRoundBrush.vue'
+import shapeButtonRoundSpeaker from '@/components/shapes/shapeButtonRoundSpeaker.vue'
 
 import header from '@/components/subPages/header.vue'
 import footer from '@/components/subPages/footer.vue'
@@ -42,16 +43,16 @@ app.component('Modal', modal)
 app.component('Button1', button1)
 app.component('Appsvg', appsvg)
 app.component('Shape', shape)
+app.component('ShapeContainer', shapeContainer)
 
 app.component('IArrowDown', iconArrowDown)
 app.component('IShopyBoom', iconShopyBoom)
 
-app.component('ShapeWindow', shapeWindow)
-app.component('ShapeCircleNumber', shapeCircleNumber)
-app.component('ShapePipeStar', shapePipeStar)
+app.component('ShapeCircle', shapeCircle)
 app.component('ShapeButtonRoundClock', shapeButtonRoundClock)
-app.component('ShapeMarketBasket', shapeMarketBasket)
-
+app.component('ShapeButtonRoundPipe',shapeButtonRoundPipe)
+app.component('ShapeButtonRoundBrush',shapeButtonRoundBrush)
+app.component('ShapeButtonRoundSpeaker',shapeButtonRoundSpeaker)
 
 app.component('Header', header)
 app.component('Footer', footer)

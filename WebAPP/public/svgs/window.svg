@@ -1,4 +1,3 @@
-<template>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="847" height="676"
     viewBox="0 0 847 676">
     <defs>
@@ -81,4 +80,3 @@
         transform="translate(421.5 168.5)" fill="#ccc5b9" opacity="0.5" />
     </g>
   </svg>
-</template>

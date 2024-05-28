@@ -44,6 +44,41 @@
             "right":{
                 "buttonRound": "Attivo in 5 min"
             }
+        },
+        "part5":{
+            "left":{
+                "buttonRound": "IA al tuo servizio"
+            },
+            "right":{
+                "title1": "Carica i tuoi",
+                "title2": "prodotti in un ",
+                "title3": "lampo",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        },
+        "part6":{
+            "left":{
+                "title1": "Personalizza",
+                "title2": "il",
+                "title3": "tuo negozio",
+                "title4": "senza sforzi",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            "right":{
+                "buttonRound": "Crea il tuo stile"
+            }
+        },
+        "part8":{
+            "left":{
+                "title1": "Promuovi",
+                "title2": "il",
+                "title3": "negozio come un",
+                "title4": "professionista",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            "right":{
+                "buttonRound": "Strumenti marketing"
+            }
         }
     },
     "header":{

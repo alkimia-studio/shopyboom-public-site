@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="283" height="186" viewBox="0 0 283 186">
+  <defs>
+    <filter id="Rectangle_254" x="0" y="0" width="283" height="186" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_254)">
+    <g id="Rectangle_254-2" data-name="Rectangle 254" transform="translate(49.5 46.5)" fill="#ccc5b9" stroke="#ff6000" stroke-width="3">
+      <rect width="184" height="87" rx="6" stroke="none"/>
+      <rect x="1.5" y="1.5" width="181" height="84" rx="4.5" fill="none"/>
+    </g>
+  </g>
+  <path id="Icon_map-food" data-name="Icon map-food" d="M52.294,14.919,48.057,48.135H33.745l-4.22-33.382H47L50.451,2.825l1.958.59L49.095,14.894l3.2.025ZM27.5,34.136s.535-4.307-6.886-4.307H8.8c-7.411,0-6.886,4.307-6.886,4.307H27.5ZM1.909,43.827S1.384,48.135,8.8,48.135h11.82c7.422,0,6.886-4.307,6.886-4.307Zm24.482-2.154a2.477,2.477,0,0,0,2.2-2.691,2.473,2.473,0,0,0-2.2-2.693H2.917a2.478,2.478,0,0,0-2.2,2.693,2.481,2.481,0,0,0,2.2,2.691H26.391Z" transform="translate(114.781 64.509)" fill="#fff"/>
+</svg>

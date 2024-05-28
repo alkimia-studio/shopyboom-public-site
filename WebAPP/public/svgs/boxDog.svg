@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="283" height="186" viewBox="0 0 283 186">
+  <defs>
+    <filter id="Rectangle_255" x="0" y="0" width="283" height="186" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_255)">
+    <rect id="Rectangle_255-2" data-name="Rectangle 255" width="184" height="87" rx="6" transform="translate(49.5 46.5)" fill="#ccc5b9"/>
+  </g>
+  <path id="Icon_awesome-dog" data-name="Icon awesome-dog" d="M35.844,6.875H31.219L30.7,5.841a2.313,2.313,0,0,0-2.068-1.278H24.758L22.787,2.591a1.156,1.156,0,0,0-1.974.817V14.237l9.25,3.3V14.969h2.313A4.625,4.625,0,0,0,37,10.344V8.031A1.156,1.156,0,0,0,35.844,6.875ZM27.75,10.344a1.156,1.156,0,1,1,1.156-1.156A1.156,1.156,0,0,1,27.75,10.344ZM6.938,16.125a2.316,2.316,0,0,1-2.312-2.313,2.313,2.313,0,0,0-4.625,0,6.926,6.926,0,0,0,4.625,6.511V35.781a1.156,1.156,0,0,0,1.156,1.156h4.625a1.156,1.156,0,0,0,1.156-1.156V27.687H23.125v8.094a1.156,1.156,0,0,0,1.156,1.156h4.625a1.156,1.156,0,0,0,1.156-1.156V19.995l-10.836-3.87Z" transform="translate(124.5 70.395)" fill="#fff"/>
+</svg>

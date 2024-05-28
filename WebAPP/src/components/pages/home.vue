@@ -3,8 +3,6 @@ import { useSizeStore, sizeType } from '@/helper/widthHandler'
 import { useHead } from '@unhead/vue'
 import { ChevronRightIcon } from '@heroicons/vue/24/solid'
 import data from '@/helper/data.json'
-import { Cordinate } from '@/helper/model';
-
 const size = useSizeStore()
 useHead({
   title: 'this is title',
@@ -15,6 +13,13 @@ useHead({
     }
   ]
 })
+const shapeContainerMinHeight = {
+  xlh: 1,
+  lgh: 1,
+  mdh: 400,
+  smh: 380,
+  xsh: 210
+}
 </script>
 <template>
   <Banner1 src="/images/image1.png">
@@ -68,96 +73,251 @@ useHead({
       </Grid>
     </Grid>
     <Stack direction="row" class="width-100p p30" justifyContent="center" alignItems="center">
-      <Txt class="pr2" :font=1 :color=1 :md=48 :xs=24>{{ data.home.part3.title1 }}</Txt>
-      <Txt class="pl2" :font=1 :color=1 :md=48 :xs=24 bold>{{ data.header.sitename }}</Txt>
+      <Txt class="pr2 word-no-break" text-align="right" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24>{{ data.home.part3.title1 }}</Txt>
+      <Txt class="pl2" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24 bold>{{ data.header.sitename }}</Txt>
     </Stack>
   </Stack>
   <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5'" direction="column" justifyContent="flex-start"
     class="backgroundapp-color-2" alignItems="flex-start">
-    <Grid :gap=0 class="mt20" direction="rtl" container :lg=8 :xs=1>
-      <Grid class="direction-ltr" :lg=5 :xs=1>
-        <Shape container>
-          <Shape 
-          :xlw=700 :xlc="new Cordinate(140, -274)"
-          :lgw=650 :lgc="new Cordinate(140, -260)" 
-          :mdw=1500 :mdc="new Cordinate(0, -240)" 
-          :smw=600 :smc="new Cordinate(0, -240)" 
-          :xsw=250 :xsc="new Cordinate(0, -240)"
+    <Grid :gap=0 class="mt20 width-100p" direction="rtl" container :lg=8 :md=1>
+      <Grid class="direction-ltr" :lg=5 :md=1>
+        <ShapeContainer 
+        :xlh="shapeContainerMinHeight.xlh" 
+        :lgh="shapeContainerMinHeight.lgh" 
+        :mdh="shapeContainerMinHeight.mdh" 
+        :smh="shapeContainerMinHeight.smh" 
+        :xsh="shapeContainerMinHeight.xsh">
+          <Shape page="home" part="part4" shape-name="window"
           :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-            <ShapeWindow />
+            <img src="/svgs/window.svg" />
           </Shape>
-          <Shape 
-          :xlw=130 :xlc="new Cordinate(-270, -70)" 
-          :lgw=110 :lgc="new Cordinate(-268, -50)" 
-          :mdw=130 :mdc="new Cordinate(-168, -40)" 
-          :smw=90 :smc="new Cordinate(-120, -40)" 
-          :xsw=45 :xsc="new Cordinate(-46, -6)" 
+         <Shape page="home" part="part4" shape-name="circleNumber3" 
           :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-            <ShapeCircleNumber number="3" color="#333333" />
+            <ShapeCircle text="3" :color=1 />
           </Shape>
-          <Shape 
-          :xlw=130 :xlc="new Cordinate(-375, -70)" 
-          :lgw=110 :lgc="new Cordinate(-343, -50)" 
-          :mdw=130 :mdc="new Cordinate(-275, -40)" 
-          :smw=90 :smc="new Cordinate(-195, -40)" 
-          :xsw=45 :xsc="new Cordinate(-81, -6)" 
+          <Shape page="home" part="part4" shape-name="circleNumber2" 
           :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-            <ShapeCircleNumber style="opacity: 0.59" number="2" color="#333333" />
+            <ShapeCircle text="2" :color=1 style="opacity: 0.59" />
           </Shape>
-          <Shape 
-          :xlw=130 :xlc="new Cordinate(-480, -70)" 
-          :lgw=110 :lgc="new Cordinate(-418, -50)" 
-          :mdw=130 :mdc="new Cordinate(-382, -40)" 
-          :smw=90 :smc="new Cordinate(-270, -40)" 
-          :xsw=45 :xsc="new Cordinate(-116, -6)" 
+          <Shape page="home" part="part4" shape-name="circleNumber1" 
           :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-            <ShapeCircleNumber style="opacity: 0.28" number="1" color="#333333" />
+            <ShapeCircle text="1" :color=1 style="opacity: 0.28" />
           </Shape>
-          <Shape 
-          :xlw=180 :xlc="new Cordinate(-350, 23)" 
-          :lgw=140 :lgc="new Cordinate(-324, 44)" 
-          :mdw=160 :mdc="new Cordinate(-275, 96)" 
-          :smw=120 :smc="new Cordinate(-195, 57)" 
-          :xsw=60 :xsc="new Cordinate(-81, 7)" 
+          <Shape page="home" part="part4" shape-name="pipeStar" 
           :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-            <ShapePipeStar />
+            <img src="/svgs/pipeStar.svg" />
           </Shape>
-          <Shape 
-          :xlw=320 :xlc="new Cordinate(134, -86)" 
-          :lgw=270 :lgc="new Cordinate(130, -62)" 
-          :mdw=340 :mdc="new Cordinate(230, -53)" 
-          :smw=250 :smc="new Cordinate(163, -54)" 
-          :xsw=110 :xsc="new Cordinate(68, -23)"
+           <Shape page="home" part="part4" shape-name="buttonRoundClock" 
           :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeButtonRoundClock :text="data.home.part4.right.buttonRound" />
           </Shape>
-          <Shape 
-          :xlw=110 :xlc="new Cordinate(-158, 53)" 
-          :lgw=100 :lgc="new Cordinate(-140, 83)" 
-          :mdw=110 :mdc="new Cordinate(-11, 123)" 
-          :smw=95 :smc="new Cordinate(-11, 100)" 
-          :xsw=39 :xsc="new Cordinate(-11, 60)"
+          <Shape page="home" part="part4" shape-name="marketBasket" 
           :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-            <ShapeMarketBasket />
+            <img src="/svgs/marketBasket.svg" />
           </Shape>
-        </Shape>
+        </ShapeContainer>
       </Grid>
-      <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :xs=1>
-        <Stack class="direction-ltr" direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Txt line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
-            :font=1 :color=1 :xl=50 :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title1 }}</Txt>
+      <Grid  class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
+        <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
+          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
+            :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title1 }}</Txt>
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
             :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-            <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=50
+            <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title2 }}</Txt>
-            <Txt line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=50 :lg=46 :md=50 :xs=30>{{
+            <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
               data.home.part4.left.title3 }}</Txt>
           </Stack>
-          <Txt line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :xl=50
+          <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :xl=72
             :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title4 }}</Txt>
           <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24 :xs=18>
             {{ data.home.part4.left.body1 }}</Txt>
+        </Stack>
+      </Grid>
+    </Grid>
+    <Grid :gap=0 class="mt20 width-100p" direction="ltr" container :lg=8 :md=1>
+      <Grid :lg=5 :md=1>
+        <ShapeContainer 
+        :xlh="shapeContainerMinHeight.xlh" 
+        :lgh="shapeContainerMinHeight.lgh" 
+        :mdh="shapeContainerMinHeight.mdh" 
+        :smh="shapeContainerMinHeight.smh" 
+        :xsh="shapeContainerMinHeight.xsh">
+        <Shape page="home" part="part5" shape-name="window"
+          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/window.svg" />
+          </Shape>
+          <Shape page="home" part="part5" shape-name="picture"
+          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/picture.svg" />
+          </Shape>
+           <Shape page="home" part="part5" shape-name="bars"
+          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/bars.svg" />
+          </Shape>
+          <Shape page="home" part="part5" shape-name="star1"
+          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/iCanSeeYourStar.svg" />
+          </Shape>
+          <Shape page="home" part="part5" shape-name="star2"
+          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/iCanSeeYourStar.svg" />
+          </Shape>
+          <Shape page="home" part="part5" shape-name="star3"
+          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/iCanSeeYourStar.svg" />
+          </Shape>
+          <Shape page="home" part="part5" shape-name="circleArrowLeft"
+          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/circleArrowLeft.svg" />
+          </Shape>
+          <Shape page="home" part="part5" shape-name="camera"
+          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/camera.svg" />
+          </Shape>
+          <Shape page="home" part="part5" shape-name="buttonRoundPipe"
+          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <ShapeButtonRoundPipe :text="data.home.part5.left.buttonRound" />
+          </Shape>
+        </ShapeContainer>
+      </Grid>
+      <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
+        <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
+          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
+            :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part5.right.title1 }}</Txt>
+          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
+            :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part5.right.title2 }}</Txt>
+          <Txt line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
+            :font=2 :color=3 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part5.right.title3 }}</Txt>
+          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24 :xs=18>
+            {{ data.home.part5.right.body1 }}</Txt>
+        </Stack>
+      </Grid>
+    </Grid>
+    <Grid :gap=0 class="mt20 width-100p" direction="rtl" container :lg=8 :md=1>
+      <Grid class="direction-ltr" :lg=5 :md=1>
+        <ShapeContainer 
+        :xlh="shapeContainerMinHeight.xlh" 
+        :lgh="shapeContainerMinHeight.lgh" 
+        :mdh="shapeContainerMinHeight.mdh" 
+        :smh="shapeContainerMinHeight.smh" 
+        :xsh="shapeContainerMinHeight.xsh">
+          <Shape page="home" part="part6" shape-name="window"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <img src="/svgs/window.svg" />
+          </Shape>
+          <Shape page="home" part="part6" shape-name="brush"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <img src="/svgs/brush.svg" />
+          </Shape>
+          <Shape page="home" part="part6" shape-name="color1"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <ShapeCircle :color=3 />
+          </Shape>
+          <Shape page="home" part="part6" shape-name="color2"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <ShapeCircle :color=1 />
+          </Shape>
+          <Shape page="home" part="part6" shape-name="color3"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <ShapeCircle :color=5 />
+          </Shape>
+          <Shape page="home" part="part6" shape-name="color4"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <ShapeCircle :color=7 />
+          </Shape>
+          <Shape page="home" part="part6" shape-name="color5"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <ShapeCircle :color=2 />
+          </Shape>
+          <Shape page="home" part="part6" shape-name="color6"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <ShapeCircle style="opacity: 0.53" :color="21" />
+          </Shape>
+          <Shape page="home" part="part6" shape-name="boxRunning"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <img src="/svgs/boxRunning.svg" />
+          </Shape>
+          <Shape page="home" part="part6" shape-name="boxFood"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <img src="/svgs/boxFood.svg" />
+          </Shape>
+          <Shape page="home" part="part6" shape-name="boxDog"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <img src="/svgs/boxDog.svg" />
+          </Shape>
+          <Shape page="home" part="part6" shape-name="buttonRoundBrush"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <ShapeButtonRoundBrush :text="data.home.part6.right.buttonRound" />
+          </Shape>
+        </ShapeContainer>
+      </Grid>
+      <Grid  class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
+        <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
+          <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
+            :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
+            :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
+            <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
+              :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title1 }}</Txt>
+            <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
+              data.home.part6.left.title2 }}</Txt>
+          </Stack>
+          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
+            :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title3 }}</Txt>
+          <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :xl=72
+            :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title4 }}</Txt>
+          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24 :xs=18>
+            {{ data.home.part6.left.body1 }}</Txt>
+        </Stack>
+      </Grid>
+    </Grid>
+    <Grid :gap=0 class="mt20 width-100p" direction="rtl" container :lg=8 :md=1>
+      <Grid class="direction-ltr" :lg=5 :md=1>
+        <ShapeContainer 
+        :xlh="shapeContainerMinHeight.xlh" 
+        :lgh="shapeContainerMinHeight.lgh" 
+        :mdh="shapeContainerMinHeight.mdh" 
+        :smh="shapeContainerMinHeight.smh" 
+        :xsh="shapeContainerMinHeight.xsh">
+          <Shape page="home" part="part8" shape-name="window"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <img src="/svgs/window.svg" />
+          </Shape>
+          <Shape page="home" part="part8" shape-name="boxEnvelop"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <img src="/svgs/boxEnvelop.svg" />
+          </Shape>
+          <Shape page="home" part="part8" shape-name="boxEarth"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <img src="/svgs/boxEarth.svg" />
+          </Shape>
+          <Shape page="home" part="part8" shape-name="boxTag"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <img src="/svgs/boxTag.svg" />
+          </Shape>
+          <Shape page="home" part="part8" shape-name="buttonRoundSpeaker"
+          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <ShapeButtonRoundSpeaker :text="data.home.part8.right.buttonRound" />
+          </Shape>
+        </ShapeContainer>
+      </Grid>
+      <Grid  class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
+        <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
+          <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
+            :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
+            :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
+            <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
+              :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title1 }}</Txt>
+            <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
+              data.home.part8.left.title2 }}</Txt>
+          </Stack>
+          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
+            :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title3 }}</Txt>
+          <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :xl=72
+            :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title4 }}</Txt>
+          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24 :xs=18>
+            {{ data.home.part8.left.body1 }}</Txt>
         </Stack>
       </Grid>
     </Grid>

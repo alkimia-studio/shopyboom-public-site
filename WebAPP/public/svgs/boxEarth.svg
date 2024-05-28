@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="283" height="186" viewBox="0 0 283 186">
+  <defs>
+    <filter id="Rectangle_264" x="0" y="0" width="283" height="186" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="16.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_264)">
+    <rect id="Rectangle_264-2" data-name="Rectangle 264" width="184" height="87" rx="6" transform="translate(49.5 46.5)" fill="#fff"/>
+  </g>
+  <g id="Icon_feather-globe" data-name="Icon feather-globe" transform="translate(118 66.5)">
+    <path id="Path_121" data-name="Path 121" d="M44,23.5A20.5,20.5,0,1,1,23.5,3,20.5,20.5,0,0,1,44,23.5Z" transform="translate(0 0)" fill="none" stroke="#ffdd9a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_122" data-name="Path 122" d="M3,18H44" transform="translate(0 5.5)" fill="none" stroke="#ffdd9a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_123" data-name="Path 123" d="M20.2,3a31.365,31.365,0,0,1,8.2,20.5A31.365,31.365,0,0,1,20.2,44,31.365,31.365,0,0,1,12,23.5,31.365,31.365,0,0,1,20.2,3Z" transform="translate(3.3 0)" fill="none" stroke="#ffdd9a" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>

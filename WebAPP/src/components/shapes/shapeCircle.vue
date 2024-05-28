@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = defineProps({
-    number: { type: Number, required: true },
-    color: { type: String, required: true}
+    text: { type: String, required: false },
+    color: { type: [String,Number], required: true}
 })
 </script>
 <template>
@@ -18,11 +18,11 @@ const props = defineProps({
         </defs>
         <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_3)">
             <circle id="Ellipse_3-2" data-name="Ellipse 3" cx="46.5" cy="46.5" r="46.5" transform="translate(36 33)"
-                :fill="props.color" />
+                :class="'fillapp-color-'+props.color" />
         </g>
-        <text id="Title_PLATFORM:MOBILE_TAG:H4_" data-name="Title [PLATFORM:MOBILE][TAG:H4]"
+        <text v-if="text !== undefined" id="Title_PLATFORM:MOBILE_TAG:H4_" data-name="Title [PLATFORM:MOBILE][TAG:H4]"
             transform="translate(50 43)" fill="#fffcf6" font-size="50" font-family="SegoeUI, Segoe UI">
-            <tspan x="18.523" y="54">{{ number }}</tspan>
+            <tspan x="18.523" y="54">{{ text }}</tspan>
         </text>
     </svg>
 </template>

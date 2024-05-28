@@ -3,12 +3,12 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  font-weight: normal;
   font-optical-sizing: auto;
   transition:
     color 0.05s,
     fill 0.05s,
-    background-color 0.05s;
+    background-color 0.05s,
+    transform 1.2s ease;
   user-select: none;
 }
 
@@ -11234,9 +11234,10 @@ hr.hr1,
 .shape{
   position: absolute;
 }
-.shape svg{
+.shape svg,.shape img{
   position: inherit;
   width: inherit;
+  height: auto;
 }
 .shape.right{
   right: 0px;
@@ -11250,33 +11251,24 @@ hr.hr1,
 .shape.container{
   position: relative;
 }
+
 @media (max-width: 480px) {
   .shape.container{
     min-height: 210px;
   }
 }
 @media (min-width: 480px) {
-  .shape.container{
-    min-height: 210px;
-  }
+
 }
 @media (min-width: 568px) {
-  .shape.container{
-    min-height: 380px;
-  }
+
 }
 @media (min-width: 768px) {
-  .shape.container{
-    min-height: 400px;
-  }
+
 }
 @media (min-width: 1024px) {
-  .shape.container{
-    min-height: unset;
-  }
+
 }
 @media (min-width: 1200px) {
-  .shape.container{
-    min-height: unset;
-  }
+
 }
