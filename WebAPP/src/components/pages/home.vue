@@ -73,7 +73,8 @@ const shapeContainerMinHeight = {
       </Grid>
     </Grid>
     <Stack direction="row" class="width-100p p30" justifyContent="center" alignItems="center">
-      <Txt class="pr2 word-no-break" text-align="right" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24>{{ data.home.part3.title1 }}</Txt>
+      <Txt class="pr2 word-no-break" text-align="right" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24>{{
+      data.home.part3.title1 }}</Txt>
       <Txt class="pl2" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24 bold>{{ data.header.sitename }}</Txt>
     </Stack>
   </Stack>
@@ -81,179 +82,168 @@ const shapeContainerMinHeight = {
     class="backgroundapp-color-2" alignItems="flex-start">
     <Grid :gap=0 class="mt20 width-100p" direction="rtl" container :lg=8 :md=1>
       <Grid class="direction-ltr" :lg=5 :md=1>
-        <ShapeContainer 
-        :xlh="shapeContainerMinHeight.xlh" 
-        :lgh="shapeContainerMinHeight.lgh" 
-        :mdh="shapeContainerMinHeight.mdh" 
-        :smh="shapeContainerMinHeight.smh" 
-        :xsh="shapeContainerMinHeight.xsh">
+        <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
+          :mdh="shapeContainerMinHeight.mdh" :smh="shapeContainerMinHeight.smh" :xsh="shapeContainerMinHeight.xsh">
           <Shape page="home" part="part4" shape-name="window"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/window.svg" />
           </Shape>
-         <Shape page="home" part="part4" shape-name="circleNumber3" 
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+          <Shape page="home" part="part4" shape-name="circleNumber3"
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle text="3" :color=1 />
           </Shape>
-          <Shape page="home" part="part4" shape-name="circleNumber2" 
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+          <Shape page="home" part="part4" shape-name="circleNumber2"
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle text="2" :color=1 style="opacity: 0.59" />
           </Shape>
-          <Shape page="home" part="part4" shape-name="circleNumber1" 
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+          <Shape page="home" part="part4" shape-name="circleNumber1"
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle text="1" :color=1 style="opacity: 0.28" />
           </Shape>
-          <Shape page="home" part="part4" shape-name="pipeStar" 
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+          <Shape page="home" part="part4" shape-name="pipeStar"
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/pipeStar.svg" />
           </Shape>
-           <Shape page="home" part="part4" shape-name="buttonRoundClock" 
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+          <Shape page="home" part="part4" shape-name="buttonRoundClock"
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeButtonRoundClock :text="data.home.part4.right.buttonRound" />
           </Shape>
-          <Shape page="home" part="part4" shape-name="marketBasket" 
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+          <Shape page="home" part="part4" shape-name="marketBasket"
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/marketBasket.svg" />
           </Shape>
         </ShapeContainer>
       </Grid>
-      <Grid  class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
+      <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
-            :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title1 }}</Txt>
+          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title1 }}</Txt>
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
             :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
             <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title2 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-              data.home.part4.left.title3 }}</Txt>
+      data.home.part4.left.title3 }}</Txt>
           </Stack>
-          <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :xl=72
-            :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title4 }}</Txt>
-          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24 :xs=18>
+          <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1
+            :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title4 }}</Txt>
+          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24
+            :xs=18>
             {{ data.home.part4.left.body1 }}</Txt>
         </Stack>
       </Grid>
     </Grid>
     <Grid :gap=0 class="mt20 width-100p" direction="ltr" container :lg=8 :md=1>
       <Grid :lg=5 :md=1>
-        <ShapeContainer 
-        :xlh="shapeContainerMinHeight.xlh" 
-        :lgh="shapeContainerMinHeight.lgh" 
-        :mdh="shapeContainerMinHeight.mdh" 
-        :smh="shapeContainerMinHeight.smh" 
-        :xsh="shapeContainerMinHeight.xsh">
-        <Shape page="home" part="part5" shape-name="window"
-          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+        <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
+          :mdh="shapeContainerMinHeight.mdh" :smh="shapeContainerMinHeight.smh" :xsh="shapeContainerMinHeight.xsh">
+          <Shape page="home" part="part5" shape-name="window"
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/window.svg" />
           </Shape>
           <Shape page="home" part="part5" shape-name="picture"
-          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/picture.svg" />
           </Shape>
-           <Shape page="home" part="part5" shape-name="bars"
-          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+          <Shape page="home" part="part5" shape-name="bars" :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/bars.svg" />
           </Shape>
           <Shape page="home" part="part5" shape-name="star1"
-          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/iCanSeeYourStar.svg" />
           </Shape>
           <Shape page="home" part="part5" shape-name="star2"
-          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/iCanSeeYourStar.svg" />
           </Shape>
           <Shape page="home" part="part5" shape-name="star3"
-          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/iCanSeeYourStar.svg" />
           </Shape>
           <Shape page="home" part="part5" shape-name="circleArrowLeft"
-          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/circleArrowLeft.svg" />
           </Shape>
           <Shape page="home" part="part5" shape-name="camera"
-          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/camera.svg" />
           </Shape>
           <Shape page="home" part="part5" shape-name="buttonRoundPipe"
-          :stick="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <ShapeButtonRoundPipe :text="data.home.part5.left.buttonRound" />
           </Shape>
         </ShapeContainer>
       </Grid>
       <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
-            :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part5.right.title1 }}</Txt>
-          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
-            :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part5.right.title2 }}</Txt>
+          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part5.right.title1 }}</Txt>
+          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part5.right.title2 }}</Txt>
           <Txt line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
             :font=2 :color=3 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part5.right.title3 }}</Txt>
-          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24 :xs=18>
+          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24
+            :xs=18>
             {{ data.home.part5.right.body1 }}</Txt>
         </Stack>
       </Grid>
     </Grid>
     <Grid :gap=0 class="mt20 width-100p" direction="rtl" container :lg=8 :md=1>
       <Grid class="direction-ltr" :lg=5 :md=1>
-        <ShapeContainer 
-        :xlh="shapeContainerMinHeight.xlh" 
-        :lgh="shapeContainerMinHeight.lgh" 
-        :mdh="shapeContainerMinHeight.mdh" 
-        :smh="shapeContainerMinHeight.smh" 
-        :xsh="shapeContainerMinHeight.xsh">
+        <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
+          :mdh="shapeContainerMinHeight.mdh" :smh="shapeContainerMinHeight.smh" :xsh="shapeContainerMinHeight.xsh">
           <Shape page="home" part="part6" shape-name="window"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/window.svg" />
           </Shape>
           <Shape page="home" part="part6" shape-name="brush"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/brush.svg" />
           </Shape>
           <Shape page="home" part="part6" shape-name="color1"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle :color=3 />
           </Shape>
           <Shape page="home" part="part6" shape-name="color2"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle :color=1 />
           </Shape>
           <Shape page="home" part="part6" shape-name="color3"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle :color=5 />
           </Shape>
           <Shape page="home" part="part6" shape-name="color4"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle :color=7 />
           </Shape>
           <Shape page="home" part="part6" shape-name="color5"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle :color=2 />
           </Shape>
           <Shape page="home" part="part6" shape-name="color6"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle style="opacity: 0.53" :color="21" />
           </Shape>
           <Shape page="home" part="part6" shape-name="boxRunning"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/boxRunning.svg" />
           </Shape>
           <Shape page="home" part="part6" shape-name="boxFood"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/boxFood.svg" />
           </Shape>
           <Shape page="home" part="part6" shape-name="boxDog"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/boxDog.svg" />
           </Shape>
           <Shape page="home" part="part6" shape-name="buttonRoundBrush"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeButtonRoundBrush :text="data.home.part6.right.buttonRound" />
           </Shape>
         </ShapeContainer>
       </Grid>
-      <Grid  class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
+      <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
@@ -261,48 +251,53 @@ const shapeContainerMinHeight = {
             <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title1 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-              data.home.part6.left.title2 }}</Txt>
+      data.home.part6.left.title2 }}</Txt>
           </Stack>
-          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
-            :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title3 }}</Txt>
-          <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :xl=72
-            :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title4 }}</Txt>
-          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24 :xs=18>
+          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title3 }}</Txt>
+          <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1
+            :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title4 }}</Txt>
+          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24
+            :xs=18>
             {{ data.home.part6.left.body1 }}</Txt>
         </Stack>
       </Grid>
     </Grid>
     <Grid :gap=0 class="mt20 width-100p" direction="rtl" container :lg=8 :md=1>
       <Grid class="direction-ltr" :lg=5 :md=1>
-        <ShapeContainer 
-        :xlh="shapeContainerMinHeight.xlh" 
-        :lgh="shapeContainerMinHeight.lgh" 
-        :mdh="shapeContainerMinHeight.mdh" 
-        :smh="shapeContainerMinHeight.smh" 
-        :xsh="shapeContainerMinHeight.xsh">
+        <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
+          :mdh="shapeContainerMinHeight.mdh" :smh="shapeContainerMinHeight.smh" :xsh="shapeContainerMinHeight.xsh">
           <Shape page="home" part="part8" shape-name="window"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/window.svg" />
           </Shape>
           <Shape page="home" part="part8" shape-name="boxEnvelop"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/boxEnvelop.svg" />
           </Shape>
           <Shape page="home" part="part8" shape-name="boxEarth"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/boxEarth.svg" />
           </Shape>
           <Shape page="home" part="part8" shape-name="boxTag"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/boxTag.svg" />
           </Shape>
           <Shape page="home" part="part8" shape-name="buttonRoundSpeaker"
-          :stick="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeButtonRoundSpeaker :text="data.home.part8.right.buttonRound" />
+          </Shape>
+          <Shape page="home" part="part8" shape-name="snow"
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <img src="/svgs/snow.svg" />
+          </Shape>
+          <Shape page="home" part="part8" shape-name="text1"
+            :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
+            <ShapeText :color=5 :font=1 :text="data.home.part8.right.text1" />
           </Shape>
         </ShapeContainer>
       </Grid>
-      <Grid  class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
+      <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
@@ -310,16 +305,101 @@ const shapeContainerMinHeight = {
             <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title1 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-              data.home.part8.left.title2 }}</Txt>
+      data.home.part8.left.title2 }}</Txt>
           </Stack>
-          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" class="word-no-break"
-            :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title3 }}</Txt>
-          <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :xl=72
-            :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title4 }}</Txt>
-          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24 :xs=18>
+          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title3 }}</Txt>
+          <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1
+            :xl=72 :lg=46 :md=50 :xs=24>{{ data.home.part8.left.title4 }}</Txt>
+          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24
+            :xs=18>
             {{ data.home.part8.left.body1 }}</Txt>
         </Stack>
       </Grid>
     </Grid>
+  </Stack>
+  <Stack class="backgroundapp-color-3 width-100p" direction="column" justifyContent="center" alignItems="center">
+    <div class="width-100p">
+      <ShapeContainer class="backgroundapp-color-3" :xlh="100" :lgh="100" :mdh="130" :smh="130" :xsh="120">
+        <Shape page="home" part="part9" shape-name="3stars" stick-v="right">
+          <img src="/svgs/3stars.svg" />
+        </Shape>
+      </ShapeContainer>
+    </div>
+    <Txt text-align="center" :line-height=140 :font=2 :color=1 :xs=60 :lg=109>{{ data.home.part9.title1 }}</Txt>
+    <Txt text-align="center" :font=1 :color=2 :xs=24 :lg=34>{{ data.home.part9.body1 }}</Txt>
+    <div class="mt8">
+      <Button1 :border=0 :color="2" :background="8" :hover-color="3" :hover-background="21" class="pt5 pb5 pr10 pl10">
+        <Txt :font=1 :color=-1 :xs=16>{{ data.home.part9.buttonRound }}</Txt>
+      </Button1>
+    </div>
+    <div class="width-100p">
+      <ShapeContainer class="backgroundapp-color-3" :xlh="100" :lgh="120" :mdh="200" :smh="220" :xsh="180">
+        <Shape page="home" part="part9" shape-name="bellCropped" stick-v="left">
+          <img src="/svgs/bellCropped.svg" />
+        </Shape>
+      </ShapeContainer>
+    </div>
+  </Stack>
+  <Stack :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pt50 pb50' : 'pr5 pl5'" direction="column" justifyContent="flex-start"
+    class="backgroundapp-color-2" alignItems="flex-start">
+    <Grid container :lg=2 :md=1>
+      <Grid :lg=1 :md=1>
+        <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
+          <Appsvg class="fillapp-color-3" :class="size.biggerThan(sizeType.lg) ? 'mb10 ml12' : 'pt14 pb10 ml6'" :xs=3 :xl=4.5>
+            <IStudyHat />
+          </Appsvg>
+          <Txt line-height="50" bold class="" :font=1 :color=1 :xs="30" :lg="67">
+            {{ data.home.part10.left.title1 }}
+          </Txt>
+          <Txt line-height="150" :font=2 :color=3 :xs="62" :lg="110">
+              {{  data.home.part10.left.title2 }}
+            </Txt>
+        </Stack>
+      </Grid>
+      <Grid :lg=1 :md=1>
+        <Stack class="width-100p" :class="size.biggerThan(sizeType.md) ? 'pl30' : 'pb8'" direction="column" justifyContent="center" alignItems="flex-start">
+            <Txt class="mt10" :font=1 :color=1 :xs="18" :lg="24">
+              {{  data.home.part10.right.body1 }}
+            </Txt>
+            <div>
+              <Button1 :border=0 :color="2" :background="3" :hover-color="3" :hover-background="2" class="mt10 pt5 pb5 pr10 pl10">
+                <Txt :font=1 :color=-1 :xs=16>{{ data.home.part10.right.buttonRound }}</Txt>
+              </Button1>
+            </div>
+        </Stack>
+      </Grid>
+    </Grid>
+  </Stack>
+  <Stack
+  :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pt20 pb20' : 'pr5 pl5'"
+  class="width-100p backgroundapp-color-1"
+      direction="column"
+      justifyContent="center"
+      alignItems="center">
+      <Txt class="pb10" text-align="center" :font=2 :color=2 :xs="30" :lg="62">
+              {{  data.home.part11.title1 }}
+      </Txt>
+      <Grid gap="20" container :lg=4 :md=1>
+        <Grid v-for="(item,index) in data.home.part11.items" :key="index">
+          <Stack class="disabled"
+            direction="column"
+            justifyContent="flex-start"
+            alignItems="center">
+            <Txt class="mt4" :font=1 :color=2 text-align="center" :xs="16">{{ item.body1 }}</Txt>
+            <Txt bold class="mt10" :font=1 :color=2 text-align="center" :xs="24">{{ item.body2 }}</Txt>
+            <Txt class="mt1" :font=1 :color=2 text-align="center" :xs="20">{{ item.body3 }}</Txt>
+            <Stack
+            class="mt5"
+              direction="row"
+              justifyContent="center"
+              alignItems="center">
+              <Appsvg v-for="index2 in item.starCount" :key="index2" class="fillapp-color-3 ml1 mr1" :xs=1>
+                <IStar />
+              </Appsvg>
+          </Stack>
+          </Stack>
+        </Grid>
+      </Grid>
   </Stack>
 </template>

@@ -11245,17 +11245,23 @@ hr.hr1,
 .shape.left{
   left: 0px;
 }
-.shape.center{
+.shape.top{
+  top: 0px;
+}
+.shape.bottom{
+  bottom: 0px;
+}
+.shape.center-left{
   left: 50%;
+}
+.shape.center-top{
+  top: 50%;
 }
 .shape.container{
   position: relative;
 }
 
 @media (max-width: 480px) {
-  .shape.container{
-    min-height: 210px;
-  }
 }
 @media (min-width: 480px) {
 

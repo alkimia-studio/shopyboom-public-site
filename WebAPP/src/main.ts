@@ -19,12 +19,15 @@ import shapeContainer from '@/components/subComponents/shapeContainer.vue'
 
 import iconArrowDown from '@/components/icons/iconArrowDown.vue'
 import iconShopyBoom from '@/components/icons/iconShopyBoom.vue'
+import iconStudyHat from '@/components/icons/iconStudyHat.vue'
+import iconStar from '@/components/icons/iconStar.vue'
 
 import shapeCircle from '@/components/shapes/shapeCircle.vue'
 import shapeButtonRoundClock from '@/components/shapes/shapeButtonRoundClock.vue'
 import shapeButtonRoundPipe from '@/components/shapes/shapeButtonRoundPipe.vue'
 import shapeButtonRoundBrush from '@/components/shapes/shapeButtonRoundBrush.vue'
 import shapeButtonRoundSpeaker from '@/components/shapes/shapeButtonRoundSpeaker.vue'
+import shapeText from '@/components/shapes/shapeText.vue'
 
 import header from '@/components/subPages/header.vue'
 import footer from '@/components/subPages/footer.vue'
@@ -47,12 +50,15 @@ app.component('ShapeContainer', shapeContainer)
 
 app.component('IArrowDown', iconArrowDown)
 app.component('IShopyBoom', iconShopyBoom)
+app.component('IStudyHat', iconStudyHat)
+app.component('IStar', iconStar)
 
 app.component('ShapeCircle', shapeCircle)
 app.component('ShapeButtonRoundClock', shapeButtonRoundClock)
 app.component('ShapeButtonRoundPipe',shapeButtonRoundPipe)
 app.component('ShapeButtonRoundBrush',shapeButtonRoundBrush)
 app.component('ShapeButtonRoundSpeaker',shapeButtonRoundSpeaker)
+app.component('ShapeText',shapeText)
 
 app.component('Header', header)
 app.component('Footer', footer)

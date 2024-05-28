@@ -1,6 +1,6 @@
 {
-    "home":{
-        "part1":{
+    "home": {
+        "part1": {
             "title1": "Tutto inizia da un gesto semplice.",
             "title2": "Tutto inizia da qui.",
             "title3": "Apri il tuo negozio",
@@ -8,13 +8,13 @@
             "title5": "Ti bastano 5 minuti",
             "button1": "Inizia"
         },
-        "part2":{
+        "part2": {
             "left": {
                 "title1": "Cos'è "
             },
-            "right":{
+            "right": {
                 "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "links":[
+                "links": [
                     {
                         "url": "/",
                         "text": "Lorem ipsum dolor sit amet"
@@ -30,61 +30,110 @@
                 ]
             }
         },
-        "part3":{
+        "part3": {
             "title1": "Perché scegliere"
         },
-        "part4":{
-            "left":{
+        "part4": {
+            "left": {
                 "title1": "Il tuo shop",
                 "title2": "online",
                 "title3": "in pochi",
                 "title4": "minuti!",
                 "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             },
-            "right":{
+            "right": {
                 "buttonRound": "Attivo in 5 min"
             }
         },
-        "part5":{
-            "left":{
+        "part5": {
+            "left": {
                 "buttonRound": "IA al tuo servizio"
             },
-            "right":{
+            "right": {
                 "title1": "Carica i tuoi",
                 "title2": "prodotti in un ",
                 "title3": "lampo",
                 "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             }
         },
-        "part6":{
-            "left":{
+        "part6": {
+            "left": {
                 "title1": "Personalizza",
                 "title2": "il",
                 "title3": "tuo negozio",
                 "title4": "senza sforzi",
                 "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             },
-            "right":{
+            "right": {
                 "buttonRound": "Crea il tuo stile"
             }
         },
-        "part8":{
-            "left":{
+        "part8": {
+            "left": {
                 "title1": "Promuovi",
                 "title2": "il",
                 "title3": "negozio come un",
-                "title4": "professionista",
+                "title4": "professionista!",
                 "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             },
-            "right":{
-                "buttonRound": "Strumenti marketing"
+            "right": {
+                "buttonRound": "Strumenti marketing",
+                "text1": "Promo!"
             }
+        },
+        "part9": {
+            "title1": "Questo è nulla",
+            "body1": "Scopri tutte le funzionalità della piattaforma",
+            "buttonRound": "Inizia"
+        },
+        "part10": {
+            "left": {
+                "title1": "Shopping",
+                "title2": "Academy"
+            },
+            "right": {
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "buttonRound": "Scopri ogni segreto"
+            }
+        },
+        "part11": {
+            "title1": "Testimonianze",
+            "items":[
+                {
+                    "img":"",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "body2": "Stefano Malcangi",
+                    "body3": "Alkimia srl",
+                    "starCount": 4
+                },
+                {
+                    "img":"",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "body2": "Stefano Malcangi",
+                    "body3": "Alkimia srl",
+                    "starCount": 5
+                },
+                {
+                    "img":"",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "body2": "Stefano Malcangi",
+                    "body3": "Alkimia srl",
+                    "starCount": 5
+                },
+                {
+                    "img":"",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                    "body2": "Stefano Malcangi",
+                    "body3": "Alkimia srl",
+                    "starCount": 5
+                }
+            ]
         }
     },
-    "header":{
+    "header": {
         "sitename": "shopyboom",
         "login": "Accedi",
-        "items":[
+        "items": [
             {
                 "url": "/4",
                 "text": "Supporto"

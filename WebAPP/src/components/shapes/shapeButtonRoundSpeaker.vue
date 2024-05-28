@@ -14,7 +14,7 @@ const props = defineProps({
       <feComposite in="SourceGraphic"/>
     </filter>
   </defs>
-  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_246)">
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_246-2)">
     <rect id="Rectangle_246-2" data-name="Rectangle 246" width="381" height="65" rx="32.5" transform="translate(67.5 64.5)" fill="#333"/>
   </g>
   <text id="Title_PLATFORM:MOBILE_TAG:H4_" data-name="Title [PLATFORM:MOBILE][TAG:H4]" transform="translate(165.5 81.5)" fill="#fffcf6" font-size="24" font-family="Plus Jakarta Sans" font-weight="800"><tspan x="0" y="25">{{ text }}</tspan></text>
