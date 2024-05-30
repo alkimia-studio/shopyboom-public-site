@@ -80,52 +80,100 @@
                 "buttonRound": "Strumenti marketing",
                 "text1": "Promo!"
             }
+        }
+    },
+    "eCommerce": {
+        "part1": {
+            "title1": "shopyboom",
+            "title2": "e-commerce,",
+            "title3": "per tutti!"
         },
-        "part9": {
-            "title1": "Questo è nulla",
-            "body1": "Scopri tutte le funzionalità della piattaforma",
-            "buttonRound": "Inizia"
+        "part2": {
+            "title1": "Tutto ciò che ti serve per gestire in modo semplice e veloce il tuo negozio online"
         },
-        "part10": {
+        "part3": {
             "left": {
-                "title1": "Shopping",
-                "title2": "Academy"
-            },
-            "right": {
-                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "buttonRound": "Scopri ogni segreto"
+                "title1": "Un e-commerce",
+                "title2": "Semplice",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
             }
         },
-        "part11": {
-            "title1": "Testimonianze",
+        "part4": {
+            "right": {
+                "title1": "L'unione",
+                "title2": "Fa la forza",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        },
+        "part5": {
+            "left": {
+                "title1": "Alta tecnologia",
+                "title2": "Per tutti",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        }
+    },
+    "risorse":{
+        "part1":{
+            "title1": "Risorse",
+            "title2": "Tutto ciò che ti serve per diventare un mago dell'e-commerce"
+        },
+        "part2":{
             "items":[
                 {
-                    "img":"",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "body2": "Stefano Malcangi",
-                    "body3": "Alkimia srl",
-                    "starCount": 4
+                    "title1":"Shopping",
+                    "title2":"Academy",
+                    "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                    "buttonRound":"Vai"
                 },
                 {
-                    "img":"",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "body2": "Stefano Malcangi",
-                    "body3": "Alkimia srl",
-                    "starCount": 5
+                    "title1":"Domande frequenti",
+                    "title2":"FAQ",
+                    "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                    "buttonRound":"Vai"
                 },
                 {
-                    "img":"",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "body2": "Stefano Malcangi",
-                    "body3": "Alkimia srl",
-                    "starCount": 5
+                    "title1":"Centro",
+                    "title2":"Supporto",
+                    "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                    "buttonRound":"Vai"
+                }
+            ]
+        },
+        "part3":{
+            "left":{
+                "title1":"Academy",
+                "title2":"Per iniziare..."
+            },
+            "right":{
+                "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+        },
+        "part4":{
+            "items":[
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Crea il tuo sito",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 },
                 {
-                    "img":"",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                    "body2": "Stefano Malcangi",
-                    "body3": "Alkimia srl",
-                    "starCount": 5
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Gestisci il catalogo",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Gestisci gli ordini",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Promuovi il tuo sito",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
                 }
             ]
         }
@@ -151,5 +199,186 @@
                 "text": "Apri negozio"
             }
         ]
+    },
+    "footer": {
+        "column1": {
+            "part1": [
+                {
+                    "url": "/",
+                    "text": "shopyboom"
+                },
+                {
+                    "url": "/",
+                    "text": "è un marchio di proprietà di"
+                }
+            ],
+            "part2": [
+                {
+                    "url": "/",
+                    "text": "Alkimia srl"
+                },
+                {
+                    "url": "/",
+                    "text": "P.IVA 012345678987"
+                },
+                {
+                    "url": "/",
+                    "text": "info@alkimia.shopping"
+                }
+            ]
+        },
+        "column2": [
+            {
+                "url": "/",
+                "text": "Chi siamo"
+            },
+            {
+                "url": "/",
+                "text": "Manifesto"
+            },
+            {
+                "url": "/",
+                "text": "Blog"
+            },
+            {
+                "url": "/",
+                "text": "Lavora con noi"
+            },
+            {
+                "url": "/",
+                "text": "Aggiornamenti e novità"
+            },
+            {
+                "url": "/",
+                "text": "Termini e condizioni"
+            },
+            {
+                "url": "/",
+                "text": "Informativa Privacy"
+            }
+        ],
+        "column3": [
+            {
+                "url": "/",
+                "text": "Contatti"
+            },
+            {
+                "url": "/",
+                "text": "Richiedi appuntamento"
+            },
+            {
+                "url": "/",
+                "text": "Accademia"
+            },
+            {
+                "url": "/",
+                "text": "Apri Richiesta supporto"
+            },
+            {
+                "url": "/",
+                "text": "Domande frequenti"
+            }
+        ],
+        "column4": {
+            "part1": [
+                {
+                    "url": "/",
+                    "text": "Accedi al tuo negozio"
+                },
+                {
+                    "url": "/",
+                    "text": "Crea il tuo negozio"
+                }
+            ],
+            "part2": [
+                {
+                    "url": "/",
+                    "text": "Home page"
+                },
+                {
+                    "url": "/",
+                    "text": "Funzionalità"
+                },
+                {
+                    "url": "/",
+                    "text": "Prezzi"
+                },
+                {
+                    "url": "/",
+                    "text": "Risorse"
+                }
+            ]
+        }
+    },
+    "bellStars": {
+        "title1": "Questo è nulla",
+        "body1": "Scopri tutte le funzionalità della piattaforma",
+        "buttonRound": "Inizia"
+    },
+    "academy": {
+        "left": {
+            "title1": "Shopping",
+            "title2": "Academy"
+        },
+        "right": {
+            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "buttonRound": "Scopri ogni segreto"
+        }
+    },
+    "people": {
+        "title1": "Testimonianze",
+        "items": [
+            {
+                "img": "/images/girl.png",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "body2": "Stefano Malcangi",
+                "body3": "Alkimia srl",
+                "starCount": 4,
+                "disabled": true
+            },
+            {
+                "img": "/images/girl.png",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "body2": "Stefano Malcangi",
+                "body3": "Alkimia srl",
+                "starCount": 5,
+                "disabled": true
+            },
+            {
+                "img": "/images/girl.png",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "body2": "Stefano Malcangi",
+                "body3": "Alkimia srl",
+                "starCount": 5,
+                "disabled": false
+            },
+            {
+                "img": "/images/girl.png",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "body2": "Stefano Malcangi",
+                "body3": "Alkimia srl",
+                "starCount": 5,
+                "disabled": true
+            }
+        ]
+    },
+    "openShop": {
+        "title1": "Apri il tuo negozio",
+        "body1": "I primi",
+        "body2": "3 mesi",
+        "body3": "sono gratis!",
+        "buttonRound": "Inizia"
+    },
+    "opportunity": {
+        "left": {
+            "title1": "Non perdere",
+            "title2": "questa",
+            "title3": "opportunità"
+        },
+        "right": {
+            "body1": "Rimani aggiornato per tutte le offerte, nuove funzionalità, tutorial… inserisci qui la tua mail",
+            "placeholder": "Scrivi la tua mail",
+            "buttonRound": "Iscriviti"
+        }
     }
 }

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="559" height="474" viewBox="0 0 559 474">
+  <defs>
+    <filter id="Rectangle_275" x="0" y="0" width="559" height="474" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-color="#ff6000" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_275)">
+    <rect id="Rectangle_275-2" data-name="Rectangle 275" width="262" height="177" rx="12" transform="translate(148.5 145.5)" fill="#fff"/>
+  </g>
+  <path id="Icon_awesome-robot" data-name="Icon awesome-robot" d="M0,47.691V71.537A5.955,5.955,0,0,0,5.961,77.5h5.961V41.73H5.961A5.955,5.955,0,0,0,0,47.691ZM86.44,17.884H65.575V5.961a5.961,5.961,0,0,0-11.923,0V17.884H32.788a14.9,14.9,0,0,0-14.9,14.9V83.46A11.934,11.934,0,0,0,29.807,95.382H89.421A11.934,11.934,0,0,0,101.344,83.46V32.788A14.9,14.9,0,0,0,86.44,17.884ZM47.691,77.5H35.768V71.537H47.691ZM41.73,55.143a7.452,7.452,0,1,1,7.452-7.452A7.45,7.45,0,0,1,41.73,55.143ZM65.575,77.5H53.653V71.537H65.575Zm17.884,0H71.537V71.537H83.46ZM77.5,55.143a7.452,7.452,0,1,1,7.452-7.452A7.45,7.45,0,0,1,77.5,55.143ZM113.267,41.73h-5.961V77.5h5.961a5.955,5.955,0,0,0,5.961-5.961V47.691A5.955,5.955,0,0,0,113.267,41.73Z" transform="translate(219.886 183.309)"/>
+</svg>

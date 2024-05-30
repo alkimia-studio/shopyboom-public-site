@@ -5,7 +5,6 @@
   background-size: cover;
   background-position: center;
   height: inherit;
-  opacity: 0.35;
 }
 
 button.button1 {
@@ -19,33 +18,95 @@ button.button1 {
   border-radius: 28px;
 }
 
+.image1{
+  border-radius: 12px;
+}
+.image2-border-radius{
+  border-radius: 12px;
+}
+.image2{
+  opacity: 0.5;
+}
+
+.input1{
+  background-color: transparent;
+  height: 42px;
+  width: 100%;
+  padding: 4px 12px !important;
+  font-size: 14px !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid;
+  box-shadow: none;
+  border-radius: 6px;
+  outline: 0;
+  display: block;
+}
+
 @media (max-width: 480px) {
   .banner1 {
     height: 400px;
+  }
+  .image1{
+    min-height: 400px;
+  }
+  .image2{
+    min-height: 160px;
   }
 }
 @media (min-width: 480px) {
   .banner1 {
     height: 400px;
   }
+  .image1{
+    min-height: 400px;
+  }
+  .image2{
+    min-height: 160px;
+  }
 }
 @media (min-width: 568px) {
   .banner1 {
     height: 500px;
+  }
+  .image1{
+    min-height: 400px;
+  }
+  .image2{
+    min-height: 260px;
   }
 }
 @media (min-width: 768px) {
   .banner1 {
     height: 600px;
   }
+  .image1{
+    min-height: 750px;
+  }
+  .image2{
+    min-height: 380px;
+  }
 }
 @media (min-width: 1024px) {
   .banner1 {
     height: 850px;
   }
+  .image1{
+    min-height: 300px;
+  }
+  .image2{
+    min-height: 140px;
+  }
 }
 @media (min-width: 1200px) {
   .banner1 {
     height: 1000px;
+  }
+  .image1{
+    min-height: 300px;
+  }
+  .image2{
+    min-height: 200px;
   }
 }

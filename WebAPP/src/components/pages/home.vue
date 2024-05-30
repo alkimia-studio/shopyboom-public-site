@@ -22,7 +22,7 @@ const shapeContainerMinHeight = {
 }
 </script>
 <template>
-  <Banner1 src="/images/image1.png">
+  <Banner1 src="/images/image1.png" class="backgroundapp-color-11" :opacity=0.35>
     <Txt :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
       data.home.part1.title1 }}</Txt>
     <Txt :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
@@ -38,8 +38,8 @@ const shapeContainerMinHeight = {
       <Txt :font=1 :color=-1 :xs=18>{{ data.home.part1.button1 }}</Txt>
     </Button1>
     <Appsvg class="fillapp-color-3"
-      :class="size.biggerThan(sizeType.lg) ? 'mt30' : size.biggerThan(sizeType.md) ? 'mt20' : 'mt10'"
-      v-if="size.biggerThan(sizeType.sm)" :md=1.5 :lg=1.8 :xl=2>
+      :class="size.biggerThan(sizeType.lg) ? 'mt20' : size.biggerThan(sizeType.md) ? 'mt15' : 'mt12'"
+      v-if="size.biggerThan(sizeType.sm)" :mdw=50 :lgw=60 :xlw=80>
       <IArrowDown class="fillapp-color-2" />
     </Appsvg>
   </Banner1>
@@ -62,7 +62,7 @@ const shapeContainerMinHeight = {
             <Stack class="pt4 pb4 width-100p" direction="row" justifyContent="space-between" alignItems="center">
               <Txt :font=1 :color=1 :md=24 :xs=18 bold>{{ item.text }}</Txt>
               <a :href="item.url">
-                <Appsvg :color=3 :xs=1>
+                <Appsvg :color=3 :xsw=35>
                   <ChevronRightIcon />
                 </Appsvg>
               </a>
@@ -74,7 +74,7 @@ const shapeContainerMinHeight = {
     </Grid>
     <Stack direction="row" class="width-100p p30" justifyContent="center" alignItems="center">
       <Txt class="pr2 word-no-break" text-align="right" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24>{{
-      data.home.part3.title1 }}</Txt>
+        data.home.part3.title1 }}</Txt>
       <Txt class="pl2" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24 bold>{{ data.header.sitename }}</Txt>
     </Stack>
   </Stack>
@@ -124,7 +124,7 @@ const shapeContainerMinHeight = {
             <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title2 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-      data.home.part4.left.title3 }}</Txt>
+              data.home.part4.left.title3 }}</Txt>
           </Stack>
           <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1
             :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title4 }}</Txt>
@@ -251,7 +251,7 @@ const shapeContainerMinHeight = {
             <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title1 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-      data.home.part6.left.title2 }}</Txt>
+              data.home.part6.left.title2 }}</Txt>
           </Stack>
           <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title3 }}</Txt>
@@ -305,7 +305,7 @@ const shapeContainerMinHeight = {
             <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title1 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-      data.home.part8.left.title2 }}</Txt>
+              data.home.part8.left.title2 }}</Txt>
           </Stack>
           <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title3 }}</Txt>
@@ -318,88 +318,10 @@ const shapeContainerMinHeight = {
       </Grid>
     </Grid>
   </Stack>
-  <Stack class="backgroundapp-color-3 width-100p" direction="column" justifyContent="center" alignItems="center">
-    <div class="width-100p">
-      <ShapeContainer class="backgroundapp-color-3" :xlh="100" :lgh="100" :mdh="130" :smh="130" :xsh="120">
-        <Shape page="home" part="part9" shape-name="3stars" stick-v="right">
-          <img src="/svgs/3stars.svg" />
-        </Shape>
-      </ShapeContainer>
-    </div>
-    <Txt text-align="center" :line-height=140 :font=2 :color=1 :xs=60 :lg=109>{{ data.home.part9.title1 }}</Txt>
-    <Txt text-align="center" :font=1 :color=2 :xs=24 :lg=34>{{ data.home.part9.body1 }}</Txt>
-    <div class="mt8">
-      <Button1 :border=0 :color="2" :background="8" :hover-color="3" :hover-background="21" class="pt5 pb5 pr10 pl10">
-        <Txt :font=1 :color=-1 :xs=16>{{ data.home.part9.buttonRound }}</Txt>
-      </Button1>
-    </div>
-    <div class="width-100p">
-      <ShapeContainer class="backgroundapp-color-3" :xlh="100" :lgh="120" :mdh="200" :smh="220" :xsh="180">
-        <Shape page="home" part="part9" shape-name="bellCropped" stick-v="left">
-          <img src="/svgs/bellCropped.svg" />
-        </Shape>
-      </ShapeContainer>
-    </div>
-  </Stack>
-  <Stack :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pt50 pb50' : 'pr5 pl5'" direction="column" justifyContent="flex-start"
-    class="backgroundapp-color-2" alignItems="flex-start">
-    <Grid container :lg=2 :md=1>
-      <Grid :lg=1 :md=1>
-        <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Appsvg class="fillapp-color-3" :class="size.biggerThan(sizeType.lg) ? 'mb10 ml12' : 'pt14 pb10 ml6'" :xs=3 :xl=4.5>
-            <IStudyHat />
-          </Appsvg>
-          <Txt line-height="50" bold class="" :font=1 :color=1 :xs="30" :lg="67">
-            {{ data.home.part10.left.title1 }}
-          </Txt>
-          <Txt line-height="150" :font=2 :color=3 :xs="62" :lg="110">
-              {{  data.home.part10.left.title2 }}
-            </Txt>
-        </Stack>
-      </Grid>
-      <Grid :lg=1 :md=1>
-        <Stack class="width-100p" :class="size.biggerThan(sizeType.md) ? 'pl30' : 'pb8'" direction="column" justifyContent="center" alignItems="flex-start">
-            <Txt class="mt10" :font=1 :color=1 :xs="18" :lg="24">
-              {{  data.home.part10.right.body1 }}
-            </Txt>
-            <div>
-              <Button1 :border=0 :color="2" :background="3" :hover-color="3" :hover-background="2" class="mt10 pt5 pb5 pr10 pl10">
-                <Txt :font=1 :color=-1 :xs=16>{{ data.home.part10.right.buttonRound }}</Txt>
-              </Button1>
-            </div>
-        </Stack>
-      </Grid>
-    </Grid>
-  </Stack>
-  <Stack
-  :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pt20 pb20' : 'pr5 pl5'"
-  class="width-100p backgroundapp-color-1"
-      direction="column"
-      justifyContent="center"
-      alignItems="center">
-      <Txt class="pb10" text-align="center" :font=2 :color=2 :xs="30" :lg="62">
-              {{  data.home.part11.title1 }}
-      </Txt>
-      <Grid gap="20" container :lg=4 :md=1>
-        <Grid v-for="(item,index) in data.home.part11.items" :key="index">
-          <Stack class="disabled"
-            direction="column"
-            justifyContent="flex-start"
-            alignItems="center">
-            <Txt class="mt4" :font=1 :color=2 text-align="center" :xs="16">{{ item.body1 }}</Txt>
-            <Txt bold class="mt10" :font=1 :color=2 text-align="center" :xs="24">{{ item.body2 }}</Txt>
-            <Txt class="mt1" :font=1 :color=2 text-align="center" :xs="20">{{ item.body3 }}</Txt>
-            <Stack
-            class="mt5"
-              direction="row"
-              justifyContent="center"
-              alignItems="center">
-              <Appsvg v-for="index2 in item.starCount" :key="index2" class="fillapp-color-3 ml1 mr1" :xs=1>
-                <IStar />
-              </Appsvg>
-          </Stack>
-          </Stack>
-        </Grid>
-      </Grid>
-  </Stack>
+    <BellStars />
+    <Academy />
+    <People />
+    <OpenShop />
+    <Opportunity />
+
 </template>

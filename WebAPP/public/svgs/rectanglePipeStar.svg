@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="559" height="474" viewBox="0 0 559 474">
+  <defs>
+    <filter id="Rectangle_273" x="0" y="0" width="559" height="474" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="49.5" result="blur"/>
+      <feFlood flood-color="#ff6000" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_273)">
+    <rect id="Rectangle_273-2" data-name="Rectangle 273" width="262" height="177" rx="12" transform="translate(148.5 145.5)" fill="#fff"/>
+  </g>
+  <path id="Icon_awesome-magic" data-name="Icon awesome-magic" d="M41.731,17.885l2.981-5.962,5.962-2.981L44.711,5.962,41.731,0,38.75,5.962,32.788,8.942l5.962,2.981ZM14.9,29.808l4.967-9.935L29.808,14.9,19.871,9.935,14.9,0,9.937,9.935,0,14.9l9.937,4.969ZM80.481,53.654l-4.967,9.935-9.937,4.969,9.937,4.969,4.967,9.935,4.967-9.935,9.937-4.969-9.937-4.969Zm13.156-36.1L77.83,1.747a5.957,5.957,0,0,0-8.43,0L1.747,69.4a5.959,5.959,0,0,0,0,8.43L17.555,93.637a5.962,5.962,0,0,0,8.43,0L93.637,25.983A5.957,5.957,0,0,0,93.637,17.555ZM66.965,37.9,57.48,28.42,73.614,12.286,83.1,21.771Z" transform="translate(231.697 186.309)" fill="#ffdd9a"/>
+</svg>

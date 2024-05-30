@@ -12,13 +12,28 @@
   user-select: none;
 }
 
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0; 
+  background: transparent;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   min-height: 100vh;
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
 
 :root {
   --color-def-1: #333333;
@@ -2162,7 +2177,9 @@ body {
 .uppercase {
   text-transform: uppercase;
 }
-
+.underline {
+  text-decoration: underline;
+}
 /* CSS code */
 .font-size-5 {
   font-size: 5px;
@@ -11060,7 +11077,16 @@ body {
   height: 100%;
   width: 100%;
 }
-
+.image-fitparent-width{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+.image-fitparent-height{
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
 .modalapp {
   display: none;
   position: fixed;
@@ -11182,15 +11208,8 @@ ul {
   height: inherit;
 }
 
-.image-fitparent {
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-}
-
 .headerapp {
-  z-index: 3;
+  z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
@@ -11215,7 +11234,7 @@ button:active {
 .svgapp{
   height: auto;
 }
-.svgapp svg{
+.svgapp svg,.svgapp img{
   width: inherit;
   height: inherit;
 }
@@ -11260,7 +11279,12 @@ hr.hr1,
 .shape.container{
   position: relative;
 }
-
+.absolute-center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 @media (max-width: 480px) {
 }
 @media (min-width: 480px) {
@@ -11277,4 +11301,8 @@ hr.hr1,
 }
 @media (min-width: 1200px) {
 
+}
+.disabled{
+  pointer-events: none;
+  opacity: 0.4;
 }

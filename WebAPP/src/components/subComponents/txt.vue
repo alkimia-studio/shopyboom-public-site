@@ -9,6 +9,7 @@ const props = defineProps({
   textAlign: { type: String as () => 'left' | 'right' | 'center' | 'justify', default: 'left' },
   bold: Boolean,
   uppercase: Boolean,
+  underline: Boolean,
   xl: Number,
   lg: Number,
   md: Number,
@@ -23,6 +24,7 @@ const txtChange = () => {
   classes.value.push(`font-${props.font}`)
   if (props.bold) classes.value.push(`bold`)
   if (props.uppercase) classes.value.push(`uppercase`)
+  if (props.underline) classes.value.push(`underline`)
   if (props.xl !== undefined) classes.value.push(`xlarge-font-size-${props.xl}`)
   if (props.lg !== undefined) classes.value.push(`large-font-size-${props.lg}`)
   if (props.md !== undefined) classes.value.push(`medium-font-size-${props.md}`)
