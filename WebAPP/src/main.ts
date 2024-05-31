@@ -1,4 +1,5 @@
 import './assets/main.css'
+import 'vue3-carousel/dist/carousel.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -22,6 +23,11 @@ import iconShopyBoom from '@/components/icons/iconShopyBoom.vue'
 import iconStudyHat from '@/components/icons/iconStudyHat.vue'
 import iconStar from '@/components/icons/iconStar.vue'
 import iconPlay from '@/components/icons/iconPlay.vue'
+import iconTickFill from '@/components/icons/iconTickFill.vue'
+import iconX from '@/components/icons/iconX.vue'
+import iconMarket from '@/components/icons/iconMarket.vue'
+import iconSpeaker from '@/components/icons/iconSpeaker.vue'
+import iconWheel from '@/components/icons/iconWheel.vue'
 
 import shapeCircle from '@/components/shapes/shapeCircle.vue'
 import shapeButtonRoundClock from '@/components/shapes/shapeButtonRoundClock.vue'
@@ -37,6 +43,8 @@ import academy from '@/components/subPages/academy.vue'
 import people from '@/components/subPages/people.vue'
 import openShop from '@/components/subPages/openShop.vue'
 import opportunity from '@/components/subPages/opportunity.vue'
+
+import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 
 const app = createApp(App)
 
@@ -59,6 +67,11 @@ app.component('IShopyBoom', iconShopyBoom)
 app.component('IStudyHat', iconStudyHat)
 app.component('IStar', iconStar)
 app.component('IPlay', iconPlay)
+app.component('ITickFill', iconTickFill)
+app.component('IX', iconX)
+app.component('IMarket', iconMarket)
+app.component('ISpeaker', iconSpeaker)
+app.component('IWheel', iconWheel)
 
 app.component('ShapeCircle', shapeCircle)
 app.component('ShapeButtonRoundClock', shapeButtonRoundClock)
@@ -74,5 +87,11 @@ app.component('Academy', academy)
 app.component('People', people)
 app.component('OpenShop', openShop)
 app.component('Opportunity', opportunity)
+
+app.component('Carousel', Carousel)
+app.component('Navigation', Navigation)
+app.component('Pagination', Pagination)
+app.component('Slide', Slide)
+
 
 app.mount('#app')

@@ -31,7 +31,7 @@ useHead({
                     <Txt class="word-no-break" lineHeight="20" :font=1 :color=1 :xs="30" :lg="40">
                         {{ data.risorse.part2.items[0].title1 }}
                     </Txt>
-                    <Txt lineHeight="150" bold :font=2 :color=1 :xs="25" :lg="60">
+                    <Txt lineHeight="150" bold :font=2 :color=1 :xs="50" :lg="60">
                         {{ data.risorse.part2.items[0].title2 }}
                     </Txt>
                     <Txt :font=1 :color=1 :md=24 :xs=18>
@@ -54,7 +54,7 @@ useHead({
                     <Txt class="word-no-break" lineHeight="20" :font=1 :color=1 :xs="30" :lg="40">
                         {{ data.risorse.part2.items[1].title1 }}
                     </Txt>
-                    <Txt lineHeight="150" bold :font=2 :color=1 :xs="25" :lg="60">
+                    <Txt lineHeight="150" bold :font=2 :color=1 :xs="50" :lg="60">
                         {{ data.risorse.part2.items[1].title2 }}
                     </Txt>
                     <Txt :font=1 :color=1 :md=24 :xs=18>
@@ -77,7 +77,7 @@ useHead({
                     <Txt class="word-no-break" lineHeight="20" :font=1 :color=1 :xs="30" :lg="40">
                         {{ data.risorse.part2.items[2].title1 }}
                     </Txt>
-                    <Txt lineHeight="150" bold :font=2 :color=1 :xs="25" :lg="60">
+                    <Txt lineHeight="150" bold :font=2 :color=1 :xs="50" :lg="60">
                         {{ data.risorse.part2.items[2].title2 }}
                     </Txt>
                     <Txt :font=1 :color=1 :md=24 :xs=18>
@@ -111,15 +111,15 @@ useHead({
                 </Stack>
             </Grid>
         </Grid>
-        <Grid :gap="10" container :lg="4" :xs="1">
+        <Grid v-if="size.biggerThan(sizeType.md)" :gap="10" container :lg="4" :xs="1">
             <Grid v-for="(item, index) in data.risorse.part4.items" :key="index" :lg="1" :xs="1">
                 <div class="position-relative">
                     <div class="backgroundapp-color-1 image2-border-radius">
-                        <div class="image2 image-fitparent-width image2-border-radius" :style="{ 'background-image': 'url(' + item.img + ')' }">
+                        <div class="image2 image-fitparent-width image2-border-radius"
+                            :style="{ 'background-image': 'url(' + item.img + ')' }">
                         </div>
                     </div>
-                    <Appsvg :color="7" :hover="3" class="absolute-center cursor-pointer" :xsw=40
-                        :lgw=55>
+                    <Appsvg :color="7" :hover="3" class="absolute-center cursor-pointer" :xsw=40 :lgw=55>
                         <IPlay />
                     </Appsvg>
                 </div>
@@ -129,6 +129,26 @@ useHead({
                 </Stack>
             </Grid>
         </Grid>
+        <Carousel class="mt10" v-else :items-to-show="size.biggerThan(sizeType.xs) ? 2 : 1">
+            <Slide v-for="(item, index) in data.risorse.part4.items" :key="index">
+                <div class="pr3 pl3">
+                    <div class="position-relative">
+                        <div class="backgroundapp-color-1 image2-border-radius">
+                            <div class="image2 image-fitparent-width image2-border-radius"
+                                :style="{ 'background-image': 'url(' + item.img + ')' }">
+                            </div>
+                        </div>
+                        <Appsvg :color="7" :hover="3" class="absolute-center cursor-pointer" :xsw=40 :lgw=55>
+                            <IPlay />
+                        </Appsvg>
+                    </div>
+                    <Stack class="height-inherit p3" direction="column" justifyContent="flex-start" alignItems="flex-start">
+                        <Txt bold class="mt5" :font=1 :color=1 text-align="left" :xs="20">{{ item.title1 }}</Txt>
+                        <Txt class="mt3" :font=1 :color=1 text-align="left" :xs="14">{{ item.body1 }}</Txt>
+                    </Stack>
+                </div>
+            </Slide>
+        </Carousel>
     </Stack>
     <BellStars />
     <Opportunity />

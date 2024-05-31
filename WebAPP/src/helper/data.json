@@ -178,6 +178,202 @@
             ]
         }
     },
+    "piani":{
+        "part1":{
+            "title1": "Piani",
+            "title2": "Scopri tutti i nostri pacchetti"
+        },
+        "part2":{
+            "items":[
+                {
+                    "title1":"Standard",
+                    "title2":"",
+                    "title3":"",
+                    "title4":"",
+                    "title5": "",
+                    "list":[
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet"
+                    ],
+                    "buttonRound": "Attiva"
+                },
+                {
+                    "title1":"Avanzato",
+                    "title2":"Tutto ciò che è incluso nel piano",
+                    "title3":"Standard",
+                    "title4":"ed inoltre...",
+                    "title5": "Più popolare",
+                    "list":[
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet"
+                    ],
+                    "buttonRound": "Attiva"
+                },
+                {
+                    "title1":"Pro",
+                    "title2":"Tutto ciò che è incluso nel piano",
+                    "title3":"Avanzato",
+                    "title4":"e in più...",
+                    "title5":"",
+                    "list":[
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet",
+                        "Lorem ipsum dolor sit amet"
+                    ],
+                    "buttonRound": "Attiva"
+                }
+            ]
+        },
+        "part3":{
+            "title1": "Non sai quale piano possa fare al caso tuo?",
+            "title2": "Hai bisogno di qualche informazione?",
+            "title3": "Contattaci, saremo felici di darti un consiglio!",
+            "buttonRound": "Contattaci",
+            "title4": "Funzionalità",
+            "title5": "Tutto ciò che ti serve per gestire in modo semplice e veloce il tuo negozio online"
+        },
+        "part4":{
+            "headers":[
+                "",
+                "Standard",
+                "Avanzato",
+                "Pro"
+            ],
+            "items":[
+                {
+                    "headerItem": "Negozio online",
+                    "list":[
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        }
+                    ]	
+                },
+                {
+                    "headerItem": "Promozione",
+                    "list":[
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        }
+                    ]	
+                },
+                {
+                    "headerItem": "Supporto",
+                    "list":[
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Caratteristica numero uno",
+                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "item1": false,
+                            "item2": true,
+                            "item3": true
+                        }
+                    ]	
+                }
+            ]
+        }
+    },
     "header": {
         "sitename": "shopyboom",
         "login": "Accedi",
