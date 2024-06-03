@@ -1,0 +1,12 @@
+{
+    "dev":{
+        "http":"http://localhost:5189",
+        "https":"https://localhost:7186",
+        "useHttps":true
+    },
+    "pro":{
+        "http":"/",
+        "https":"/",
+        "useHttps":true
+    }
+}

@@ -79,7 +79,7 @@ body {
   --shadow-def-2: 20px 40px 60px rgba(0, 0, 0, 0.39);
 
   --font-def-1: 'Plus Jakarta Sans', sans-serif;
-  --font-def-2: arial, sans-serif;
+  --font-def-2: "fields-display",sans-serif;
 }
 
 .default-theme {
@@ -2965,8 +2965,8 @@ body {
   font-size: 200px;
 }
 
-.line-height-auto {
-  line-height: auto;
+.line-height-normal {
+  line-height: normal;
 }
 
 .line-height-0 {

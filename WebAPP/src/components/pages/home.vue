@@ -24,13 +24,13 @@ const shapeContainerMinHeight = {
 <template>
   <Banner1 src="/images/image1.png" class="backgroundapp-color-11" :opacity=0.35>
     <Txt :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
-      data.home.part1.title1 }}</Txt>
+    data.home.part1.title1 }}</Txt>
     <Txt :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
-      data.home.part1.title2 }}</Txt>
+    data.home.part1.title2 }}</Txt>
     <Txt :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center" bold>{{
-      data.home.part1.title3 }}</Txt>
+    data.home.part1.title3 }}</Txt>
     <Txt :font="2" :color="3" :xl="134" :lg="110" :md="80" :sm="70" :xs="60" text-align="center" bold>{{
-      data.home.part1.title4 }}</Txt>
+    data.home.part1.title4 }}</Txt>
     <Txt :font="1" :color="5" :xl="33" :lg="28" :md="24" :sm="21" :xs="18" text-align="center">{{ data.home.part1.title5
       }}</Txt>
     <Button1 :border=0 :color="21" :background="3" :hover-color="3" :hover-background="21"
@@ -72,10 +72,10 @@ const shapeContainerMinHeight = {
         </Stack>
       </Grid>
     </Grid>
-    <Stack direction="row" class="width-100p p30" justifyContent="center" alignItems="center">
-      <Txt class="pr2 word-no-break" text-align="right" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24>{{
-        data.home.part3.title1 }}</Txt>
-      <Txt class="pl2" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24 bold>{{ data.header.sitename }}</Txt>
+    <Stack :direction="size.biggerThan(sizeType.sm) ? 'row' : 'column'" class="width-100p pt30 pb30" justifyContent="center" alignItems="center">
+      <Txt class="pr2 word-no-break" :text-align="size.biggerThan(sizeType.sm) ? 'right' : 'center'" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24>{{
+    data.home.part3.title1 }}</Txt>
+      <Txt :class="size.biggerThan(sizeType.sm)? '': 'mt6'" class="pl2" :text-align="size.biggerThan(sizeType.sm) ? 'left' : 'center'" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24 bold>{{ data.header.sitename }}</Txt>
     </Stack>
   </Stack>
   <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5'" direction="column" justifyContent="flex-start"
@@ -124,7 +124,7 @@ const shapeContainerMinHeight = {
             <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title2 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-              data.home.part4.left.title3 }}</Txt>
+    data.home.part4.left.title3 }}</Txt>
           </Stack>
           <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1
             :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title4 }}</Txt>
@@ -251,7 +251,7 @@ const shapeContainerMinHeight = {
             <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title1 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-              data.home.part6.left.title2 }}</Txt>
+    data.home.part6.left.title2 }}</Txt>
           </Stack>
           <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title3 }}</Txt>
@@ -305,7 +305,7 @@ const shapeContainerMinHeight = {
             <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title1 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-              data.home.part8.left.title2 }}</Txt>
+    data.home.part8.left.title2 }}</Txt>
           </Stack>
           <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title3 }}</Txt>
@@ -318,10 +318,10 @@ const shapeContainerMinHeight = {
       </Grid>
     </Grid>
   </Stack>
-    <BellStars />
-    <Academy />
-    <People />
-    <OpenShop />
-    <Opportunity />
+  <BellStars />
+  <Academy />
+  <People />
+  <OpenShop />
+  <Opportunity />
 
 </template>

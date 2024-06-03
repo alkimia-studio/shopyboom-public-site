@@ -2,6 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -26,7 +27,7 @@ app.MapGet("/weatherforecast", () =>
     var forecast =  Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
-            DateOnlyDateTime(DateTime.Now.AddDays(index)),
+            new DateOnly(DateTime.Now.Year,1,1),
             Random.Shared.Next(-20, 55),
             summaries[Random.Shared.Next(summaries.Length)]
         ))
@@ -35,7 +36,11 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast")
 .WithOpenApi();
-
+app.UseDefaultFiles();
+app.UseStaticFiles();
+app.UseHttpsRedirection();
+app.MapControllers();
+app.MapFallbackToFile("index.html"); 
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)

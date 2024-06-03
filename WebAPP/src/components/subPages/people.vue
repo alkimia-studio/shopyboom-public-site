@@ -9,7 +9,7 @@ const size = useSizeStore()
     <Txt class="pb10" text-align="center" :font=2 :color=2 :xs="30" :lg="62">
       {{ data.people.title1 }}
     </Txt>
-    <Grid gap="8" container :lg=4 :md=1>
+    <Grid :gap="8" container :lg=4 :md=1>
       <Grid v-for="(item, index) in data.people.items" :key="index" :class="{ 'disabled': item.disabled }">
         <div class="image1 image-fitparent-width" :style="{ 'background-image': 'url(' + item.img + ')' }"></div>
         <Stack class="height-inherit" direction="column" justifyContent="flex-start" alignItems="center">

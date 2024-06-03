@@ -3,29 +3,35 @@ import home from '@/components/pages/home.vue'
 import eCommerce from '@/components/pages/eCommerce.vue'
 import risorse from '@/components/pages/risorse.vue'
 import piani from '@/components/pages/piani.vue'
+import lottie from '@/components/pages/lottie.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
-      path: '/home',
+      path: '/',
       name: 'home',
       component: home
     },
     {
-      path: '/eCommerce',
+      path: '/caratteristiche-piattaforma-ecommerce',
       name: 'eCommerce',
       component: eCommerce
     },
     {
-      path: '/risorse',
+      path: '/supporto',
       name: 'risorse',
       component: risorse
     },
     {
-      path: '/',
+      path: '/piani',
       name: 'piani',
       component: piani
+    },
+    {
+      path: '/5',
+      name: 'lottie',
+      component: lottie
     }
     // {
     //   path: '/about',

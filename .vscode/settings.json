@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/9bbcb946-6bdf-4a9e-bca0-d19268fc54a8/resourceGroups/shopyboom-public-site_group/providers/Microsoft.Web/sites/shopyboom-public-site",
+    "appService.deploySubpath": "website"
+}

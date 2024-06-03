@@ -379,20 +379,20 @@
         "login": "Accedi",
         "items": [
             {
-                "url": "/4",
-                "text": "Supporto"
-            },
-            {
-                "url": "/3",
-                "text": "Piani"
-            },
-            {
-                "url": "/2",
-                "text": "Funzionalità"
-            },
-            {
                 "url": "/",
-                "text": "Apri negozio"
+                "text": "home"
+            },
+            {
+                "url": "/caratteristiche-piattaforma-ecommerce",
+                "text": "Cos'è"
+            },
+            {
+                "url": "/supporto",
+                "text": "supporto"
+            },
+            {
+                "url": "/piani",
+                "text": "piani"
             }
         ]
     },

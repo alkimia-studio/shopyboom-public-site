@@ -46,11 +46,14 @@ import opportunity from '@/components/subPages/opportunity.vue'
 
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 
+import Vue3Lottie from 'vue3-lottie'
+
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(createHead())
 app.use(router)
+app.use(Vue3Lottie, { name: "Vue3Lottie" })
 
 app.component('Txt', txt)
 app.component('Stack', stack)
@@ -92,6 +95,7 @@ app.component('Carousel', Carousel)
 app.component('Navigation', Navigation)
 app.component('Pagination', Pagination)
 app.component('Slide', Slide)
+
 
 
 app.mount('#app')
