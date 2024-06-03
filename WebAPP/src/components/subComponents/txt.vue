@@ -4,7 +4,7 @@ const props = defineProps({
   class: { type: String, default: '' },
   font: { type: Number, required: true },
   color: { type: Number, required: true },
-  lineHeight: { type: [Number, String], default: 'normal' },
+  lineHeight: { type: [Number, String], default: 'unset' },
   hover: { type: Number },
   textAlign: { type: String as () => 'left' | 'right' | 'center' | 'justify', default: 'left' },
   bold: Boolean,
