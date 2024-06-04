@@ -31,12 +31,12 @@ const router = createRouter({
       component: piani
     },
     {
-      path: '/6',
+      path: '/shopping-academy',
       name: 'ShoppingAcademy',
       component: shoppingAcademy
     },
     {
-      path: '/7',
+      path: '/faq',
       name: 'faq',
       component: faq
     },

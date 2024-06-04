@@ -124,19 +124,23 @@
                     "title1":"Shopping",
                     "title2":"Academy",
                     "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                    "buttonRound":"Vai"
+                    "buttonRound":"Vai",
+                    "url": "/shopping-academy"
                 },
                 {
                     "title1":"Domande frequenti",
                     "title2":"FAQ",
                     "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                    "buttonRound":"Vai"
+                    "buttonRound":"Vai",
+                    "url": "/faq"
                 },
                 {
                     "title1":"Centro",
                     "title2":"Supporto",
                     "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
-                    "buttonRound":"Vai"
+                    "buttonRound":"Vai",
+                    "url": "/supporto"
+
                 }
             ]
         },
