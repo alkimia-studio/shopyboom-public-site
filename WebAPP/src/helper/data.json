@@ -576,5 +576,13 @@
             "placeholder": "Scrivi la tua mail",
             "buttonRound": "Iscriviti"
         }
+    },
+    "errorMessages" : {
+        "required":"this field is required",
+        "email": "email format is wrong!",
+        "sendRequest": "sorry, there is an error in proceding your request. try again later"
+    },
+    "successMessages" : {
+        "sendRequest": "your request has been sent successfully"
     }
 }

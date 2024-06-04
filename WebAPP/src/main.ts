@@ -47,12 +47,13 @@ import opportunity from '@/components/subPages/opportunity.vue'
 import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
 
 import Vue3Lottie from 'vue3-lottie'
-
+import Notifications from '@kyvg/vue3-notification'
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(createHead())
 app.use(router)
+app.use(Notifications)
 app.use(Vue3Lottie, { name: "Vue3Lottie" })
 
 app.component('Txt', txt)

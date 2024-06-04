@@ -1,21 +1,62 @@
 <script setup lang="ts">
 import { useSizeStore, sizeType } from '@/helper/widthHandler'
 import data from '@/helper/data.json'
+import { useApi } from '@/helper/api'
+import { info , success , error } from '@/helper/toast'
+import { isNotEmpty, isEmail  } from '@/helper/validation'
+import { type inputObj } from '@/helper/models'
+import { ref } from 'vue'
+const api = new useApi()
+type formDataType = {
+  email: inputObj
+}
+const formData = ref<formDataType>({
+   email: { value: '', error: false },
+});
 const size = useSizeStore()
+const sendRequest = () => {
+  api.sendSignUp({
+    Email: formData.value.email.value
+  }).then((response) => {
+    success(data.successMessages.sendRequest)
+  }).catch((e) => {
+    error(data.errorMessages.sendRequest)
+  })
+
+}
+const validation = (): boolean => {
+  let isValid: boolean = true;
+  if (!isNotEmpty(formData.value.email.value)) {
+    if (isValid)
+      error(`${data.errorMessages.required}: Email`)
+    formData.value.email.error = true;
+    isValid = false;
+  }
+  if (!isEmail(formData.value.email.value)) {
+      error(`${data.errorMessages.email}: Email`)
+    formData.value.email.error = true;
+    isValid = false;
+  }
+  return isValid;
+}
+const onSubmit = () => {
+  if (validation())
+    sendRequest()
+}
 </script>
 <template>
-      <Stack :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pt40 pb40' : 'pr5 pl5 pt20 pb20'" direction="column"
+  <Stack :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pt40 pb40' : 'pr5 pl5 pt20 pb20'" direction="column"
     justifyContent="flex-start" class="backgroundapp-color-2" alignItems="flex-start">
     <Grid container :lg=2 :md=1>
       <Grid :lg=1 :md=1>
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Txt :line-height="size.biggerThan(sizeType.lg) ? 100: 70" :font=1 :color=1 :xs="30" :lg="73">
+          <Txt :line-height="size.biggerThan(sizeType.lg) ? 100 : 70" :font=1 :color=1 :xs="30" :lg="73">
             {{ data.opportunity.left.title1 }}
           </Txt>
-          <Txt :line-height="size.biggerThan(sizeType.lg) ? 100: 70" :font=1 :color=1 :xs="30" :lg="73">
+          <Txt :line-height="size.biggerThan(sizeType.lg) ? 100 : 70" :font=1 :color=1 :xs="30" :lg="73">
             {{ data.opportunity.left.title2 }}
           </Txt>
-          <Txt :line-height="size.biggerThan(sizeType.lg) ? 100: 70" :font=2 :color=3 :xs="62" :lg="73">
+          <Txt :line-height="size.biggerThan(sizeType.lg) ? 100 : 70" :font=2 :color=3 :xs="62" :lg="73">
             {{ data.opportunity.left.title3 }}
           </Txt>
         </Stack>
@@ -26,9 +67,10 @@ const size = useSizeStore()
           <Txt class="mt10" :font=1 :color=1 :xs="18" :lg="24">
             {{ data.opportunity.right.body1 }}
           </Txt>
-          <input class="input1 textapp-color-1 font-1 borderapp-color-5 mt6" :placeholder="data.opportunity.right.placeholder" />
+          <input v-model="formData.email.value" :class="{'error': formData.email.error}" class="input1 textapp-color-1 font-1 borderapp-color-5 mt6"
+            :placeholder="data.opportunity.right.placeholder" />
           <div>
-            <Button1 :border=0 :color="2" :background="3" :hover-color="3" :hover-background="2"
+            <Button1 @click="()=>{onSubmit()}" :border=0 :color="2" :background="3" :hover-color="3" :hover-background="2"
               class="mt10 pt5 pb5 pr10 pl10">
               <Txt :font=1 :color=-1 :xs=16>{{ data.opportunity.right.buttonRound }}</Txt>
             </Button1>
