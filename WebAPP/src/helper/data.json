@@ -543,19 +543,19 @@
         "items": [
             {
                 "url": "/",
-                "text": "home"
+                "text": "Login"
+            },
+            {
+                "url": "/supporto",
+                "text": "Supporto"
+            },
+            {
+                "url": "/piani",
+                "text": "Piani"
             },
             {
                 "url": "/caratteristiche-piattaforma-ecommerce",
                 "text": "Cos'è"
-            },
-            {
-                "url": "/supporto",
-                "text": "supporto"
-            },
-            {
-                "url": "/piani",
-                "text": "piani"
             }
         ]
     },

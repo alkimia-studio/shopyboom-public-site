@@ -53,7 +53,6 @@ button.button1 {
 .piniacard{
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  box-shadow: 0px 3px 99px rgba(255, 96, 0, 0.24);
 }
 .border-top-12{
   border-top-left-radius: 12px;
@@ -138,7 +137,7 @@ button.button1 {
 }
 @media (min-width: 1024px) {
   .banner1 {
-    height: 850px;
+    height: 100vh;
   }
   .image1{
     min-height: 300px;
@@ -149,7 +148,7 @@ button.button1 {
 }
 @media (min-width: 1200px) {
   .banner1 {
-    height: 1000px;
+    height: 100vh;
   }
   .image1{
     min-height: 300px;

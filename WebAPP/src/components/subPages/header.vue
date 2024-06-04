@@ -24,7 +24,7 @@ const openBarIsOpen = ref(false)
           <Txt :font=1 :color=-1 :xs=16>{{ data.header.login }}</Txt>
         </Button1>
         <Txt v-for="(item, index) in pages.getListPage()" class="mr14 ml5 word-no-break" :key="index" :href="item.url"
-          :color="item.active ? 3 : 2" :hover=3 :font=1 :xs=18>{{ item.text }}</Txt>
+          :color="item.active ? 3 : 2" bold :hover=3 :font=1 :xs=18>{{ item.text }}</Txt>
       </Stack>
       <Appsvg v-else :xs=1 :width=42 :color=2>
         <Bars3BottomRightIcon class="cursor-pointer" @click="openBarIsOpen=true" />

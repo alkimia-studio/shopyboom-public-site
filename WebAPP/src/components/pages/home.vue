@@ -38,7 +38,7 @@ const shapeContainerMinHeight = {
       <Txt :font=1 :color=-1 :xs=18>{{ data.home.part1.button1 }}</Txt>
     </Button1>
     <Appsvg class="fillapp-color-3"
-      :class="size.biggerThan(sizeType.lg) ? 'mt20' : size.biggerThan(sizeType.md) ? 'mt15' : 'mt12'"
+      :class="size.biggerThan(sizeType.lg) ? 'mt10' : size.biggerThan(sizeType.md) ? 'mt15' : 'mt12'"
       v-if="size.biggerThan(sizeType.sm)" :mdw=50 :lgw=60 :xlw=80>
       <IArrowDown class="fillapp-color-2" />
     </Appsvg>

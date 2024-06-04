@@ -22,15 +22,15 @@ const shapeContainerMinHeight = {
 </script>
 <template>
     <Banner1 src="/images/image2.png" class="backgroundapp-color-7">
-        <Txt :class="size.biggerThan(sizeType.md) ? 'mt20': 'mt5'" :font="2" :color="3" :xl="134" :lg="110" :md="80" :sm="70" :xs="45"
-            text-align="center" :line-height="size.biggerThan(sizeType.md) ? 150: 100" bold>{{
-                data.eCommerce.part1.title1 }}</Txt>
-        <Txt :line-height="size.biggerThan(sizeType.md) ? 150: 50" :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center"
-            bold>{{
-                data.eCommerce.part1.title2 }}</Txt>
-        <Txt :line-height="size.biggerThan(sizeType.md) ? 150: 50" :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center"
-            bold>{{
-                data.eCommerce.part1.title3 }}</Txt>
+        <Txt :class="size.biggerThan(sizeType.md) ? 'mt20' : 'mt5'" :font="2" :color="3" :xl="134" :lg="110" :md="80"
+            :sm="70" :xs="45" text-align="center" :line-height="size.biggerThan(sizeType.md) ? 150 : 100" bold>{{
+            data.eCommerce.part1.title1 }}</Txt>
+        <Txt :line-height="size.biggerThan(sizeType.md) ? 150 : 50" :font="2" :color="2" :xl="93" :lg="81" :md="60"
+            :sm="40" :xs="30" text-align="center" bold>{{
+            data.eCommerce.part1.title2 }}</Txt>
+        <Txt :line-height="size.biggerThan(sizeType.md) ? 150 : 50" :font="2" :color="2" :xl="93" :lg="81" :md="60"
+            :sm="40" :xs="30" text-align="center" bold>{{
+            data.eCommerce.part1.title3 }}</Txt>
     </Banner1>
     <Stack direction="row" class="width-100p p10" justifyContent="center" alignItems="center">
         <Txt class="pr2" text-align="center" :font=1 :color=1 :lg=30 :md=20 :sm=20 :xs=18>{{
@@ -45,14 +45,13 @@ const shapeContainerMinHeight = {
                     :xsh="shapeContainerMinHeight.xsh">
                     <Shape page="ecommerce" part="part3" shape-name="rectangle1"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-                        <img v-if="size.biggerThan(sizeType.md)" src="/svgs/rectangleCroppedRight.svg" />
-                        <img v-else src="/svgs/rectangle.svg" />
+                        <img class="shadow-3 round-3" :src="`/images/eCommerce/part3-img1.jpg`" />
                     </Shape>
-                     <Shape page="ecommerce" part="part3" shape-name="rectangle2"
+                    <Shape page="ecommerce" part="part3" shape-name="rectangle2"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
                         <img src="/svgs/rectangle.svg" />
                     </Shape>
-                   <Shape page="ecommerce" part="part3" shape-name="rectanglePipeStar"
+                    <Shape page="ecommerce" part="part3" shape-name="rectanglePipeStar"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
                         <img src="/svgs/rectanglePipeStar.svg" />
                     </Shape>
@@ -70,123 +69,18 @@ const shapeContainerMinHeight = {
                 </Stack>
             </Grid>
         </Grid>
-        <Grid :gap=0 :class="size.biggerThan(sizeType.sm) ? '': 'mb25' " class="mt40 width-100p" container :lg=8 :md=1>
+        <Grid :gap=0 :class="size.biggerThan(sizeType.sm) ? '' : 'mb25'" class="mt40 width-100p" container :lg=8 :md=1>
             <Grid :lg=5 :md=1>
-                <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
-                    :mdh="350" :smh="350"
-                    :xsh="150">
-                    <Shape page="ecommerce" part="part4" shape-name="squareCroppedLeft01"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/squareCroppedLeft.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="squareCroppedLeft02"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/squareCroppedLeft.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="squareCroppedLeft03"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/squareCroppedLeft.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="squareCroppedLeft04"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/squareCroppedLeft.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square11"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square12"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square13"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square14"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square21"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square22"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square23"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square24"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square31"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square32"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square33"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square34"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square41"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square42"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square43"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square44"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square51"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square52"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square53"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square54"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square61"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square62"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square63"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
-                    <Shape page="ecommerce" part="part4" shape-name="square64"
-                        :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-                        <img src="/svgs/square.svg" />
-                    </Shape>
+                <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh" :mdh="350"
+                    :smh="350" :xsh="150">
+                    <template v-for="i in 6" :key="i">
+                        <template v-for="j in 4" :key="j">
+                         <Shape page="ecommerce" part="part4" :shape-name="`square${i}${j}`"
+                            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+                                <img class="shadow-3 round-3" :src="`/images/eCommerce/${((i-1)*4+j)}.jpg`" />
+                            </Shape>
+                        </template>
+                    </template>
                 </ShapeContainer>
             </Grid>
             <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
@@ -209,8 +103,7 @@ const shapeContainerMinHeight = {
                     :xsh="shapeContainerMinHeight.xsh">
                     <Shape page="ecommerce" part="part5" shape-name="rectangle1"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-                        <img v-if="size.biggerThan(sizeType.md)" src="/svgs/rectangleCroppedRight.svg" />
-                        <img v-else src="/svgs/rectangle.svg" />
+                        <img class="shadow-3 round-3" :src="`/images/eCommerce/part5-img1.jpg`" />
                     </Shape>
                     <Shape page="ecommerce" part="part5" shape-name="rectangle2"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">

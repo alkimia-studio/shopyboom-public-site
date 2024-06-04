@@ -29,7 +29,7 @@ useHead({
                     <Txt text-align="center" :color="2" :font=1 :xs="16">{{ item.title5 }}</Txt>
                 </Stack>
                 <Stack :class="item.title5 !== '' ? 'active borderapp-color-3' : 'border-top-12'"
-                    class="p4 height-inherit backgroundapp-color-21 hr1 piniacard" direction="column"
+                    class="p4 height-inherit backgroundapp-color-21 hr1 piniacard shadow-3" direction="column"
                     justifyContent="flex-start" alignItems="flex-start">
                     <Stack class="pb8 width-100p" direction="column" justifyContent="space-between" alignItems="center">
                         <Stack class="width-100p" direction="column" justifyContent="flex-start" alignItems="flex-start">
@@ -78,7 +78,7 @@ useHead({
             </Txt>
             <Txt text-align="center" :font="1" :color="1" :xs="30">{{ data.piani.part3.title5 }}</Txt>
         </Stack>
-        <Stack class="pl15 pr15 pt5 pb5 height-100p backgroundapp-color-21 hr1 piniacard border-top-12 width-100p"
+        <Stack class="pl15 pr15 pt5 pb5 height-100p backgroundapp-color-21 hr1 piniacard shadow-3 border-top-12 width-100p"
             direction="column" justifyContent="flex-start" alignItems="flex-start">
             <table class="table1 width-100p">
                 <thead>
