@@ -13,11 +13,11 @@ namespace WebAPI.Helper
 
         public static EmailTemplate AdminSignupEmail
         {
-            get { return new EmailTemplate() { TemplateId = "d-72f435c442644b43a1a83928516c751e" }; }
+            get { return new EmailTemplate() { TemplateId = "d-79e9266e67524a0ea7d84fc11b2b2cd1" }; }
         }
         public static EmailTemplate UserSignupEmail
         {
-            get { return new EmailTemplate() { TemplateId = "d-1cb8c487034844c0bd91c14f6b65b3ac" }; }
+            get { return new EmailTemplate() { TemplateId = "d-79e9266e67524a0ea7d84fc11b2b2cd1" }; }
         }
     }
     public class EmailService(IOptions<AppSettings> appSettings)
@@ -30,7 +30,6 @@ namespace WebAPI.Helper
         private readonly string UserName = appSettings.Value.UserName;
         public async Task SendAdminSignup(SignupEmailViewModel content)
         {
-            Console.WriteLine(appSettings.Value.SendGridApiKey);
             var from = new EmailAddress(SenderEmail, SenderName);
             var to = new EmailAddress(AdminEmail, AdminName);
             await SendEmail(EmailTemplate.AdminSignupEmail,from,to,content);

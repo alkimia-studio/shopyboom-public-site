@@ -4,6 +4,8 @@ import eCommerce from '@/components/pages/eCommerce.vue'
 import risorse from '@/components/pages/risorse.vue'
 import piani from '@/components/pages/piani.vue'
 import lottie from '@/components/pages/lottie.vue'
+import shoppingAcademy from '@/components/pages/shoppingAcademy.vue'
+import faq from '@/components/pages/faq.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +29,16 @@ const router = createRouter({
       path: '/piani',
       name: 'piani',
       component: piani
+    },
+    {
+      path: '/6',
+      name: 'ShoppingAcademy',
+      component: shoppingAcademy
+    },
+    {
+      path: '/7',
+      name: 'faq',
+      component: faq
     },
     {
       path: '/5',

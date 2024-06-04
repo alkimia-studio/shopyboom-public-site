@@ -15,6 +15,7 @@ import grid from '@/components/subComponents/grid.vue'
 import modal from '@/components/subComponents/modal.vue'
 import button1 from '@/components/subComponents/button1.vue'
 import appsvg from '@/components/subComponents/appsvg.vue'
+import accordion1 from '@/components/subComponents/accordion1.vue'
 import shape from '@/components/subComponents/shape.vue'
 import shapeContainer from '@/components/subComponents/shapeContainer.vue'
 
@@ -63,6 +64,7 @@ app.component('Grid', grid)
 app.component('Modal', modal)
 app.component('Button1', button1)
 app.component('Appsvg', appsvg)
+app.component('Accordion1', accordion1)
 app.component('Shape', shape)
 app.component('ShapeContainer', shapeContainer)
 

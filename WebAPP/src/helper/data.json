@@ -374,6 +374,165 @@
             ]
         }
     },
+    "shoppingAcademy":{
+        "part1":{
+            "title1": "Shopping Academy",
+            "title2": "Impara come sfruttare al meglio il tuo negozio on-line"
+        },
+        "part2":{
+            "left":{
+                "title1":"Apri il tuo negozio"
+            },
+            "right":{
+                "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            "items":[
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Crea il tuo sito",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Gestisci il catalogo",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Gestisci gli ordini",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Promuovi il tuo sito",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                }
+            ]
+        },
+        "part3":{
+            "left":{
+                "title1":"Gestisci il tuo negozio"
+            },
+            "right":{
+                "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            "items":[
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Crea il tuo sito",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Gestisci il catalogo",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Gestisci gli ordini",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Promuovi il tuo sito",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                }
+            ]
+        },
+        "part4":{
+            "left":{
+                "title1":"Analizza e Promuovi"
+            },
+            "right":{
+                "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            "items":[
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Crea il tuo sito",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Gestisci il catalogo",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Gestisci gli ordini",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "img": "/images/girl.png",
+                    "url": "/",
+                    "title1": "Promuovi il tuo sito",
+                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                }
+            ]
+        }
+    },
+    "faq":{
+        "part1":{
+            "title1": "FAQ",
+            "title2": "Trova le risposte alle domande più comuni"
+        },
+        "part2":{
+            "title1": "Ottieni rapidamente risposte alle domande più frequenti sulla configurazione del tuo negozio.",
+            "items":[
+                {
+                    "question":"Come posso creare un account sul sito?",
+                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "question":"Come posso gestire gli ordini?",
+                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "question":"Come posso creare un codice sconto?",
+                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "question":"Come posso aggiornare le informazioni del mio account?",
+                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "question":"Come posso contattare il servizio clienti?",
+                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "question":"Quanto tempo ci vuole per la spedizione e quali sono i costi?",
+                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "question":"Cosa devo fare se ricevo un prodotto danneggiato o sbagliato?",
+                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "question":"Come posso creare un account sul sito?",
+                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "question":"Come posso gestire gli ordini?",
+                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                },
+                {
+                    "question":"Come posso contattare il servizio clienti?",
+                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                }
+            ]
+        }
+    },
     "header": {
         "sitename": "shopyboom",
         "login": "Accedi",
