@@ -20,7 +20,7 @@ const openBarIsOpen = ref(false)
       </Stack>
       <Stack v-if="size.biggerThan(sizeType.md)" class="mr10" direction="row-reverse" justifyContent="flex-start"
         alignItems="center">
-        <Button1 :border=0 :color="2" :background="8" :hover-color="3" :hover-background="21" class="pt5 pb5 pr10 pl10">
+        <Button1 :border=0 :color="2" :background="8" :hover-color="3" :hover-background="21" class="pr10 pl10">
           <Txt :font=1 :color=-1 :xs=16>{{ data.header.login }}</Txt>
         </Button1>
         <Txt v-for="(item, index) in pages.getListPage()" class="mr14 ml5 word-no-break" :key="index" :href="item.url"

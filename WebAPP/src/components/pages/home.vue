@@ -36,7 +36,7 @@ const shapeContainerMinHeight = {
     <Txt :font="1" :color="5" :xl="33" :lg="28" :md="24" :sm="21" :xs="18" text-align="center">{{ data.home.part1.title5
       }}</Txt>
     <Button1 :border=0 :color="21" :background="3" :hover-color="3" :hover-background="21"
-      class="mt10 pt5 pb5 pr15 pl15">
+      class="mt10 pr15 pl15">
       <Txt :font=1 :color=-1 :xs=18>{{ data.home.part1.button1 }}</Txt>
     </Button1>
     <Appsvg class="fillapp-color-3"
@@ -253,7 +253,7 @@ const shapeContainerMinHeight = {
             <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title1 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-    data.home.part6.left.title2 }}</Txt>
+              data.home.part6.left.title2 }}</Txt>
           </Stack>
           <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title3 }}</Txt>
@@ -273,12 +273,9 @@ const shapeContainerMinHeight = {
             :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/window.svg" />
           </Shape>
-          <Shape page="home" part="part7" shape-name="picture"
+          <Shape page="home" part="part7" shape-name="bars2"
             :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-            <img src="/svgs/picture.svg" />
-          </Shape>
-          <Shape page="home" part="part7" shape-name="bars" :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-            <img src="/svgs/bars.svg" />
+            <img src="/svgs/bars2.svg" />
           </Shape>
           <Shape page="home" part="part7" shape-name="star1"
             :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
@@ -292,17 +289,17 @@ const shapeContainerMinHeight = {
             :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/iCanSeeYourStar.svg" />
           </Shape>
-          <Shape page="home" part="part7" shape-name="circleArrowLeft"
+          <Shape page="home" part="part7" shape-name="circleArrowRight"
             :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-            <img src="/svgs/circleArrowLeft.svg" />
+            <img style="transform: rotate(180deg);" src="/svgs/circleArrowLeft.svg" />
           </Shape>
-          <Shape page="home" part="part7" shape-name="camera"
+          <Shape page="home" part="part7" shape-name="truck"
             :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-            <img src="/svgs/camera.svg" />
+            <img src="/svgs/truck.svg" />
           </Shape>
           <Shape page="home" part="part7" shape-name="buttonRoundPipe"
             :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-            <ShapeButtonRoundPipe :text="data.home.part7.left.buttonRound" />
+            <ShapeButtonRoundPipe2 :text="data.home.part7.left.buttonRound" />
           </Shape>
         </ShapeContainer>
       </Grid>

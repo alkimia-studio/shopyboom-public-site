@@ -38,8 +38,8 @@ const shapeContainerMinHeight = {
         <Txt class="pr2" text-align="center" :font=1 :color=1 :lg=30 :md=20 :sm=20 :xs=18>{{
             data.eCommerce.part2.title1 }}</Txt>
     </Stack>
-    <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35 pb20' : 'pr5 pl5 pt20 pb20'" direction="column"
-        justifyContent="flex-start" class="backgroundapp-color-2" alignItems="flex-start">
+    <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5 pt20'" direction="column"
+        justifyContent="flex-start" class="backgroundapp-color-2 pb40" alignItems="flex-start">
         <Grid :gap=0 class="mt20 width-100p" direction="rtl" container :lg=8 :md=1>
             <Grid class="direction-ltr" :lg=5 :md=1>
                 <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"

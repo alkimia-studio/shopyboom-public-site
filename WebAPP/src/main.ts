@@ -35,6 +35,7 @@ import iconQuestion from '@/components/icons/iconQuestion.vue'
 import shapeCircle from '@/components/shapes/shapeCircle.vue'
 import shapeButtonRoundClock from '@/components/shapes/shapeButtonRoundClock.vue'
 import shapeButtonRoundPipe from '@/components/shapes/shapeButtonRoundPipe.vue'
+import shapeButtonRoundPipe2 from '@/components/shapes/shapeButtonRoundPipe2.vue'
 import shapeButtonRoundBrush from '@/components/shapes/shapeButtonRoundBrush.vue'
 import shapeButtonRoundSpeaker from '@/components/shapes/shapeButtonRoundSpeaker.vue'
 import shapeText from '@/components/shapes/shapeText.vue'
@@ -86,6 +87,7 @@ app.component('IQuestion', iconQuestion)
 app.component('ShapeCircle', shapeCircle)
 app.component('ShapeButtonRoundClock', shapeButtonRoundClock)
 app.component('ShapeButtonRoundPipe',shapeButtonRoundPipe)
+app.component('ShapeButtonRoundPipe2',shapeButtonRoundPipe2)
 app.component('ShapeButtonRoundBrush',shapeButtonRoundBrush)
 app.component('ShapeButtonRoundSpeaker',shapeButtonRoundSpeaker)
 app.component('ShapeText',shapeText)

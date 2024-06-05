@@ -13,7 +13,7 @@ const size = useSizeStore()
       <Grid v-for="(item, index) in data.people.items" :key="index" :class="{ 'disabled': item.disabled }">
         <div class="image1 image-fitparent-width" :style="{ 'background-image': 'url(' + item.img + ')' }"></div>
         <Stack class="height-inherit" direction="column" justifyContent="flex-start" alignItems="center">
-          <Txt class="mt4" :font=1 :color=2 text-align="center" :xs="16">{{ item.body1 }}</Txt>
+          <Txt line-height="24" class="mt4" :font=1 :color=2 text-align="center" :xs="16">{{ item.body1 }}</Txt>
           <Txt bold class="mt10" :font=1 :color=2 text-align="center" :xs="24">{{ item.body2 }}</Txt>
           <Txt class="mt1" :font=1 :color=2 text-align="center" :xs="20">{{ item.body3 }}</Txt>
           <Stack class="mt5" direction="row" justifyContent="center" alignItems="center">

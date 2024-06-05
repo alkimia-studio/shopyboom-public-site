@@ -39,7 +39,7 @@ useHead({
                     </Txt>
                     <div>
                         <Button1 :href="data.risorse.part2.items[0].url" :border=0 :color="2" :background="3" :hover-color="3" :hover-background="2"
-                            class="mt10 pt5 pb5 pr10 pl10">
+                            class="mt10 pr10 pl10">
                             <Txt :font=1 :color=-1 :xs=16>{{ data.risorse.part2.items[0].buttonRound }}</Txt>
                         </Button1>
                     </div>
@@ -62,7 +62,7 @@ useHead({
                     </Txt>
                     <div>
                         <Button1  :href="data.risorse.part2.items[1].url" :border=0 :color="2" :background="3" :hover-color="3" :hover-background="2"
-                            class="mt10 pt5 pb5 pr10 pl10">
+                            class="mt10 pr10 pl10">
                             <Txt :font=1 :color=-1 :xs=16>{{ data.risorse.part2.items[1].buttonRound }}</Txt>
                         </Button1>
                     </div>
@@ -85,14 +85,14 @@ useHead({
                     </Txt>
                     <div>
                         <Button1 :href="data.risorse.part2.items[2].url" :border=0 :color="2" :background="3" :hover-color="3" :hover-background="2"
-                            class="mt10 pt5 pb5 pr10 pl10">
+                            class="mt10 pr10 pl10">
                             <Txt :font=1 :color=-1 :xs=16>{{ data.risorse.part2.items[2].buttonRound }}</Txt>
                         </Button1>
                     </div>
                 </Stack>
             </Grid>
         </Grid>
-        <Grid class="mt40" container :lg="2" :xs="1">
+        <Grid class="mt40 mb20" container :lg="2" :xs="1">
             <Grid :lg="1" :xs="1">
                 <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
                     <Txt :font=1 :color=1 :xs="25" :lg="40">
