@@ -699,34 +699,34 @@
         "title1": "Testimonianze",
         "items": [
             {
-                "img": "/images/girl.png",
-                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "body2": "Stefano Malcangi",
-                "body3": "Alkimia srl",
+                "img": "/images/people/1.jpg",
+                "body1": "Shopyboom è davvero la soluzione per tutti, compreso chi, come me, non ha dimestichezza con la tecnologia. Ho aperto il mio negozio online in maniera semplice e veloce, è esteticamente come lo volevo ed anche la gestione è facile e chiara. Supporto efficiente ed affidabile",
+                "body2": "Valentina",
+                "body3": "Sogni di Pietra",
                 "starCount": 4,
                 "disabled": true
             },
             {
-                "img": "/images/girl.png",
-                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "body2": "Stefano Malcangi",
-                "body3": "Alkimia srl",
+                "img": "/images/people/2.jpg",
+                "body1": "Facilissimo da utilizzare: scegli uno dei temi proposti, lo personalizzi se serve e carichi gli articoli, che con il supporto dell’intelligenza artificiale avranno un aspetto ed una descrizione ottimi! I primi mesi sono gratis ed i piani offerti per il futuro sono più che abbordabili, da provare senza dubbio!",
+                "body2": "Marco e Sara",
+                "body3": "La Cerretta",
                 "starCount": 5,
                 "disabled": true
             },
             {
-                "img": "/images/girl.png",
-                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "body2": "Stefano Malcangi",
-                "body3": "Alkimia srl",
+                "img": "/images/people/3.jpg",
+                "body1": "Proprio quello di cui avevo bisogno! Semplice, chiaro, veloce, con assistenza pronta ed in italiano... e ad un prezzo ottimo! Per ora sono davvero soddisfatta di quello che ottenuto, il mio negozio online, fatto da sola e come lo avrei sempre voluto!",
+                "body2": "Jacopo",
+                "body3": "Jacopo Bike",
                 "starCount": 5,
                 "disabled": false
             },
             {
-                "img": "/images/girl.png",
-                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                "body2": "Stefano Malcangi",
-                "body3": "Alkimia srl",
+                "img": "/images/people/4.jpg",
+                "body1": "Sembra esserci davvero tutto quello che cercavo! Ho seguito il tutorial e senza intoppi ho aperto il mio negozio, è bello e soprattutto semplice da organizzare. La gestione degli ordini, i pagamenti, le spedizioni, tutto integrato senza alcuna difficoltà",
+                "body2": "Federica",
+                "body3": "Aromatica Naturale",
                 "starCount": 5,
                 "disabled": true
             }

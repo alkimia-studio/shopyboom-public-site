@@ -7,6 +7,6 @@ import { RouterView } from 'vue-router'
     <Header></Header>
     <RouterView />
     <notifications position="bottom right"  />
-    <Footer></Footer>
+    <!-- <Footer></Footer> -->
   </div>
 </template>

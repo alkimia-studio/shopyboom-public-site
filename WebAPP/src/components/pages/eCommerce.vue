@@ -21,16 +21,16 @@ const shapeContainerMinHeight = {
 }
 </script>
 <template>
-    <Banner1 src="/images/image2.png" class="backgroundapp-color-7">
+    <Banner1 src="/images/image2.jpg" class="backgroundapp-color-7">
         <Txt :class="
           size.biggerThan(sizeType.md) ? 'pt40' : size.biggerThan(sizeType.sm) ? 'pt30' : size.biggerThan(sizeType.xs) ? 'pt35' : 'pt25'
         " :font="2" :color="3" :xl="134" :lg="110" :md="80"
-            :sm="70" :xs="45" text-align="center" :line-height="size.biggerThan(sizeType.md) ? 150 : 100" bold>{{
+            :sm="70" :xs="45" text-align="center" bold>{{
             data.eCommerce.part1.title1 }}</Txt>
-        <Txt :line-height="size.biggerThan(sizeType.md) ? 150 : 50" :font="2" :color="2" :xl="93" :lg="81" :md="60"
+        <Txt class="mt6" :font="2" :color="2" :xl="93" :lg="81" :md="60"
             :sm="40" :xs="30" text-align="center" bold>{{
             data.eCommerce.part1.title2 }}</Txt>
-        <Txt :line-height="size.biggerThan(sizeType.md) ? 150 : 50" :font="2" :color="2" :xl="93" :lg="81" :md="60"
+        <Txt class="mt6" :font="2" :color="2" :xl="93" :lg="81" :md="60"
             :sm="40" :xs="30" text-align="center" bold>{{
             data.eCommerce.part1.title3 }}</Txt>
     </Banner1>
@@ -133,6 +133,6 @@ const shapeContainerMinHeight = {
     <BellStars />
     <Academy />
     <People />
-    <OpenShop />
-    <Opportunity />
+    <!-- <OpenShop />
+    <Opportunity /> -->
 </template>

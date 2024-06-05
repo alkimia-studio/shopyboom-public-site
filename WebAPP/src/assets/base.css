@@ -11213,6 +11213,14 @@ ul {
   height: inherit;
 }
 
+.width-initial {
+  width: initial;
+}
+
+.height-initial {
+  height: initial;
+}
+
 .headerapp {
   z-index: 4;
   position: fixed;

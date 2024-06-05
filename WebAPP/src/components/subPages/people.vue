@@ -10,17 +10,21 @@ const size = useSizeStore()
       {{ data.people.title1 }}
     </Txt>
     <Grid :gap="8" container :lg=4 :md=1>
-      <Grid v-for="(item, index) in data.people.items" :key="index" :class="{ 'disabled': item.disabled }">
-        <div class="image1 image-fitparent-width" :style="{ 'background-image': 'url(' + item.img + ')' }"></div>
-        <Stack class="height-inherit" direction="column" justifyContent="flex-start" alignItems="center">
-          <Txt line-height="24" class="mt4" :font=1 :color=2 text-align="center" :xs="16">{{ item.body1 }}</Txt>
-          <Txt bold class="mt10" :font=1 :color=2 text-align="center" :xs="24">{{ item.body2 }}</Txt>
-          <Txt class="mt1" :font=1 :color=2 text-align="center" :xs="20">{{ item.body3 }}</Txt>
-          <Stack class="mt5" direction="row" justifyContent="center" alignItems="center">
-            <Appsvg v-for="index2 in item.starCount" :key="index2" class="ml1 mr1"
-              :class="item.disabled ? 'fillapp-color-3' : 'fillapp-color-7'" :xsw=30>
-              <IStar />
-            </Appsvg>
+      <Grid :lg=1 :md=1 class="height-100p" v-for="(item, index) in data.people.items" :key="index" :class="{ 'disabled': item.disabled }">
+        <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
+          <div class="image1 image-fitparent-width" :style="{ 'background-image': 'url(' + item.img + ')' }"></div>
+          <Stack class="height-inherit" direction="column" justifyContent="space-between" alignItems="center">
+            <Txt line-height="24" class="mt4" :font=1 :color=2 text-align="center" :xs="16">{{ item.body1 }}</Txt>
+            <Stack  class="height-initial mt4" direction="column" justifyContent="flex-start" alignItems="center">
+              <Txt bold :font=1 :color=2 text-align="center" :xs="24">{{ item.body2 }}</Txt>
+              <Txt class="mt1" :font=1 :color=2 text-align="center" :xs="20">{{ item.body3 }}</Txt>
+              <Stack class="mt5 height-initial" direction="row" justifyContent="center" alignItems="center">
+                <Appsvg v-for="index2 in item.starCount" :key="index2" class="ml1 mr1"
+                  :class="item.disabled ? 'fillapp-color-3' : 'fillapp-color-7'" :xsw=30>
+                  <IStar />
+                </Appsvg>
+              </Stack>
+            </Stack>
           </Stack>
         </Stack>
       </Grid>
