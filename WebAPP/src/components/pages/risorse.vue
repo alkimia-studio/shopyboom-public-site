@@ -24,17 +24,17 @@ useHead({
         <Grid container :gap="20" :lg="3" :xs="1">
             <Grid :lg="1" :xs="1">
                 <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-                    <Appsvg class="fillapp-color-3" :class="size.biggerThan(sizeType.lg) ? 'mb8' : 'mt10 mb4'" :xsw=40
+                    <Appsvg class="fillapp-color-3" :class="size.biggerThan(sizeType.lg) ? 'mb4' : 'mt10 mb4'" :xsw=40
                         :lgw=60>
                         <IStudyHat />
                     </Appsvg>
-                    <Txt class="word-no-break" lineHeight="20" :font=1 :color=1 :xs="30" :lg="40">
+                    <Txt class="word-no-break" :font=1 :color=1 :xs="30" :lg="40">
                         {{ data.risorse.part2.items[0].title1 }}
                     </Txt>
-                    <Txt lineHeight="150" bold :font=2 :color=1 :xs="50" :lg="60">
+                    <Txt class="mt3" bold :font=2 :color=1 :xs="50" :lg="60">
                         {{ data.risorse.part2.items[0].title2 }}
                     </Txt>
-                    <Txt :font=1 :color=1 :md=24 :xs=18>
+                    <Txt class="mt3" :font=1 :color=1 :md=24 :xs=18>
                         {{ data.risorse.part2.items[0].body1 }}
                     </Txt>
                     <div>
@@ -47,17 +47,17 @@ useHead({
             </Grid>
             <Grid :lg="1" :xs="1">
                 <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-                    <Appsvg class="fillapp-color-3" :class="size.biggerThan(sizeType.lg) ? 'mb8' : 'mt10 mb4'" :xsw=40
-                        :lgw=60>
-                        <IStudyHat />
+                    <Appsvg class="fillapp-color-3" :class="size.biggerThan(sizeType.lg) ? 'mb4' : 'mt10 mb4'" :xsw=30
+                        :lgw=40>
+                        <IQuestion />
                     </Appsvg>
-                    <Txt class="word-no-break" lineHeight="20" :font=1 :color=1 :xs="30" :lg="40">
+                    <Txt class="word-no-break" :font=1 :color=1 :xs="30" :lg="40">
                         {{ data.risorse.part2.items[1].title1 }}
                     </Txt>
-                    <Txt lineHeight="150" bold :font=2 :color=1 :xs="50" :lg="60">
+                    <Txt  class="mt3" bold :font=2 :color=1 :xs="50" :lg="60">
                         {{ data.risorse.part2.items[1].title2 }}
                     </Txt>
-                    <Txt :font=1 :color=1 :md=24 :xs=18>
+                    <Txt class="mt3" :font=1 :color=1 :md=24 :xs=18>
                         {{ data.risorse.part2.items[1].body1 }}
                     </Txt>
                     <div>
@@ -70,17 +70,17 @@ useHead({
             </Grid>
             <Grid :lg="1" :xs="1">
                 <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-                    <Appsvg class="fillapp-color-3" :class="size.biggerThan(sizeType.lg) ? 'mb8' : 'mt10 mb4'" :xsw=40
-                        :lgw=60>
-                        <IStudyHat />
+                    <Appsvg class="fillapp-color-3" :class="size.biggerThan(sizeType.lg) ? 'mb4' : 'mt10 mb4'" :xsw=30
+                        :lgw=40>
+                        <ISeaBall />
                     </Appsvg>
-                    <Txt class="word-no-break" lineHeight="20" :font=1 :color=1 :xs="30" :lg="40">
+                    <Txt class="word-no-break" :font=1 :color=1 :xs="30" :lg="40">
                         {{ data.risorse.part2.items[2].title1 }}
                     </Txt>
-                    <Txt lineHeight="150" bold :font=2 :color=1 :xs="50" :lg="60">
+                    <Txt class="mt3" bold :font=2 :color=1 :xs="50" :lg="60">
                         {{ data.risorse.part2.items[2].title2 }}
                     </Txt>
-                    <Txt :font=1 :color=1 :md=24 :xs=18>
+                    <Txt class="mt3" :font=1 :color=1 :md=24 :xs=18>
                         {{ data.risorse.part2.items[2].body1 }}
                     </Txt>
                     <div>

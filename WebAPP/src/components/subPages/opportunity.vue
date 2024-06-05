@@ -50,13 +50,13 @@ const onSubmit = () => {
     <Grid container :lg=2 :md=1>
       <Grid :lg=1 :md=1>
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Txt :line-height="size.biggerThan(sizeType.lg) ? 100 : 70" :font=1 :color=1 :xs="30" :lg="73">
+          <Txt :font=1 :color=1 :xs="30" :lg="73">
             {{ data.opportunity.left.title1 }}
           </Txt>
-          <Txt :line-height="size.biggerThan(sizeType.lg) ? 100 : 70" :font=1 :color=1 :xs="30" :lg="73">
+          <Txt :font=1 :color=1 :xs="30" :lg="73">
             {{ data.opportunity.left.title2 }}
           </Txt>
-          <Txt :line-height="size.biggerThan(sizeType.lg) ? 100 : 70" :font=2 :color=3 :xs="62" :lg="73">
+          <Txt :font=2 :color=3 :xs="62" :lg="73">
             {{ data.opportunity.left.title3 }}
           </Txt>
         </Stack>

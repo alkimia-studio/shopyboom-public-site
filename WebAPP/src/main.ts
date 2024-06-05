@@ -29,6 +29,8 @@ import iconX from '@/components/icons/iconX.vue'
 import iconMarket from '@/components/icons/iconMarket.vue'
 import iconSpeaker from '@/components/icons/iconSpeaker.vue'
 import iconWheel from '@/components/icons/iconWheel.vue'
+import iconSeaBall from '@/components/icons/iconSeaBall.vue'
+import iconQuestion from '@/components/icons/iconQuestion.vue'
 
 import shapeCircle from '@/components/shapes/shapeCircle.vue'
 import shapeButtonRoundClock from '@/components/shapes/shapeButtonRoundClock.vue'
@@ -78,6 +80,8 @@ app.component('IX', iconX)
 app.component('IMarket', iconMarket)
 app.component('ISpeaker', iconSpeaker)
 app.component('IWheel', iconWheel)
+app.component('ISeaBall', iconSeaBall)
+app.component('IQuestion', iconQuestion)
 
 app.component('ShapeCircle', shapeCircle)
 app.component('ShapeButtonRoundClock', shapeButtonRoundClock)

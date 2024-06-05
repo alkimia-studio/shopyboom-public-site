@@ -16,13 +16,9 @@ const size = useSizeStore()
     ></div>
     <div class="position-relative">
       <Stack
-        :class="
-          size.biggerThan(sizeType.md) ? 'pt40' : size.biggerThan(sizeType.sm) ? 'pt30' : size.biggerThan(sizeType.xs) ? 'pt35' : 'pt25'
-        "
         direction="column"
         justifyContent="center"
-        alignItems="center"
-      >
+        alignItems="center"s>
         <slot></slot>
       </Stack>
     </div>

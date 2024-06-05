@@ -17,7 +17,7 @@ const props = defineProps({
   <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_246-2)">
     <rect id="Rectangle_246-2" data-name="Rectangle 246" width="381" height="65" rx="32.5" transform="translate(67.5 64.5)" fill="#333"/>
   </g>
-  <text id="Title_PLATFORM:MOBILE_TAG:H4_" data-name="Title [PLATFORM:MOBILE][TAG:H4]" transform="translate(165.5 81.5)" fill="#fffcf6" font-size="24" font-family="Plus Jakarta Sans" font-weight="800"><tspan x="0" y="25">{{ text }}</tspan></text>
+  <text class="font-1" id="Title_PLATFORM:MOBILE_TAG:H4_" data-name="Title [PLATFORM:MOBILE][TAG:H4]" transform="translate(165.5 81.5)" fill="#fffcf6" font-size="24" font-weight="800"><tspan x="0" y="25">{{ text }}</tspan></text>
   <g id="Icon_ionic-md-megaphone" data-name="Icon ionic-md-megaphone" transform="translate(95.361 72.867)">
     <path id="Path_118" data-name="Path 118" d="M27.671,10.083,25.242,12.5a8.556,8.556,0,0,1,0,12.114l2.429,2.429a12,12,0,0,0,0-16.962Z" transform="translate(11.395 2.209)" fill="#fffcf6"/>
     <path id="Path_119" data-name="Path 119" d="M30.9,6.961,28.512,9.348a15.233,15.233,0,0,1,0,21.515L30.9,33.251a18.584,18.584,0,0,0,0-26.29Z" transform="translate(13.015 0.662)" fill="#fffcf6"/>

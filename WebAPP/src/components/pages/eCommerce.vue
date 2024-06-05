@@ -22,7 +22,9 @@ const shapeContainerMinHeight = {
 </script>
 <template>
     <Banner1 src="/images/image2.png" class="backgroundapp-color-7">
-        <Txt :class="size.biggerThan(sizeType.md) ? 'mt20' : 'mt5'" :font="2" :color="3" :xl="134" :lg="110" :md="80"
+        <Txt :class="
+          size.biggerThan(sizeType.md) ? 'pt40' : size.biggerThan(sizeType.sm) ? 'pt30' : size.biggerThan(sizeType.xs) ? 'pt35' : 'pt25'
+        " :font="2" :color="3" :xl="134" :lg="110" :md="80"
             :sm="70" :xs="45" text-align="center" :line-height="size.biggerThan(sizeType.md) ? 150 : 100" bold>{{
             data.eCommerce.part1.title1 }}</Txt>
         <Txt :line-height="size.biggerThan(sizeType.md) ? 150 : 50" :font="2" :color="2" :xl="93" :lg="81" :md="60"
@@ -69,7 +71,7 @@ const shapeContainerMinHeight = {
                 </Stack>
             </Grid>
         </Grid>
-        <Grid :gap=0 :class="size.biggerThan(sizeType.sm) ? '' : 'mb25'" class="mt40 width-100p" container :lg=8 :md=1>
+        <Grid :gap=0 :class="size.biggerThan(sizeType.sm) ? '' : 'mb25'" class="mt60 width-100p" container :lg=8 :md=1>
             <Grid :lg=5 :md=1>
                 <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh" :mdh="350"
                     :smh="350" :xsh="150">
@@ -96,7 +98,7 @@ const shapeContainerMinHeight = {
                 </Stack>
             </Grid>
         </Grid>
-        <Grid :gap=0 class="mt20 width-100p" direction="rtl" container :lg=8 :md=1>
+        <Grid :gap=0 :class="size.biggerThan(sizeType.lg) ? 'pt40': ''" class="mt60 width-100p" direction="rtl" container :lg=8 :md=1>
             <Grid class="direction-ltr" :lg=5 :md=1>
                 <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
                     :mdh="shapeContainerMinHeight.mdh" :smh="shapeContainerMinHeight.smh"

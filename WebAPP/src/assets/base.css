@@ -2970,6 +2970,10 @@ body {
   font-size: 200px;
 }
 
+.line-height-normal {
+  line-height: normal;
+}
+
 .line-height-unset {
   line-height: unset;
 }

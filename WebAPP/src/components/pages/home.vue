@@ -23,7 +23,9 @@ const shapeContainerMinHeight = {
 </script>
 <template>
   <Banner1 src="/images/image1.png" class="backgroundapp-color-11" :opacity=0.35>
-    <Txt :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
+    <Txt :class="
+          size.biggerThan(sizeType.md) ? 'pt40' : size.biggerThan(sizeType.sm) ? 'pt30' : size.biggerThan(sizeType.xs) ? 'pt35' : 'pt25'
+        " :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
     data.home.part1.title1 }}</Txt>
     <Txt :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
     data.home.part1.title2 }}</Txt>
@@ -79,7 +81,7 @@ const shapeContainerMinHeight = {
     </Stack>
   </Stack>
   <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5'" direction="column" justifyContent="flex-start"
-    class="backgroundapp-color-2" alignItems="flex-start">
+    class="backgroundapp-color-2 pb30" alignItems="flex-start">
     <Grid :gap=0 class="mt20 width-100p" direction="rtl" container :lg=8 :md=1>
       <Grid class="direction-ltr" :lg=5 :md=1>
         <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
@@ -121,7 +123,7 @@ const shapeContainerMinHeight = {
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
             :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-            <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
+            <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title2 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
     data.home.part4.left.title3 }}</Txt>
@@ -134,7 +136,7 @@ const shapeContainerMinHeight = {
         </Stack>
       </Grid>
     </Grid>
-    <Grid :gap=0 class="mt20 width-100p" direction="ltr" container :lg=8 :md=1>
+    <Grid :gap=0 class="mt60 width-100p" direction="ltr" container :lg=8 :md=1>
       <Grid :lg=5 :md=1>
         <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
           :mdh="shapeContainerMinHeight.mdh" :smh="shapeContainerMinHeight.smh" :xsh="shapeContainerMinHeight.xsh">
@@ -189,7 +191,7 @@ const shapeContainerMinHeight = {
         </Stack>
       </Grid>
     </Grid>
-    <Grid :gap=0 class="mt20 width-100p" direction="rtl" container :lg=8 :md=1>
+    <Grid :gap=0 class="mt60 width-100p" direction="rtl" container :lg=8 :md=1>
       <Grid class="direction-ltr" :lg=5 :md=1>
         <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
           :mdh="shapeContainerMinHeight.mdh" :smh="shapeContainerMinHeight.smh" :xsh="shapeContainerMinHeight.xsh">
@@ -248,7 +250,7 @@ const shapeContainerMinHeight = {
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
             :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-            <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
+            <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title1 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
     data.home.part6.left.title2 }}</Txt>
@@ -263,7 +265,66 @@ const shapeContainerMinHeight = {
         </Stack>
       </Grid>
     </Grid>
-    <Grid :gap=0 class="mt20 width-100p" direction="rtl" container :lg=8 :md=1>
+    <Grid :gap=0 class="mt60 width-100p" direction="ltr" container :lg=8 :md=1>
+      <Grid :lg=5 :md=1>
+        <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
+          :mdh="shapeContainerMinHeight.mdh" :smh="shapeContainerMinHeight.smh" :xsh="shapeContainerMinHeight.xsh">
+          <Shape page="home" part="part7" shape-name="window"
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/window.svg" />
+          </Shape>
+          <Shape page="home" part="part7" shape-name="picture"
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/picture.svg" />
+          </Shape>
+          <Shape page="home" part="part7" shape-name="bars" :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/bars.svg" />
+          </Shape>
+          <Shape page="home" part="part7" shape-name="star1"
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/iCanSeeYourStar.svg" />
+          </Shape>
+          <Shape page="home" part="part7" shape-name="star2"
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/iCanSeeYourStar.svg" />
+          </Shape>
+          <Shape page="home" part="part7" shape-name="star3"
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/iCanSeeYourStar.svg" />
+          </Shape>
+          <Shape page="home" part="part7" shape-name="circleArrowLeft"
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/circleArrowLeft.svg" />
+          </Shape>
+          <Shape page="home" part="part7" shape-name="camera"
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <img src="/svgs/camera.svg" />
+          </Shape>
+          <Shape page="home" part="part7" shape-name="buttonRoundPipe"
+            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+            <ShapeButtonRoundPipe :text="data.home.part7.left.buttonRound" />
+          </Shape>
+        </ShapeContainer>
+      </Grid>
+      <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
+        <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
+          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part7.right.title1 }}</Txt>
+            <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
+            :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
+            :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
+            <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=1 :color=1 :xl=72
+              :lg=46 :md=50 :xs=30>{{ data.home.part7.right.title2 }}</Txt>
+            <Txt bold  line-height="normal" class="ml2 word-no-break"  :xl=72  :font=2 :color=3 
+              :lg=46 :md=50 :xs=30>{{ data.home.part7.right.title3 }}</Txt>
+          </Stack>
+          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24
+            :xs=18>
+            {{ data.home.part7.right.body1 }}</Txt>
+        </Stack>
+      </Grid>
+    </Grid>
+    <Grid :gap=0 class="mt60 width-100p" direction="rtl" container :lg=8 :md=1>
       <Grid class="direction-ltr" :lg=5 :md=1>
         <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
           :mdh="shapeContainerMinHeight.mdh" :smh="shapeContainerMinHeight.smh" :xsh="shapeContainerMinHeight.xsh">
@@ -302,7 +363,7 @@ const shapeContainerMinHeight = {
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
             :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-            <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
+            <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title1 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
     data.home.part8.left.title2 }}</Txt>

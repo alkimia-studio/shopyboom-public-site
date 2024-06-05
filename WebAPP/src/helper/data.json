@@ -68,6 +68,17 @@
                 "buttonRound": "Crea il tuo stile"
             }
         },
+        "part7": {
+            "right": {
+                "title1": "Gestire il negozio",
+                "title2": "è",
+                "title3": "semplicissimo",
+                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            },
+            "left": {
+                "buttonRound": "Impostazioni automatiche"
+            }
+        },
         "part8": {
             "left": {
                 "title1": "Promuovi",
@@ -115,7 +126,7 @@
     },
     "risorse":{
         "part1":{
-            "title1": "Risorse",
+            "title1": "Supporto",
             "title2": "Tutto ciò che ti serve per diventare un mago dell'e-commerce"
         },
         "part2":{
@@ -664,7 +675,7 @@
                 },
                 {
                     "url": "/",
-                    "text": "Risorse"
+                    "text": "Supporto"
                 }
             ]
         }
