@@ -36,7 +36,7 @@ const size = useSizeStore()
   </Stack>
   <swiper-container v-if="!size.biggerThan(sizeType.md)"
     :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pb20' : 'pr5 pl5 pb10'" class="backgroundapp-color-1"
-    :slides-per-view="size.biggerThan(sizeType.xs) ? 2 : 1" speed="500" space-between="16" css-mode="true">
+    :slides-per-view="size.biggerThan(sizeType.xs) ? 2 : 1" speed="500" space-between="16">
     <swiper-slide class="height-inherit" v-for="(item, index) in data.people.items" :key="index">
       <div class="height-100p" :class="{ 'disabled': item.disabled }" >
       <Stack direction="column" justifyContent="flex-start"

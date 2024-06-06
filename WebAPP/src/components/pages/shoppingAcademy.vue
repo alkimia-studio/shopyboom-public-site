@@ -58,7 +58,7 @@ useHead({
     </Stack>
     <swiper-container v-if="!size.biggerThan(sizeType.md)"
         :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5'" class="mt10 backgroundapp-color-2"
-        :slides-per-view="size.biggerThan(sizeType.xs) ? 2 : 1" speed="500" space-between="16" css-mode="true">
+        :slides-per-view="size.biggerThan(sizeType.xs) ? 2 : 1" speed="500" space-between="16">
         <swiper-slide class="height-inherit" v-for="(item, index) in data.shoppingAcademy.part2.items" :key="index">
             <div>
                 <div class="position-relative">
@@ -117,7 +117,7 @@ useHead({
     </Stack>
     <swiper-container v-if="!size.biggerThan(sizeType.md)"
         :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5'" class="mt10 backgroundapp-color-2"
-        :slides-per-view="size.biggerThan(sizeType.xs) ? 2 : 1" speed="500" space-between="16" css-mode="true">
+        :slides-per-view="size.biggerThan(sizeType.xs) ? 2 : 1" speed="500" space-between="16">
         <swiper-slide class="height-inherit" v-for="(item, index) in data.shoppingAcademy.part3.items" :key="index">
             <div>
                 <div class="position-relative">
@@ -176,7 +176,7 @@ useHead({
     </Stack>
     <swiper-container v-if="!size.biggerThan(sizeType.md)"
         :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35 pb20' : 'pr5 pl5 pb20'" class="mt10 backgroundapp-color-2"
-        :slides-per-view="size.biggerThan(sizeType.xs) ? 2 : 1" speed="500" space-between="16" css-mode="true">
+        :slides-per-view="size.biggerThan(sizeType.xs) ? 2 : 1" speed="500" space-between="16">
         <swiper-slide class="height-inherit" v-for="(item, index) in data.shoppingAcademy.part4.items" :key="index">
             <div>
                 <div class="position-relative">
