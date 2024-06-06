@@ -39,7 +39,7 @@ onBeforeUpdate(txtChange)
 </script>
 <template>
   <span
-    class="txt width-100p"
+    class="txt"
     @mouseover="hover = true"
     @mouseleave="hover = false"
     v-if="props.href === undefined"
@@ -53,7 +53,7 @@ onBeforeUpdate(txtChange)
     <slot></slot>
   </span>
   <a
-    class="txt width-100p"
+    class="txt"
     @mouseover="hover = true"
     @mouseleave="hover = false"
     v-else

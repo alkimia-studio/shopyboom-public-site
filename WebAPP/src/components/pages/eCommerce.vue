@@ -61,9 +61,9 @@ const shapeContainerMinHeight = {
             </Grid>
             <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
                 <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-                    <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1
+                    <Txt class="width-100p" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1
                         :color=1 :xl=40 :lg=38 :md=40 :xs=24>{{ data.eCommerce.part3.left.title1 }}</Txt>
-                    <Txt line-height="120" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=2
+                    <Txt class="width-100p" line-height="120" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=2
                         :color=3 :xl=100 :lg=80 :md=100 :xs=48>{{ data.eCommerce.part3.left.title2 }}</Txt>
                     <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1
                         :md=24 :xs=18>
@@ -87,9 +87,9 @@ const shapeContainerMinHeight = {
             </Grid>
             <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
                 <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-                    <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1
+                    <Txt class="width-100p" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1
                         :color=1 :xl=40 :lg=38 :md=40 :xs=24>{{ data.eCommerce.part4.right.title1 }}</Txt>
-                    <Txt class="word-no-break" line-height="120"
+                    <Txt class="word-no-break width-100p" line-height="120"
                         :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=2 :color=3 :xl=100 :lg=80
                         :md=100 :xs=48>{{ data.eCommerce.part4.right.title2 }}</Txt>
                     <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1
@@ -119,9 +119,9 @@ const shapeContainerMinHeight = {
             </Grid>
             <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg=3 :md=1>
                 <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-                    <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1
+                    <Txt class="width-100p" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1
                         :color=1 :xl=40 :lg=38 :md=40 :xs=24>{{ data.eCommerce.part5.left.title1 }}</Txt>
-                    <Txt line-height="120" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=2
+                    <Txt class="width-100p" line-height="120" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=2
                         :color=3 :xl=100 :lg=80 :md=100 :xs=48>{{ data.eCommerce.part5.left.title2 }}</Txt>
                     <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1
                         :md=24 :xs=18>

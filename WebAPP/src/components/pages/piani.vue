@@ -51,7 +51,11 @@ useHead({
                                     </Stack>
                                     <hr class="width-100p mt4" />
                                 </div>
-
+                            </Stack>
+                            <Stack class="width-100p" direction="row" justifyContent="center" alignItems="center">
+                                <Txt text-align="right" :xs="24" :md="24" :lg="30" :font="2" :color="1">{{ item.price1 }}</Txt>
+                                <Txt class="pl2 pr3" text-align="center" :xs="48" :md="48" :lg="60" :font="2" :color="1"bold>{{ item.price2 }}</Txt>
+                                <Txt text-align="left" :xs="24" :md="24" :lg="30" :font="2" :color="1">{{ item.price3 }}</Txt>
                             </Stack>
                         </Stack>
                         <div>

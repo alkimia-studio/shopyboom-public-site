@@ -214,6 +214,9 @@
                         "Lorem ipsum dolor sit amet",
                         "Lorem ipsum dolor sit amet"
                     ],
+                    "price1": "€",
+                    "price2": "15",
+                    "price3": "/mese", 
                     "buttonRound": "Attiva"
                 },
                 {
@@ -230,6 +233,9 @@
                         "Lorem ipsum dolor sit amet",
                         "Lorem ipsum dolor sit amet"
                     ],
+                    "price1": "€",
+                    "price2": "23",
+                    "price3": "/mese", 
                     "buttonRound": "Attiva"
                 },
                 {
@@ -246,6 +252,9 @@
                         "Lorem ipsum dolor sit amet",
                         "Lorem ipsum dolor sit amet"
                     ],
+                    "price1": "€",
+                    "price2": "45",
+                    "price3": "/mese", 
                     "buttonRound": "Attiva"
                 }
             ]
