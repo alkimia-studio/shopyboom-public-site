@@ -70,9 +70,9 @@ const onSubmit = () => {
           <input v-model="formData.email.value" :class="{'error': formData.email.error}" class="input1 textapp-color-1 font-1 borderapp-color-5 mt6"
             :placeholder="data.opportunity.right.placeholder" />
           <div>
-            <Button1 @click="()=>{onSubmit()}" :border=0 :color="2" :background="3" :hover-color="3" :hover-background="2"
+            <Button1 @click="()=>{onSubmit()}" :border=0 :color="2" :background="3" :hover-color="3" :hover-background="7"
               class="mt10 pr10 pl10">
-              <Txt :font=1 :color=-1 :xs=16>{{ data.opportunity.right.buttonRound }}</Txt>
+              <Txt bold :font=1 :color=-1 :xs=16>{{ data.opportunity.right.buttonRound }}</Txt>
             </Button1>
           </div>
         </Stack>

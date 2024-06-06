@@ -20,8 +20,8 @@ const openBarIsOpen = ref(false)
       </Stack>
       <Stack v-if="size.biggerThan(sizeType.md)" class="mr10" direction="row-reverse" justifyContent="flex-start"
         alignItems="center">
-        <Button1 :border=0 :color="2" :background="8" :hover-color="3" :hover-background="21" class="pr10 pl10">
-          <Txt :font=1 :color=-1 :xs=16>{{ data.header.login }}</Txt>
+        <Button1 :border=0 :color="2" :background="8" :hover-color="3" :hover-background="7" class="pr10 pl10">
+          <Txt bold :font=1 :color=-1 :xs=16>{{ data.header.login }}</Txt>
         </Button1>
         <Txt v-for="(item, index) in pages.getListPage()" class="mr14 ml5 word-no-break" :key="index" :href="item.url"
           :color="item.active ? 3 : 2" bold :hover=3 :font=1 :xs=18>{{ item.text }}</Txt>
@@ -46,7 +46,7 @@ const openBarIsOpen = ref(false)
           <hr class="width-100p mt4 borderapp-color-2" />
         </div>
         <div class="width-100p mt4">
-          <Button1 :border=0 :color="1" :background="2" :hover-color="3" :hover-background="21" class="mt4 pt3 pb3">
+          <Button1 :border=0 :color="1" :background="2" :hover-color="3" :hover-background="7" class="mt4 pt3 pb3">
             <Txt text-align="center" :font=2 :color=-1 bold :xs=26>{{ data.header.login }}</Txt>
           </Button1>
         </div>

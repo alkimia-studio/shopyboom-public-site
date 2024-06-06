@@ -13,19 +13,19 @@
                 "title1": "Cos'è "
             },
             "right": {
-                "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                "title1": "Shopyboom è la piattaforma che ti permette di creare il tuo negozio online, in pochi e semplici passi. Non ti servirà avere nessuna competenza tecnica, sarai seguito passo a passo, dalla creazione alla gestione del tuo e-commerce e ad un costo davvero accessibile a tutti!",
                 "links": [
                     {
-                        "url": "/",
-                        "text": "Lorem ipsum dolor sit amet"
+                        "url": "/caratteristiche-piattaforma-ecommerce",
+                        "text": "Come funziona Shopyboom"
                     },
                     {
-                        "url": "/",
-                        "text": "Lorem ipsum dolor sit amet"
+                        "url": "/piani",
+                        "text": "Scopri i nostri piani e le loro funzionalità"
                     },
                     {
-                        "url": "/",
-                        "text": "Lorem ipsum dolor sit amet"
+                        "url": "/supporto",
+                        "text": "Approfitta del supporto a tua disposizione"
                     }
                 ]
             }
@@ -39,7 +39,7 @@
                 "title2": "online",
                 "title3": "in pochi",
                 "title4": "minuti!",
-                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "body1": "I passaggi per ottenere il tuo negozio online sono davvero pochi, semplici ed intuitivi... ed in attimo il tuo e-commerce sarà attivo!"
             },
             "right": {
                 "buttonRound": "Attivo in 5 min"
@@ -53,7 +53,7 @@
                 "title1": "Carica i tuoi",
                 "title2": "prodotti in un ",
                 "title3": "lampo",
-                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "body1": "Con l'aiuto dell'intelligenza artificiale integrata sarà ancora più semplice di quanto potessi immaginare, le immagini e le descrizioni saranno migliorate automaticamente per ottenere un risultato ottimale!"
             }
         },
         "part6": {
@@ -62,7 +62,7 @@
                 "title2": "il",
                 "title3": "tuo negozio",
                 "title4": "senza sforzi",
-                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "body1": "Scegli il tema che preferisci e personalizza il tuo negozio secondo lo stile che ti piace. Mettiamo a tua disposizione tutto ciò che serve per ottenere il risultato desiderato."
             },
             "right": {
                 "buttonRound": "Crea il tuo stile"
@@ -73,7 +73,7 @@
                 "title1": "Gestire il negozio",
                 "title2": "è",
                 "title3": "semplicissimo",
-                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "body1": "Gestire gli ordini, i pagamenti, le spedizioni... non preoccuparti di nulla, abbiamo pensato a come rendere tutto questo semplice ed automatico. E ricorda, il nostro supporto è sempre a tua disposizione!"
             },
             "left": {
                 "buttonRound": "Impostazioni automatiche"
@@ -85,7 +85,7 @@
                 "title2": "il",
                 "title3": "negozio come un",
                 "title4": "professionista!",
-                "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "body1": "Marketing, pubblicità, promozioni, newsletter... tutto ciò che serve per promuovere il tuo e-commerce e le tue vendite lo puoi fare all'interno di Shopyboom."
             },
             "right": {
                 "buttonRound": "Strumenti marketing",
@@ -691,7 +691,7 @@
             "title2": "Academy"
         },
         "right": {
-            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "body1": "Vuoi sapere come utilizzare al meglio tutte le funzionalità a tua disposizione? Abbiamo creato una sezione per spiegarti tutto, proprio tutto.",
             "buttonRound": "Scopri ogni segreto"
         }
     },

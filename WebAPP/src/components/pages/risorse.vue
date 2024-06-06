@@ -39,8 +39,8 @@ useHead({
                     </Txt>
                     <div>
                         <Button1 :href="data.risorse.part2.items[0].url" :border=0 :color="2" :background="3"
-                            :hover-color="3" :hover-background="2" class="mt10 pr10 pl10">
-                            <Txt :font=1 :color=-1 :xs=16>{{ data.risorse.part2.items[0].buttonRound }}</Txt>
+                            :hover-color="3" :hover-background="7" class="mt10 pr10 pl10">
+                            <Txt bold :font=1 :color=-1 :xs=16>{{ data.risorse.part2.items[0].buttonRound }}</Txt>
                         </Button1>
                     </div>
                 </Stack>
@@ -62,8 +62,8 @@ useHead({
                     </Txt>
                     <div>
                         <Button1 :href="data.risorse.part2.items[1].url" :border=0 :color="2" :background="3"
-                            :hover-color="3" :hover-background="2" class="mt10 pr10 pl10">
-                            <Txt :font=1 :color=-1 :xs=16>{{ data.risorse.part2.items[1].buttonRound }}</Txt>
+                            :hover-color="3" :hover-background="7" class="mt10 pr10 pl10">
+                            <Txt bold :font=1 :color=-1 :xs=16>{{ data.risorse.part2.items[1].buttonRound }}</Txt>
                         </Button1>
                     </div>
                 </Stack>
@@ -85,8 +85,8 @@ useHead({
                     </Txt>
                     <div>
                         <Button1 :href="data.risorse.part2.items[2].url" :border=0 :color="2" :background="3"
-                            :hover-color="3" :hover-background="2" class="mt10 pr10 pl10">
-                            <Txt :font=1 :color=-1 :xs=16>{{ data.risorse.part2.items[2].buttonRound }}</Txt>
+                            :hover-color="3" :hover-background="7" class="mt10 pr10 pl10">
+                            <Txt bold :font=1 :color=-1 :xs=16>{{ data.risorse.part2.items[2].buttonRound }}</Txt>
                         </Button1>
                     </div>
                 </Stack>

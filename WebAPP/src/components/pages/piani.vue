@@ -55,9 +55,9 @@ useHead({
                             </Stack>
                         </Stack>
                         <div>
-                            <Button1 :border=0 :color="2" :background="3" :hover-color="3" :hover-background="2"
+                            <Button1 :border=0 :color="2" :background="3" :hover-color="3" :hover-background="7"
                                 class="mt10 pr10 pl10">
-                                <Txt :font=1 :color=-1 :xs=16>{{ item.buttonRound }}</Txt>
+                                <Txt bold :font=1 :color=-1 :xs=16>{{ item.buttonRound }}</Txt>
                             </Button1>
                         </div>
                     </Stack>
@@ -69,9 +69,9 @@ useHead({
             <Txt text-align="center" :font="1" :color="1" :xs="30" bold>{{ data.piani.part3.title2 }}</Txt>
             <Txt text-align="center" :font="1" :color="1" :xs="30">{{ data.piani.part3.title3 }}</Txt>
             <div class="mt4">
-                <Button1 :border=0 :color="2" :background="8" :hover-color="3" :hover-background="21"
+                <Button1 :border=0 :color="2" :background="8" :hover-color="3" :hover-background="7"
                     class="pr10 pl10">
-                    <Txt :font=1 :color=-1 :xs=16>{{ data.piani.part3.buttonRound }}</Txt>
+                    <Txt bold :font=1 :color=-1 :xs=16>{{ data.piani.part3.buttonRound }}</Txt>
                 </Button1>
             </div>
             <Txt class="mt40" text-align="center" :font="2" :color="3" :lg="100" :xs="30">{{ data.piani.part3.title4 }}

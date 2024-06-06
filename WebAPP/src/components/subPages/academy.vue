@@ -27,9 +27,9 @@ const size = useSizeStore()
             {{ data.academy.right.body1 }}
           </Txt>
           <div>
-            <Button1 href="/shopping-academy" :border=0 :color="2" :background="3" :hover-color="3" :hover-background="2"
+            <Button1 href="/shopping-academy" :border=0 :color="2" :background="3" :hover-color="3" :hover-background="7"
               class="mt10 pr10 pl10">
-              <Txt :font=1 :color=-1 :xs=16>{{ data.academy.right.buttonRound }}</Txt>
+              <Txt bold :font=1 :color=-1 :xs=16>{{ data.academy.right.buttonRound }}</Txt>
             </Button1>
           </div>
         </Stack>

@@ -35,9 +35,9 @@ const shapeContainerMinHeight = {
     data.home.part1.title4 }}</Txt>
     <Txt :font="1" :color="5" :xl="33" :lg="28" :md="24" :sm="21" :xs="18" text-align="center">{{ data.home.part1.title5
       }}</Txt>
-    <Button1 :border=0 :color="21" :background="3" :hover-color="3" :hover-background="21"
+    <Button1 :border=0 :color="21" :background="3" :hover-color="3" :hover-background="7"
       class="mt10 pr15 pl15">
-      <Txt :font=1 :color=-1 :xs=18>{{ data.home.part1.button1 }}</Txt>
+      <Txt bold :font=1 :color=-1 :xs=18>{{ data.home.part1.button1 }}</Txt>
     </Button1>
     <Appsvg class="fillapp-color-3"
       :class="size.biggerThan(sizeType.lg) ? 'mt10' : size.biggerThan(sizeType.md) ? 'mt15' : 'mt12'"

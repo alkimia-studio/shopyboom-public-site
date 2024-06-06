@@ -15,8 +15,8 @@ const size = useSizeStore()
       <Txt class="word-no-break pr1 pl1" text-align="center" :font=1 :color=2 :xs=24 :lg=34 bold>{{ data.openShop.body3 }}</Txt>
     </Stack>
     <div class="mt8">
-      <Button1 :border=0 :color="2" :background="8" :hover-color="3" :hover-background="21" class="pr10 pl10">
-        <Txt :font=1 :color=-1 :xs=16>{{ data.openShop.buttonRound }}</Txt>
+      <Button1 :border=0 :color="2" :background="8" :hover-color="3" :hover-background="7" class="pr10 pl10">
+        <Txt bold :font=1 :color=-1 :xs=16>{{ data.openShop.buttonRound }}</Txt>
       </Button1>
     </div>
   </Stack>
