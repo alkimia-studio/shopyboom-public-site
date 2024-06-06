@@ -14,7 +14,7 @@ import data from '@/helper/data.json'
     <Txt text-align="center" :line-height=140 :font=2 :color=1 :xs=60 :lg=109>{{ data.bellStars.title1 }}</Txt>
     <Txt text-align="center" :font=1 :color=2 :xs=24 :lg=34>{{ data.bellStars.body1 }}</Txt>
     <div class="mt8">
-      <Button1 :border=0 :color="2" :background="8" :hover-color="3" :hover-background="7" class="pr10 pl10">
+      <Button1 href="/piani" :border=0 :color="2" :background="8" :hover-color="3" :hover-background="7" class="pr10 pl10">
         <Txt bold :font=1 :color=-1 :xs=16>{{ data.bellStars.buttonRound }}</Txt>
       </Button1>
     </div>

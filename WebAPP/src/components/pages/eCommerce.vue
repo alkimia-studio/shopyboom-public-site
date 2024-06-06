@@ -47,11 +47,11 @@ const shapeContainerMinHeight = {
                     :xsh="shapeContainerMinHeight.xsh">
                     <Shape page="ecommerce" part="part3" shape-name="rectangle1"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-                        <img class="shadow-3 round-3" :src="`/images/eCommerce/part3-img1.jpg`" />
+                        <img class="shadow-3 round-3" src="/images/eCommerce/part3-img1.jpg" />
                     </Shape>
                     <Shape page="ecommerce" part="part3" shape-name="rectangle2"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-                        <img src="/svgs/rectangle.svg" />
+                        <img class="shadow-3 round-3" src="/images/eCommerce/part3-img2.jpg" />
                     </Shape>
                     <Shape page="ecommerce" part="part3" shape-name="rectanglePipeStar"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
@@ -109,7 +109,7 @@ const shapeContainerMinHeight = {
                     </Shape>
                     <Shape page="ecommerce" part="part5" shape-name="rectangle2"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-                        <img src="/svgs/rectangle.svg" />
+                        <img class="shadow-3 round-3" src="/images/eCommerce/part5-img2.jpg" />
                     </Shape>
                     <Shape page="ecommerce" part="part5" shape-name="rectangleRobot"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">

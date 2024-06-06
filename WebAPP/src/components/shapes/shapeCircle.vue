@@ -21,7 +21,7 @@ const props = defineProps({
                 :class="'fillapp-color-'+props.color" />
         </g>
         <text v-if="text !== undefined" id="Title_PLATFORM:MOBILE_TAG:H4_" data-name="Title [PLATFORM:MOBILE][TAG:H4]"
-            transform="translate(50 43)" fill="#fffcf6" font-size="50" font-family="SegoeUI, Segoe UI">
+            transform="translate(50 43)" fill="#fffcf6" font-size="50" class="font-1 bold">
             <tspan x="18.523" y="54">{{ text }}</tspan>
         </text>
     </svg>

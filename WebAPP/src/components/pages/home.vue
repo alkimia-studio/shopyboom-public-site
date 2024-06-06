@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useSizeStore, sizeType } from '@/helper/widthHandler'
 import { useHead } from '@unhead/vue'
-import { ChevronRightIcon } from '@heroicons/vue/24/solid'
+import { ChevronRightIcon, ArrowLongDownIcon } from '@heroicons/vue/24/solid'
 import data from '@/helper/data.json'
 const size = useSizeStore()
 useHead({
@@ -23,27 +23,28 @@ const shapeContainerMinHeight = {
 </script>
 <template>
   <Banner1 src="/images/image1.jpg" class="backgroundapp-color-11" :opacity=0.35>
-    <Txt :class="
-          size.biggerThan(sizeType.md) ? 'pt40' : size.biggerThan(sizeType.sm) ? 'pt30' : size.biggerThan(sizeType.xs) ? 'pt35' : 'pt25'
-        " :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
-    data.home.part1.title1 }}</Txt>
+    <Txt :class="size.biggerThan(sizeType.md) ? 'pt40' : size.biggerThan(sizeType.sm) ? 'pt30' : size.biggerThan(sizeType.xs) ? 'pt35' : 'pt25'
+      " :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
+          data.home.part1.title1 }}</Txt>
     <Txt :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
-    data.home.part1.title2 }}</Txt>
+      data.home.part1.title2 }}</Txt>
     <Txt :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center" bold>{{
-    data.home.part1.title3 }}</Txt>
+      data.home.part1.title3 }}</Txt>
     <Txt :font="2" :color="3" :xl="134" :lg="110" :md="80" :sm="70" :xs="60" text-align="center" bold>{{
-    data.home.part1.title4 }}</Txt>
+      data.home.part1.title4 }}</Txt>
     <Txt :font="1" :color="5" :xl="33" :lg="28" :md="24" :sm="21" :xs="18" text-align="center">{{ data.home.part1.title5
       }}</Txt>
-    <Button1 :border=0 :color="21" :background="3" :hover-color="3" :hover-background="7"
-      class="mt10 pr15 pl15">
+    <Button1 :border=0 :color="21" :background="3" :hover-color="3" :hover-background="7" class="mt10 pr15 pl15">
       <Txt bold :font=1 :color=-1 :xs=18>{{ data.home.part1.button1 }}</Txt>
     </Button1>
-    <Appsvg class="fillapp-color-3"
-      :class="size.biggerThan(sizeType.lg) ? 'mt10' : size.biggerThan(sizeType.md) ? 'mt15' : 'mt12'"
-      v-if="size.biggerThan(sizeType.sm)" :mdw=50 :lgw=60 :xlw=80>
-      <IArrowDown class="fillapp-color-2" />
-    </Appsvg>
+    <ShapeContainer :xlh="100" :lgh="100" :mdh="100" :smh="100" :xsh="100">
+      <Shape page="home" part="part1" shape-name="arrow" stick-v="center" stick-h="center">
+        <Appsvg class="fillapp-color-3" :xsw="50" :xmw="60" :mdw=70 :lgw=70 :xlw=80>
+          <ArrowLongDownIcon class="fillapp-color-2 arrow" />
+        </Appsvg>
+      </Shape>
+    </ShapeContainer>
+
   </Banner1>
   <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5'" direction="column" justifyContent="flex-start"
     alignItems="flex-start">
@@ -61,23 +62,27 @@ const shapeContainerMinHeight = {
           </Stack>
           <Stack class="width-100p" v-for="(item, index) in data.home.part2.right.links" direction="column"
             justifyContent="flex-start" alignItems="flex-start">
-            <Stack class="pt4 pb4 width-100p" direction="row" justifyContent="space-between" alignItems="center">
+            <a class="pt4 pb4 width-100p" :href="item.url">
+            <Stack direction="row" justifyContent="space-between" alignItems="center">
               <Txt :font=1 :color=1 :md=24 :xs=18 bold>{{ item.text }}</Txt>
-              <a :href="item.url">
                 <Appsvg :color=3 :xsw=35>
                   <ChevronRightIcon />
                 </Appsvg>
-              </a>
-            </Stack>
+              </Stack>
+            </a>
             <hr class="width-100p" />
           </Stack>
         </Stack>
       </Grid>
     </Grid>
-    <Stack :direction="size.biggerThan(sizeType.sm) ? 'row' : 'column'" class="width-100p pt30 pb30" justifyContent="center" alignItems="center">
-      <Txt class="pr2 word-no-break" :text-align="size.biggerThan(sizeType.sm) ? 'right' : 'center'" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24>{{
-    data.home.part3.title1 }}</Txt>
-      <Txt :class="size.biggerThan(sizeType.sm)? '': 'mt6'" class="pl2" :text-align="size.biggerThan(sizeType.sm) ? 'left' : 'center'" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24 bold>{{ data.header.sitename }}</Txt>
+    <Stack :direction="size.biggerThan(sizeType.sm) ? 'row' : 'column'" class="width-100p pt30 pb30"
+      justifyContent="center" alignItems="center">
+      <Txt class="pr2 word-no-break" :text-align="size.biggerThan(sizeType.sm) ? 'right' : 'center'" :font=1 :color=1
+        :lg=48 :md=30 :sm=30 :xs=24>{{
+          data.home.part3.title1 }}</Txt>
+      <Txt :class="size.biggerThan(sizeType.sm) ? '' : 'mt6'" class="pl2"
+        :text-align="size.biggerThan(sizeType.sm) ? 'left' : 'center'" :font=1 :color=1 :lg=48 :md=30 :sm=30 :xs=24
+        bold>{{ data.header.sitename }}</Txt>
     </Stack>
   </Stack>
   <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5'" direction="column" justifyContent="flex-start"
@@ -123,10 +128,10 @@ const shapeContainerMinHeight = {
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
             :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-            <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
-              :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title2 }}</Txt>
+            <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3
+              :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title2 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-    data.home.part4.left.title3 }}</Txt>
+              data.home.part4.left.title3 }}</Txt>
           </Stack>
           <Txt bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1
             :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part4.left.title4 }}</Txt>
@@ -250,8 +255,8 @@ const shapeContainerMinHeight = {
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
             :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-            <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
-              :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title1 }}</Txt>
+            <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3
+              :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part6.left.title1 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
               data.home.part6.left.title2 }}</Txt>
           </Stack>
@@ -307,13 +312,13 @@ const shapeContainerMinHeight = {
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
           <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part7.right.title1 }}</Txt>
-            <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
+          <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
             :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
             <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=1 :color=1 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part7.right.title2 }}</Txt>
-            <Txt line-height="normal" class="ml2 word-no-break"  :xl=72  :font=2 :color=3 
-              :lg=46 :md=50 :xs=30>{{ data.home.part7.right.title3 }}</Txt>
+            <Txt line-height="normal" class="ml2 word-no-break" :xl=72 :font=2 :color=3 :lg=46 :md=50 :xs=30>{{
+              data.home.part7.right.title3 }}</Txt>
           </Stack>
           <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24
             :xs=18>
@@ -360,10 +365,10 @@ const shapeContainerMinHeight = {
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
             :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-            <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3 :xl=72
-              :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title1 }}</Txt>
+            <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=2 :color=3
+              :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title1 }}</Txt>
             <Txt bold line-height="48" class="ml2 word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{
-    data.home.part8.left.title2 }}</Txt>
+              data.home.part8.left.title2 }}</Txt>
           </Stack>
           <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             class="word-no-break" :font=1 :color=1 :xl=72 :lg=46 :md=50 :xs=30>{{ data.home.part8.left.title3 }}</Txt>

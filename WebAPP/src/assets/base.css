@@ -8,7 +8,8 @@
     color 0.05s,
     fill 0.05s,
     background-color 0.05s,
-    transform 1.2s ease;
+    transform 1.2s ease,
+    opacity 1s ease-in-out;
   user-select: none;
 }
 
