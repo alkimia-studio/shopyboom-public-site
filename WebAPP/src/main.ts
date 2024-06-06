@@ -1,5 +1,4 @@
 import './assets/main.css'
-import 'vue3-carousel/dist/carousel.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
@@ -48,10 +47,9 @@ import people from '@/components/subPages/people.vue'
 import openShop from '@/components/subPages/openShop.vue'
 import opportunity from '@/components/subPages/opportunity.vue'
 
-import { Carousel, Navigation, Pagination, Slide } from 'vue3-carousel'
-
 import Vue3Lottie from 'vue3-lottie'
 import Notifications from '@kyvg/vue3-notification'
+import { register } from 'swiper/element/bundle';
 const app = createApp(App)
 
 app.use(createPinia())
@@ -59,6 +57,7 @@ app.use(createHead())
 app.use(router)
 app.use(Notifications)
 app.use(Vue3Lottie, { name: "Vue3Lottie" })
+register();
 
 app.component('Txt', txt)
 app.component('Stack', stack)
@@ -99,12 +98,5 @@ app.component('Academy', academy)
 app.component('People', people)
 app.component('OpenShop', openShop)
 app.component('Opportunity', opportunity)
-
-app.component('Carousel', Carousel)
-app.component('Navigation', Navigation)
-app.component('Pagination', Pagination)
-app.component('Slide', Slide)
-
-
 
 app.mount('#app')

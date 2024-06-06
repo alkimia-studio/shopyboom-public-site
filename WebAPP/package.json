@@ -18,10 +18,10 @@
     "@kyvg/vue3-notification": "^3.2.1",
     "@unhead/vue": "^1.9.11",
     "pinia": "^2.1.7",
+    "swiper": "^11.1.4",
     "unhead": "^1.9.11",
     "vue": "^3.4.21",
     "vue-router": "^4.3.0",
-    "vue3-carousel": "^0.3.3",
     "vue3-lottie": "^3.3.0"
   },
   "devDependencies": {

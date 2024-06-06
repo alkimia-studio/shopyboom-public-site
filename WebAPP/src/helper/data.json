@@ -550,11 +550,11 @@
     },
     "header": {
         "sitename": "shopyboom",
-        "login": "Accedi",
+        "login": "Inizia",
         "items": [
             {
                 "url": "/",
-                "text": "Login"
+                "text": "Accedi"
             },
             {
                 "url": "/supporto",
@@ -681,7 +681,7 @@
         }
     },
     "bellStars": {
-        "title1": "Questo è nulla",
+        "title1": "Scopri di più",
         "body1": "Scopri tutte le funzionalità della piattaforma",
         "buttonRound": "Inizia"
     },

@@ -22,7 +22,7 @@ const shapeContainerMinHeight = {
 }
 </script>
 <template>
-  <Banner1 src="/images/image1.png" class="backgroundapp-color-11" :opacity=0.35>
+  <Banner1 src="/images/image1.jpg" class="backgroundapp-color-11" :opacity=0.35>
     <Txt :class="
           size.biggerThan(sizeType.md) ? 'pt40' : size.biggerThan(sizeType.sm) ? 'pt30' : size.biggerThan(sizeType.xs) ? 'pt35' : 'pt25'
         " :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
@@ -312,7 +312,7 @@ const shapeContainerMinHeight = {
             :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
             <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font=1 :color=1 :xl=72
               :lg=46 :md=50 :xs=30>{{ data.home.part7.right.title2 }}</Txt>
-            <Txt bold  line-height="normal" class="ml2 word-no-break"  :xl=72  :font=2 :color=3 
+            <Txt line-height="normal" class="ml2 word-no-break"  :xl=72  :font=2 :color=3 
               :lg=46 :md=50 :xs=30>{{ data.home.part7.right.title3 }}</Txt>
           </Stack>
           <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font=1 :color=1 :md=24
@@ -381,5 +381,4 @@ const shapeContainerMinHeight = {
   <People />
   <OpenShop />
   <Opportunity />
-
 </template>

@@ -267,7 +267,7 @@ useHead({
             </table>
         </Stack>
     </Stack>
-    <BellStars />
+    <OpenShop />
     <Academy />
     <People />
     <Opportunity />

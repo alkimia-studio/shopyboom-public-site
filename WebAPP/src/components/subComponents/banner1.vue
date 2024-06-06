@@ -14,11 +14,12 @@ const size = useSizeStore()
       class="banner1-image width-100p position-absolute"
       :style="{ backgroundImage: `url(${props.src})` , 'opacity': props.opacity}"
     ></div>
-    <div class="position-relative">
+    <div class="position-relative height-inherit">
       <Stack
+        class="height-inherit"
         direction="column"
         justifyContent="center"
-        alignItems="center"s>
+        alignItems="center">
         <slot></slot>
       </Stack>
     </div>

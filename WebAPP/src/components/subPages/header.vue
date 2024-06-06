@@ -46,7 +46,7 @@ const openBarIsOpen = ref(false)
           <hr class="width-100p mt4 borderapp-color-2" />
         </div>
         <div class="width-100p mt4">
-          <Button1 :border=0 :color="1" :background="2" :hover-color="3" :hover-background="21" class="mt4 pt7 pb6">
+          <Button1 :border=0 :color="1" :background="2" :hover-color="3" :hover-background="21" class="mt4 pt3 pb3">
             <Txt text-align="center" :font=2 :color=-1 bold :xs=26>{{ data.header.login }}</Txt>
           </Button1>
         </div>

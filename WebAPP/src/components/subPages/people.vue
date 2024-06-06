@@ -4,18 +4,22 @@ import data from '@/helper/data.json'
 const size = useSizeStore()
 </script>
 <template>
-     <Stack :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pt20 pb20' : 'pr5 pl5 pt10 pb10'"
+  <Stack :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pt20 pb10' : 'pr5 pl5 pt10 pb10'"
     class="width-100p backgroundapp-color-1" direction="column" justifyContent="center" alignItems="center">
     <Txt class="pb10" text-align="center" :font=2 :color=2 :xs="30" :lg="62">
       {{ data.people.title1 }}
     </Txt>
-    <Grid :gap="8" container :lg=4 :md=1>
-      <Grid :lg=1 :md=1 class="height-100p" v-for="(item, index) in data.people.items" :key="index" :class="{ 'disabled': item.disabled }">
+  </Stack>
+  <Stack  v-if="size.biggerThan(sizeType.md)" :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pb20' : 'pr5 pl5 pb10'" class="width-100p backgroundapp-color-1" direction="column" justifyContent="center" alignItems="center">
+    <Grid v-if="size.biggerThan(sizeType.md)" :class="size.biggerThan(sizeType.md) ? 'pb20' : 'pb10'" :gap="8" container
+      :lg=4 :md=1>
+      <Grid :lg=1 :md=1 class="height-100p" v-for="(item, index) in data.people.items" :key="index"
+        :class="{ 'disabled': item.disabled }">
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
           <div class="image1 image-fitparent-width" :style="{ 'background-image': 'url(' + item.img + ')' }"></div>
           <Stack class="height-inherit" direction="column" justifyContent="space-between" alignItems="center">
             <Txt line-height="24" class="mt4" :font=1 :color=2 text-align="center" :xs="16">{{ item.body1 }}</Txt>
-            <Stack  class="height-initial mt4" direction="column" justifyContent="flex-start" alignItems="center">
+            <Stack class="height-initial mt4" direction="column" justifyContent="flex-start" alignItems="center">
               <Txt bold :font=1 :color=2 text-align="center" :xs="24">{{ item.body2 }}</Txt>
               <Txt class="mt1" :font=1 :color=2 text-align="center" :xs="20">{{ item.body3 }}</Txt>
               <Stack class="mt5 height-initial" direction="row" justifyContent="center" alignItems="center">
@@ -30,4 +34,29 @@ const size = useSizeStore()
       </Grid>
     </Grid>
   </Stack>
+  <swiper-container v-if="!size.biggerThan(sizeType.md)"
+    :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pb20' : 'pr5 pl5 pb10'" class="backgroundapp-color-1"
+    :slides-per-view="size.biggerThan(sizeType.xs) ? 2 : 1" speed="500" space-between="16" css-mode="true">
+    <swiper-slide class="height-inherit" v-for="(item, index) in data.people.items" :key="index">
+      <div class="height-100p" :class="{ 'disabled': item.disabled }" >
+      <Stack direction="column" justifyContent="flex-start"
+        alignItems="flex-start">
+        <div class="image1 image-fitparent-width" :style="{ 'background-image': 'url(' + item.img + ')' }"></div>
+        <Stack class="height-inherit" direction="column" justifyContent="space-between" alignItems="center">
+          <Txt line-height="24" class="mt4" :font=1 :color=2 text-align="center" :xs="16">{{ item.body1 }}</Txt>
+          <Stack class="height-initial mt4" direction="column" justifyContent="flex-start" alignItems="center">
+            <Txt bold :font=1 :color=2 text-align="center" :xs="24">{{ item.body2 }}</Txt>
+            <Txt class="mt1" :font=1 :color=2 text-align="center" :xs="20">{{ item.body3 }}</Txt>
+            <Stack class="mt5 height-initial" direction="row" justifyContent="center" alignItems="center">
+              <Appsvg v-for="index2 in item.starCount" :key="index2" class="ml1 mr1"
+                :class="item.disabled ? 'fillapp-color-3' : 'fillapp-color-7'" :xsw=30>
+                <IStar />
+              </Appsvg>
+            </Stack>
+          </Stack>
+        </Stack>
+      </Stack>
+    </div>
+    </swiper-slide>
+  </swiper-container>
 </template>

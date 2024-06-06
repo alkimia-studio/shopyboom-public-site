@@ -133,6 +133,6 @@ const shapeContainerMinHeight = {
     <BellStars />
     <Academy />
     <People />
-    <!-- <OpenShop />
-    <Opportunity /> -->
+    <OpenShop />
+    <Opportunity />
 </template>
