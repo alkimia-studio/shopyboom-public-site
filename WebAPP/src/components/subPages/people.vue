@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { useSizeStore, sizeType } from '@/helper/widthHandler'
 import data from '@/helper/data.json'
+import { useSliderPeople } from '@/helper/sliderPeople';
 const size = useSizeStore()
+const sliderPeople = useSliderPeople()
 </script>
 <template>
   <Stack :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pt20 pb10' : 'pr5 pl5 pt10 pb10'"
@@ -13,7 +15,7 @@ const size = useSizeStore()
   <Stack  v-if="size.biggerThan(sizeType.md)" :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pb20' : 'pr5 pl5 pb10'" class="width-100p backgroundapp-color-1" direction="column" justifyContent="center" alignItems="center">
     <Grid v-if="size.biggerThan(sizeType.md)" :class="size.biggerThan(sizeType.md) ? 'pb20' : 'pb10'" :gap="8" container
       :lg=4 :md=1>
-      <Grid :lg=1 :md=1 class="height-100p" v-for="(item, index) in data.people.items" :key="index"
+      <Grid :lg=1 :md=1 class="height-100p" v-for="(item, index) in sliderPeople.getSliderPeoples()" :key="index"
         :class="{ 'disabled': item.disabled }">
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
           <div class="image1 image-fitparent-width" :style="{ 'background-image': 'url(' + item.img + ')' }"></div>
@@ -37,7 +39,7 @@ const size = useSizeStore()
   <swiper-container v-if="!size.biggerThan(sizeType.md)"
     :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pb20' : 'pr5 pl5 pb10'" class="backgroundapp-color-1"
     :slides-per-view="size.biggerThan(sizeType.xs) ? 2 : 1" speed="500" space-between="16">
-    <swiper-slide class="height-inherit" v-for="(item, index) in data.people.items" :key="index">
+    <swiper-slide class="height-inherit" v-for="(item, index) in sliderPeople.getSliderPeoples()" :key="index">
       <div class="height-100p" :class="{ 'disabled': item.disabled }" >
       <Stack direction="column" justifyContent="flex-start"
         alignItems="flex-start">
