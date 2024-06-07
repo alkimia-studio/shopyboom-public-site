@@ -56,7 +56,7 @@ const onSubmit = () => {
           <Txt :font=1 :color=1 :xs="30" :lg="73">
             {{ data.opportunity.left.title2 }}
           </Txt>
-          <Txt :font=2 :color=3 :xs="62" :lg="73">
+          <Txt :font=2 :color=3 :xs="40" :lg="73">
             {{ data.opportunity.left.title3 }}
           </Txt>
         </Stack>

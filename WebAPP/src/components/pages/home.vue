@@ -28,9 +28,9 @@ const shapeContainerMinHeight = {
           data.home.part1.title1 }}</Txt>
     <Txt :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
       data.home.part1.title2 }}</Txt>
-    <Txt :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center" bold>{{
+    <Txt :class="size.biggerThan(sizeType.sm) ? '': 'pt20'" :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center" bold>{{
       data.home.part1.title3 }}</Txt>
-    <Txt :font="2" :color="3" :xl="134" :lg="110" :md="80" :sm="70" :xs="60" text-align="center" bold>{{
+    <Txt :class="size.biggerThan(sizeType.sm) ? '': 'pt5'" :font="2" :color="3" :xl="134" :lg="110" :md="80" :sm="70" :xs="60" text-align="center" bold>{{
       data.home.part1.title4 }}</Txt>
     <Txt :font="1" :color="5" :xl="33" :lg="28" :md="24" :sm="21" :xs="18" text-align="center">{{ data.home.part1.title5
       }}</Txt>
