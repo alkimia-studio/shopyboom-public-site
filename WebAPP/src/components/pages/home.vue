@@ -23,12 +23,12 @@ const shapeContainerMinHeight = {
 </script>
 <template>
   <Banner1 src="/images/image1.jpg" class="backgroundapp-color-11" :opacity=0.35>
-    <Txt :class="size.biggerThan(sizeType.md) ? 'pt40' : size.biggerThan(sizeType.sm) ? 'pt30' : size.biggerThan(sizeType.xs) ? 'pt35' : 'pt25'
+    <Txt :class="size.biggerThan(sizeType.md) ? 'pt30' : size.biggerThan(sizeType.sm) ? 'pt30' : size.biggerThan(sizeType.xs) ? 'pt35' : 'pt25'
       " :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
           data.home.part1.title1 }}</Txt>
-    <Txt :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
+    <Txt class="mt5" :font="1" :color="2" :xl="31" :lg="26" text-align="center" v-if="size.biggerThan(sizeType.md)">{{
       data.home.part1.title2 }}</Txt>
-    <Txt :class="size.biggerThan(sizeType.sm) ? '': 'pt20'" :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center" bold>{{
+    <Txt class="mt2" :class="size.biggerThan(sizeType.sm) ? '': 'pt20'" :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center" bold>{{
       data.home.part1.title3 }}</Txt>
     <Txt :class="size.biggerThan(sizeType.sm) ? '': 'pt5'" :font="2" :color="3" :xl="134" :lg="110" :md="80" :sm="70" :xs="60" text-align="center" bold>{{
       data.home.part1.title4 }}</Txt>

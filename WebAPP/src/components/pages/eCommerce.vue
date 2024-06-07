@@ -109,7 +109,7 @@ const shapeContainerMinHeight = {
                     </Shape>
                     <Shape page="ecommerce" part="part5" shape-name="rectangle2"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-                        <img class="shadow-3 round-3" src="/images/eCommerce/part5-img2.jpg" />
+                        <img class="shadow-3 round-3" src="/images/eCommerce/part5-img-2.jpg" />
                     </Shape>
                     <Shape page="ecommerce" part="part5" shape-name="rectangleRobot"
                         :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
