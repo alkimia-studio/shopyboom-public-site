@@ -28,10 +28,10 @@ useHead({
                     justifyContent="center" alignItems="center">
                     <Txt text-align="center" :color="2" :font=1 :xs="16">{{ item.title5 }}</Txt>
                 </Stack>
-                <Stack :class="item.title5 !== '' ? 'active borderapp-color-3' : 'border-top-12'"
-                    class="p4 height-inherit backgroundapp-color-21 hr1 piniacard shadow-3" direction="column"
+                <Stack :style="{'height': item.title5 !== '' ? 'calc(100% - (50px))' : 'inherit'}" :class="item.title5 !== '' ? 'active borderapp-color-3' : 'border-top-12'"
+                    class="p4 backgroundapp-color-21 hr1 piniacard shadow-3" direction="column"
                     justifyContent="flex-start" alignItems="flex-start">
-                    <Stack class="pb8 width-100p" direction="column" justifyContent="space-between" alignItems="center">
+                    <Stack :class="item.title5 !== '' ? 'height-100p': ''" class="pb8 width-100p" direction="column" justifyContent="space-between" alignItems="center">
                         <Stack class="width-100p" direction="column" justifyContent="flex-start" alignItems="flex-start">
                             <Txt bold class="mt2 mb2 width-100p" text-align="center" :font="1" :color="1" :xs="24">{{ item.title1 }}
                             </Txt>
@@ -54,17 +54,19 @@ useHead({
                                     <hr class="width-100p mt4" />
                                 </div>
                             </Stack>
+                        </Stack>
+                        <div class="width-100p">
                             <Stack class="width-100p" direction="row" justifyContent="center" alignItems="center">
                                 <Txt text-align="right" :xs="24" :md="24" :lg="30" :font="2" :color="1">{{ item.price1 }}</Txt>
                                 <Txt class="pl2 pr3" text-align="center" :xs="48" :md="48" :lg="60" :font="2" :color="1"bold>{{ item.price2 }}</Txt>
                                 <Txt text-align="left" :xs="24" :md="24" :lg="30" :font="2" :color="1">{{ item.price3 }}</Txt>
                             </Stack>
-                        </Stack>
-                        <div>
+                            <div class="text-align-center">
                             <Button1 :border=0 :color="2" :background="3" :hover-color="3" :hover-background="7"
                                 class="mt10 pr10 pl10">
                                 <Txt bold :font=1 :color=-1 :xs=16>{{ item.buttonRound }}</Txt>
                             </Button1>
+                            </div>
                         </div>
                     </Stack>
                 </Stack>
@@ -90,7 +92,7 @@ useHead({
                 <thead>
                     <tr>
                         <td class="pt10" v-for="(item, index) in data.piani.part4.headers" :key="index" style="text-align: center;">
-                            <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item }}</Txt>
+                            <Txt bold :font="1" :color="1" :md="24" :xs="6" :sm="12" text-align="center">{{ item }}</Txt>
                         </td>
                     </tr>
                 </thead>
@@ -129,7 +131,7 @@ useHead({
                             </td>
                             <td class="pt6 pb6" style="text-align: center;" v-else>
                                 <Stack direction="column" justifyContent="center" alignItems="center">
-                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item1 }}</Txt>
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="6" :sm="12" text-align="center">{{ item.item1 }}</Txt>
                                 </Stack>
                             </td>
                             <td class="pt6 pb6" v-if="item.item2 == true">
@@ -148,7 +150,7 @@ useHead({
                             </td>
                             <td class="pt6 pb6" style="text-align: center;" v-else>
                                 <Stack direction="column" justifyContent="center" alignItems="center">
-                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item2 }}</Txt>
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="6" :sm="12" text-align="center">{{ item.item2 }}</Txt>
                                 </Stack>
                             </td>
                             <td class="pt6 pb6" v-if="item.item3 === true">
@@ -167,7 +169,7 @@ useHead({
                             </td>
                             <td class="pt6 pb6" style="text-align: center;" v-else>
                                 <Stack direction="column" justifyContent="center" alignItems="center">
-                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item3 }}</Txt>
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="6" :sm="12" text-align="center">{{ item.item3 }}</Txt>
                                 </Stack>
                             </td>
                         </tr>
@@ -209,7 +211,7 @@ useHead({
                             </td>
                             <td class="pt6 pb6" style="text-align: center;" v-else>
                                 <Stack direction="column" justifyContent="center" alignItems="center">
-                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item1 }}</Txt>
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="6" :sm="12" text-align="center">{{ item.item1 }}</Txt>
                                 </Stack>
                             </td>
                             <td class="pt6 pb6" v-if="item.item2 === true">
@@ -228,7 +230,7 @@ useHead({
                             </td>
                             <td class="pt6 pb6" style="text-align: center;" v-else>
                                 <Stack direction="column" justifyContent="center" alignItems="center">
-                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item2 }}</Txt>
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="6" :sm="12" text-align="center">{{ item.item2 }}</Txt>
                                 </Stack>
                             </td>
                             <td class="pt6 pb6" v-if="item.item3 === true">
@@ -247,7 +249,7 @@ useHead({
                             </td>
                             <td class="pt6 pb6" style="text-align: center;" v-else>
                                 <Stack direction="column" justifyContent="center" alignItems="center">
-                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item3 }}</Txt>
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="6" :sm="12" text-align="center">{{ item.item3 }}</Txt>
                                 </Stack>
                             </td>
                         </tr>
@@ -289,7 +291,7 @@ useHead({
                             </td>
                             <td class="pt6 pb6" style="text-align: center;" v-else>
                                 <Stack direction="column" justifyContent="center" alignItems="center">
-                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item1 }}</Txt>
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="6" :sm="12" text-align="center">{{ item.item1 }}</Txt>
                                 </Stack>
                             </td>
                             <td class="pt6 pb6" v-if="item.item2 === true">
@@ -308,7 +310,7 @@ useHead({
                             </td>
                             <td class="pt6 pb6" style="text-align: center;" v-else>
                                 <Stack direction="column" justifyContent="center" alignItems="center">
-                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item2 }}</Txt>
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="6" :sm="12" text-align="center">{{ item.item2 }}</Txt>
                                 </Stack>
                             </td>
                             <td class="pt6 pb6" v-if="item.item3 === true">
@@ -327,7 +329,7 @@ useHead({
                             </td>
                             <td class="pt6 pb6" style="text-align: center;" v-else>
                                 <Stack direction="column" justifyContent="center" alignItems="center">
-                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item3 }}</Txt>
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="6" :sm="12" text-align="center">{{ item.item3 }}</Txt>
                                 </Stack>
                             </td>
                         </tr>
