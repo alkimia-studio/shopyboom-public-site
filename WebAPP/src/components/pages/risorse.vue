@@ -152,6 +152,6 @@ useHead({
             </div>
         </swiper-slide>
     </swiper-container>
-    <BellStars />
+    <OpenShop bellStars />
     <Opportunity />
 </template>

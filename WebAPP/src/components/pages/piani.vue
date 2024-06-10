@@ -19,8 +19,8 @@ useHead({
         <Txt text-align="center" :font=2 :color=3 :lg="100" :xs="56">{{ data.piani.part1.title1 }}</Txt>
         <Txt text-align="center" :font=1 :color=2 :lg="34" :xs="24">{{ data.piani.part1.title2 }}</Txt>
     </Stack>
-    <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35 mt30 mb30' : 'pr5 pl5 mt15 mb15'">
-        <Grid  class="width-100p" :gap="size.biggerThan(sizeType.md) ? 4 : 12" container :lg="3" :xs="1">
+    <Stack :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 mt30 mb30' : 'pr5 pl5 mt15 mb15'">
+        <Grid class="width-100p" :gap="size.biggerThan(sizeType.md) ? 4 : 12" container :lg="3" :xs="1">
             <Grid v-for="(item, index) in data.piani.part2.items" :key="index" :lg="1" :xs="1"
                 :class="item.title5 === '' ? 'height-100p' : ''"
                 :style="{ 'margin-top': item.title5 !== '' && size.biggerThan(sizeType.md) ? '-60px' : '' }">
@@ -33,7 +33,7 @@ useHead({
                     justifyContent="flex-start" alignItems="flex-start">
                     <Stack class="pb8 width-100p" direction="column" justifyContent="space-between" alignItems="center">
                         <Stack class="width-100p" direction="column" justifyContent="flex-start" alignItems="flex-start">
-                            <Txt class="mt2 mb2" text-align="center" :font="1" :color="1" :xs="24">{{ item.title1 }}
+                            <Txt bold class="mt2 mb2 width-100p" text-align="center" :font="1" :color="1" :xs="24">{{ item.title1 }}
                             </Txt>
                             <hr class="width-100p" />
                             <Stack class="pr10 pl10 pt10 pb8 width-100p" direction="column" justifyContent="flex-start"
@@ -46,7 +46,9 @@ useHead({
                                 <div v-for="(item2, index2) in item.list" :key="index2" class="width-inherit mt3 mb3">
                                     <Stack class="width-100p" direction="row" justifyContent="flex-start"
                                         alignItems="center">
-                                        <ITickFill />
+                                        <Appsvg :xsw="22" :lgw=20 :xlw=22>
+                                            <ITickFill />
+                                        </Appsvg>
                                         <Txt class="ml6" :xs="18" :font="1" :color="1">{{ item2 }}</Txt>
                                     </Stack>
                                     <hr class="width-100p mt4" />
@@ -87,8 +89,8 @@ useHead({
             <table class="table1 width-100p">
                 <thead>
                     <tr>
-                        <td v-for="(item, index) in data.piani.part4.headers" :key="index" style="text-align: center;">
-                            <Txt :font="1" :color="1" :md="16" :xs="12" text-align="center">{{ item }}</Txt>
+                        <td class="pt10" v-for="(item, index) in data.piani.part4.headers" :key="index" style="text-align: center;">
+                            <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item }}</Txt>
                         </td>
                     </tr>
                 </thead>
@@ -96,188 +98,248 @@ useHead({
                     <tr>
                         <td colspan="4">
                             <Stack class="pt12 pb6" direction="row" justifyContent="flex-start" alignItems="center">
-                                <Appsvg :xsw="30" :smw="40" :mdw=50 :lgw=60 :xlw=60>
+                                <Appsvg :xsw="30" :mdw=40>
                                     <IMarket />
                                 </Appsvg>
                                 <Txt bold class="ml3" :font="1" :color="1" :md="32" :xs="18">{{ data.piani.part4.items[0].headerItem }}</Txt>
                             </Stack>
                         </td>
                     </tr>
-                    <tr v-for="(item, index) in data.piani.part4.items[0].list" :key="index" class="">
-                        <td :class="size.biggerThan(sizeType.sm) ? 'width-50p': 'width-25p'" class="pt6 pb6">
-                            <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-                                <Txt bold :font="1" :color="1" :xs="16" :sm="24">{{ item.title1 }}</Txt>
-                                <Txt :font="1" :color="1" :xs="12" :sm="20">{{ item.body1 }}</Txt>
-                            </Stack>
-                        </td>
-                        <td class="pt6 pb6" v-if="item.item1">
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="22" :smw="30">
-                                    <ITickFill />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td class="pt6 pb6" v-else>
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="16" :smw="20">
-                                    <IX />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td class="pt6 pb6" v-if="item.item2">
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="22" :smw="30">
-                                    <ITickFill />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td class="pt6 pb6" v-else>
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="16" :smw="20">
-                                    <IX />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td class="pt6 pb6" v-if="item.item3">
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="22" :smw="30">
-                                    <ITickFill />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td class="pt6 pb6" v-else>
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="16" :smw="20">
-                                    <IX />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                    </tr>
+                    <template v-for="(item, index) in data.piani.part4.items[0].list" :key="index">
+                        <tr>
+                            <td :class="size.biggerThan(sizeType.sm) ? 'width-50p': 'width-25p'" class="pt6 pb6">
+                                <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
+                                    <Txt bold :font="1" :color="1" :xs="16" :sm="24">{{ item.title1 }}</Txt>
+                                    <Txt class="mt3" :font="1" :color="1" :xs="12" :sm="16">{{ item.body1 }}</Txt>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-if="item.item1 === true">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="22" :smw="30">
+                                        <ITickFill />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-else-if="item.item1 === false">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="16" :smw="20">
+                                        <IX />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" style="text-align: center;" v-else>
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item1 }}</Txt>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-if="item.item2 == true">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="22" :smw="30">
+                                        <ITickFill />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-else-if="item.item2 === false">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="16" :smw="20">
+                                        <IX />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" style="text-align: center;" v-else>
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item2 }}</Txt>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-if="item.item3 === true">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="22" :smw="30">
+                                        <ITickFill />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-else-if="item.item3 === false">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="16" :smw="20">
+                                        <IX />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" style="text-align: center;" v-else>
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item3 }}</Txt>
+                                </Stack>
+                            </td>
+                        </tr>
+                        <tr>
+                           <td colspan="4"> <hr class="hr1 width-100p" /></td> 
+                        </tr>
+                    </template>
                     <tr>
                         <td colspan="4">
                             <Stack  class="pt12 pb6" direction="row" justifyContent="flex-start" alignItems="center">
-                                <Appsvg :xsw="30" :smw="40" :mdw=50 :lgw=60 :xlw=60>
+                                <Appsvg :xsw="30" :mdw=40>
                                     <ISpeaker />
                                 </Appsvg>
                                 <Txt bold class="ml3" :font="1" :color="1" :xs="20" :sm="32">{{ data.piani.part4.items[1].headerItem }}</Txt>
                             </Stack>
                         </td>
                     </tr>
-                    <tr v-for="(item, index) in data.piani.part4.items[1].list" :key="index" class="">
-                        <td :class="size.biggerThan(sizeType.sm) ? 'width-50p': 'width-25p'" class="pt6 pb6">
-                            <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-                                <Txt bold :font="1" :color="1" :xs="16" :sm="24">{{ item.title1 }}</Txt>
-                                <Txt :font="1" :color="1" :xs="12" :sm="20">{{ item.body1 }}</Txt>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-if="item.item1">
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="22" :smw="30">
-                                    <ITickFill />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-else>
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="16" :smw="20">
-                                    <IX />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-if="item.item2">
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="22" :smw="30">
-                                    <ITickFill />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-else>
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="16" :smw="20">
-                                    <IX />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-if="item.item3">
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="22" :smw="30">
-                                    <ITickFill />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-else>
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="16" :smw="20">
-                                    <IX />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                    </tr>
+                    <template v-for="(item, index) in data.piani.part4.items[1].list" :key="index">
+                        <tr>
+                            <td :class="size.biggerThan(sizeType.sm) ? 'width-50p': 'width-25p'" class="pt6 pb6">
+                                <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
+                                    <Txt bold :font="1" :color="1" :xs="16" :sm="24">{{ item.title1 }}</Txt>
+                                    <Txt class="mt3" :font="1" :color="1" :xs="12" :sm="16">{{ item.body1 }}</Txt>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-if="item.item1 === true">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="22" :smw="30">
+                                        <ITickFill />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-else-if="item.item1 === false">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="16" :smw="20">
+                                        <IX />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" style="text-align: center;" v-else>
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item1 }}</Txt>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-if="item.item2 === true">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="22" :smw="30">
+                                        <ITickFill />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-else-if="item.item2 === false">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="16" :smw="20">
+                                        <IX />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" style="text-align: center;" v-else>
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item2 }}</Txt>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-if="item.item3 === true">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="22" :smw="30">
+                                        <ITickFill />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-else-if="item.item3 === false">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="16" :smw="20">
+                                        <IX />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" style="text-align: center;" v-else>
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item3 }}</Txt>
+                                </Stack>
+                            </td>
+                        </tr>
+                        <tr>
+                           <td colspan="4"> <hr class="hr1 width-100p" /></td> 
+                        </tr>
+                    </template>
                     <tr>
                         <td colspan="4">
                             <Stack class="pt12 pb6" direction="row" justifyContent="flex-start" alignItems="center">
-                                <Appsvg :xsw="30" :smw="40" :mdw=50 :lgw=60 :xlw=60>
+                                <Appsvg :xsw="30" :mdw=40>
                                     <IWheel />
                                 </Appsvg>
                                 <Txt bold class="ml3" :font="1" :color="1" :xs="20" :sm="32">{{ data.piani.part4.items[2].headerItem }}</Txt>
                             </Stack>
                         </td>
                     </tr>
-                    <tr v-for="(item, index) in data.piani.part4.items[2].list" :key="index" class="">
-                        <td :class="size.biggerThan(sizeType.sm) ? 'width-50p': 'width-25p'" class="pt6 pb6">
-                            <Stack  direction="column" justifyContent="flex-start" alignItems="flex-start">
-                                <Txt bold :font="1" :color="1" :xs="16" :sm="24">{{ item.title1 }}</Txt>
-                                <Txt :font="1" :color="1" :xs="12" :sm="20">{{ item.body1 }}</Txt>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-if="item.item1">
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="22" :smw="30">
-                                    <ITickFill />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-else>
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="16" :smw="20">
-                                    <IX />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-if="item.item2">
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="22" :smw="30">
-                                    <ITickFill />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-else>
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="16" :smw="20">
-                                    <IX />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-if="item.item3">
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="22" :smw="30">
-                                    <ITickFill />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                        <td  class="pt6 pb6" v-else>
-                            <Stack direction="column" justifyContent="center" alignItems="center">
-                                <Appsvg :xsw="16" :smw="20">
-                                    <IX />
-                                </Appsvg>
-                            </Stack>
-                        </td>
-                    </tr>
+                    <template v-for="(item, index) in data.piani.part4.items[2].list" :key="index">
+                        <tr>
+                            <td :class="size.biggerThan(sizeType.sm) ? 'width-50p': 'width-25p'" class="pt6 pb6">
+                                <Stack  direction="column" justifyContent="flex-start" alignItems="flex-start">
+                                    <Txt bold :font="1" :color="1" :xs="16" :sm="24">{{ item.title1 }}</Txt>
+                                    <Txt class="mt3" :font="1" :color="1" :xs="12" :sm="16">{{ item.body1 }}</Txt>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-if="item.item1 === true">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="22" :smw="30">
+                                        <ITickFill />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-else-if="item.item1 === false">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="16" :smw="20">
+                                        <IX />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" style="text-align: center;" v-else>
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item1 }}</Txt>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-if="item.item2 === true">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="22" :smw="30">
+                                        <ITickFill />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-else-if="item.item2 === false">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="16" :smw="20">
+                                        <IX />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" style="text-align: center;" v-else>
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item2 }}</Txt>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-if="item.item3 === true">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="22" :smw="30">
+                                        <ITickFill />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" v-else-if="item.item3 === false">
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Appsvg :xsw="16" :smw="20">
+                                        <IX />
+                                    </Appsvg>
+                                </Stack>
+                            </td>
+                            <td class="pt6 pb6" style="text-align: center;" v-else>
+                                <Stack direction="column" justifyContent="center" alignItems="center">
+                                    <Txt bold :font="1" :color="1" :md="24" :xs="18" text-align="center">{{ item.item3 }}</Txt>
+                                </Stack>
+                            </td>
+                        </tr>
+                        <tr>
+                           <td colspan="4"> <hr class="hr1 width-100p" /></td> 
+                        </tr>
+                    </template>
                 </tbody>
             </table>
         </Stack>
     </Stack>
-    <OpenShop />
+    <OpenShop bellStars />
     <Academy />
     <People />
     <Opportunity />

@@ -134,21 +134,21 @@
                 {
                     "title1":"Shopping",
                     "title2":"Academy",
-                    "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                    "body1":"Scopri i tutorial video sull’utilizzo di Shopyboom e su come promuovere il tuo negozio.",
                     "buttonRound":"Vai",
                     "url": "/shopping-academy"
                 },
                 {
                     "title1":"Domande frequenti",
                     "title2":"FAQ",
-                    "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                    "body1":"Trova le risposte alle domande più frequenti nella sezione dedicata.",
                     "buttonRound":"Vai",
                     "url": "/faq"
                 },
                 {
                     "title1":"Centro",
                     "title2":"Supporto",
-                    "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+                    "body1":"Hai bisogno di supporto? Leggi la documentazione che abbiamo preparato o chiedi direttamente alla nostra chat AI.",
                     "buttonRound":"Vai",
                     "url": "/supporto"
 
@@ -161,7 +161,7 @@
                 "title2":"Per iniziare..."
             },
             "right":{
-                "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                "body1":"Scopri tutti i video tutorial che abbiamo preparato per te: seguili ad ogni passo, dalla creazione del negozio alla sua promozione."
             }
         },
         "part4":{
@@ -170,25 +170,25 @@
                     "img": "/images/girl.png",
                     "url": "/",
                     "title1": "Crea il tuo sito",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    "body1": "4 semplici passaggi per creare il tuo e-commerce online, inserisci i tuoi dati, scegli lo stile che preferisci e personalizzalo. Iniziamo!"
                 },
                 {
                     "img": "/images/girl.png",
                     "url": "/",
                     "title1": "Gestisci il catalogo",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    "body1": "Inserisci i prodotti che vuoi vendere nel tuo e-shop, carica foto e descrizioni, l'intelligenza artificiale ti aiuterà a mostrarli al meglio ai tuoi clienti."
                 },
                 {
                     "img": "/images/girl.png",
                     "url": "/",
                     "title1": "Gestisci gli ordini",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    "body1": "Ora inizia la parte migliore: la vendita! Shopyboom gestisce i tuoi ordini ed i clienti in modo semplice ed organizzato, scopri come!"
                 },
                 {
                     "img": "/images/girl.png",
                     "url": "/",
                     "title1": "Promuovi il tuo sito",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    "body1": "È importante promuovere il tuo negozio online, per farlo conoscere a nuovi clienti ed aumentare le vendite e potrai fare tutto attraverso la piattaforma."
                 }
             ]
         }
@@ -205,14 +205,19 @@
                     "title2":"",
                     "title3":"",
                     "title4":"",
-                    "title5": "",
+                    "title5":"",
                     "list":[
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet"
+                        "Gestione negozio da qualsiasi dispositivo",
+                        "Numero di prodotti illimitati",
+                        "Assistenza mail Standard",
+                        "Assistenza chatbot",
+                        "Reportistica standard",
+                        "1 Magazzino",
+                        "Modulo Newsletter",
+                        "Strumenti Marketing Standard",
+                        "Suggerimenti per attività di comunicazione",
+                        "Accesso collaboratori esterni",
+                        "Free Hosting"
                     ],
                     "price1": "€",
                     "price2": "15",
@@ -226,12 +231,16 @@
                     "title4":"ed inoltre...",
                     "title5": "Più popolare",
                     "list":[
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet"
+                        "3 account collaboratori aziendali con ruoli diversi",
+                        "Assistenza mail Premium",
+                        "5 magazzini",
+                        "Strumenti Marketing Avanzati",
+                        "Mail per recupero del carrello",
+                        "Codici sconto",
+                        "Buoni regalo",
+                        "Prodotti a tempo",
+                        "Promozioni a tempo",
+                        "Intregrazione Instagram, Facebook e Google Shopping"
                     ],
                     "price1": "€",
                     "price2": "23",
@@ -245,12 +254,14 @@
                     "title4":"e in più...",
                     "title5":"",
                     "list":[
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet",
-                        "Lorem ipsum dolor sit amet"
+                        "Account collaboratori aziendali illimitati",
+                        "Assistenza mail Pro",
+                        "Reportistica Avanzata",
+                        "20 Magazzini",
+                        "Strumenti Marketing Pro",
+                        "Abbonamenti acquisti ricorrenti",
+                        "WhatsApp per comunicazioni con cliente (a pagamento)",
+                        "Possibilità di personalizzare il sito su richiesta"
                     ],
                     "price1": "€",
                     "price2": "45",
@@ -279,38 +290,87 @@
                     "headerItem": "Negozio online",
                     "list":[
                         {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "title1": "Numero di prodotti Illiminati",
+                            "body1": "Potrai caricare sul tuo e-commerce tutti i prodotti che vorrai, senza alcun limite di quantità.",
+                            "item1": true,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Account collaboratori esterni",
+                            "body1": "Creazione account per collaboratori esterni con accesso gratuito",
+                            "item1": true,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Account collaboratori aziendali",
+                            "body1": "Creazione account collaboratori aziendali con differenti ruoli",
+                            "item1": false,
+                            "item2": "3",
+                            "item3": "Illimitati"
+                        },
+                        {
+                            "title1": "Reportistica",
+                            "body1": "Report sugli andamenti del fatturato, degli ordini, dei prodotti e dei clienti",
+                            "item1": "Standard",
+                            "item2": "Standard",
+                            "item3": "Avanzata"
+                        },
+                        {
+                            "title1": "Magazzino",
+                            "body1": "Possibilità di gestire ordini da magazzini in località diverse",
+                            "item1": "1",
+                            "item2": "5",
+                            "item3": "20"
+                        },
+                        {
+                            "title1": "Free Hosting",
+                            "body1": "Il canone di hosting per pubblicare il tuo sito è incluso",
+                            "item1": true,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Account dei clienti",
+                            "body1": "Creazione account illimitato",
+                            "item1": true,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Gestione negozio da qualsiasi dispositivo",
+                            "body1": "",
+                            "item1": true,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Modulo di registrazione alla Newsletter",
+                            "body1": "Potrai raccogliere le email degli utenti del tuo sito per l’invio di comunicazioni commerciali",
+                            "item1": true,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Powered by Shopyboom",
+                            "body1": "Link al sito Shopyboom.it nel piè di pagina del negozio",
+                            "item1": "Obbligatorio",
+                            "item2": "Rimovibile",
+                            "item3": "Rimovibile"
+                        },
+                        {
+                            "title1": "Prodotti a tempo",
+                            "body1": "Possibilità di mostrare alcuni prodotti solo per un limitato periodo di tempo",
                             "item1": false,
                             "item2": true,
                             "item3": true
                         },
                         {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "title1": "Personalizzazione del sito su richiesta",
+                            "body1": "Possibilità di richiedere personalizzazione dello stile e delle funzionalità del negozio (a pagamento)",
                             "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                            "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                            "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                            "item1": false,
-                            "item2": true,
+                            "item2": false,
                             "item3": true
                         }
                     ]	
@@ -319,38 +379,80 @@
                     "headerItem": "Promozione",
                     "list":[
                         {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "title1": "Campagna promozionale Standard",
+                            "body1": "Possibilità di inviare mail promozionale ad una lista di clienti personalizzabile: 100 email/mese",
+                            "item1": true,
+                            "item2": false,
+                            "item3": false
+                        },
+                        {
+                            "title1": "Campagna promozionale Avanzata",
+                            "body1": "Possibilità di inviare mail promozionale ad una lista di clienti personalizzabile: 500 email/mese, Contenuti per email più ricchi e generati tramite AI",
+                            "item1": false,
+                            "item2": true,
+                            "item3": false
+                        },
+                        {
+                            "title1": "Campagna promozionale Pro",
+                            "body1": "Possibilità di inviare mail promozionale ad una lista di clienti personalizzabile: 10000 email/mese, Contenuti per email più ricchi e generati tramite AI",
+                            "item1": false,
+                            "item2": false,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Suggerimenti comunicazione ai clienti",
+                            "body1": "Suggerimenti di best practice per le attività di comunicazione ai clienti",
+                            "item1": true,
+                            "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Mail di recupero del Carrello",
+                            "body1": "Mail automatica che arriverà al cliente dopo 1 ora, 1 giorno e 3 giorni dall’abbandono del carrello, nel caso in cui l’acquisto sia stato interrotto",
                             "item1": false,
                             "item2": true,
                             "item3": true
                         },
                         {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "title1": "Codici sconto",
+                            "body1": "Possibilità di creare codici sconto per promozioni su prodotti, categorie e importo dell’ordine",
                             "item1": false,
                             "item2": true,
                             "item3": true
                         },
                         {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "title1": "Buoni regalo",
+                            "body1": "Possibilità di vendita di buoni regalo di diversi importi",
                             "item1": false,
                             "item2": true,
                             "item3": true
                         },
                         {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "title1": "Promozioni a tempo",
+                            "body1": "Possibilità di creare promozioni su prodotti, categorie, importo dell’ordine con scadenza temporale",
                             "item1": false,
                             "item2": true,
                             "item3": true
                         },
                         {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "title1": "Abbonamenti acquisti ricorrenti",
+                            "body1": "Possibilità di impostare abbonamenti per acquisti ricorrenti con differenti cadenze temporali",
+                            "item1": false,
+                            "item2": false,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Integrazione Instagram, Facebook e Google Shopping",
+                            "body1": "Il tuo catalogo prodotti verrà automaticamente pubblicato nei marketplace Instagram, Facebook e nella sezione gratuita Google Shopping",
                             "item1": false,
                             "item2": true,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Possibilità di integrare WhatsApp",
+                            "body1": "Integrazione di WhatsApp per gestire le comunicazioni con i clienti",
+                            "item1": false,
+                            "item2": false,
                             "item3": true
                         }
                     ]	
@@ -359,37 +461,37 @@
                     "headerItem": "Supporto",
                     "list":[
                         {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+                            "title1": "Assistenza email Standard",
+                            "body1": "Risposta in 48 ore lavorative (esclusi giorni festivi), Massimo 10 Mail al mese",
+                            "item1": true,
+                            "item2": false,
+                            "item3": false
+                        },
+                        {
+                            "title1": "Assistenza email Avanzata",
+                            "body1": "Risposta in 24 ore lavorative (esclusi giorni festivi), Assistenza telefonica a pagamento in orari prefissati",
                             "item1": false,
+                            "item2": true,
+                            "item3": false
+                        },
+                        {
+                            "title1": "Assistenza email Pro",
+                            "body1": "Assistenza mail  prioritaria (esclusi giorni festivi), Assistenza telefonica a pagamento in orari prefissati",
+                            "item1": false,
+                            "item2": false,
+                            "item3": true
+                        },
+                        {
+                            "title1": "Assistenza Chatbot",
+                            "body1": "Assistenza tramite Chatbot integrato con Intelligenza Artificiale sempre a tua disposizione",
+                            "item1": true,
                             "item2": true,
                             "item3": true
                         },
                         {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                            "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                            "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                            "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Caratteristica numero uno",
-                            "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-                            "item1": false,
+                            "title1": "Shopping Academy",
+                            "body1": "Accesso a tutti i contenti della Shopping Academy, dove potrai trovare tutorial video sull’utilizzo di Shopyboom e su come promuovere il tuo negozio",
+                            "item1": true,
                             "item2": true,
                             "item3": true
                         }

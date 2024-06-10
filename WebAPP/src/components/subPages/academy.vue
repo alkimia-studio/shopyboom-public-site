@@ -15,7 +15,7 @@ const size = useSizeStore()
           <Txt line-height="50" bold class="" :font=1 :color=1 :xs="30" :lg="67">
             {{ data.academy.left.title1 }}
           </Txt>
-          <Txt :line-height="size.biggerThan(sizeType.md) ? 150 : 70" :font=2 :color=3 :xs="62" :lg="110">
+          <Txt bold :line-height="size.biggerThan(sizeType.md) ? 150 : 70" :font=2 :color=3 :xs="62" :lg="110">
             {{ data.academy.left.title2 }}
           </Txt>
         </Stack>

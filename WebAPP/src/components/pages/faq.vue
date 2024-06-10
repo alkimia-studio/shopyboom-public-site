@@ -26,6 +26,6 @@ useHead({
             <Txt :font="1" :color="1" :xs="16"> {{ item.answer }}</Txt>
         </Accordion1>
     </Stack>
-    <BellStars />
+    <OpenShop bellStars />
     <Opportunity />
 </template>

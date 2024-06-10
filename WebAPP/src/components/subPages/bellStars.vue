@@ -6,7 +6,7 @@ import data from '@/helper/data.json'
       <Stack class="backgroundapp-color-3 width-100p" direction="column" justifyContent="center" alignItems="center">
     <div class="width-100p">
       <ShapeContainer class="backgroundapp-color-3" :xlh="100" :lgh="100" :mdh="130" :smh="130" :xsh="120">
-        <Shape page="home" part="part9" shape-name="3stars" stick-v="right">
+        <Shape page="bellStars" part="part1" shape-name="3stars" stick-v="right">
           <img src="/svgs/3stars.svg" />
         </Shape>
       </ShapeContainer>
@@ -20,7 +20,7 @@ import data from '@/helper/data.json'
     </div>
     <div class="width-100p">
       <ShapeContainer class="backgroundapp-color-3" :xlh="100" :lgh="120" :mdh="200" :smh="220" :xsh="180">
-        <Shape page="home" part="part9" shape-name="bellCropped" stick-v="left">
+        <Shape page="bellStars" part="part1" shape-name="bellCropped" stick-v="left">
           <img src="/svgs/bellCropped.svg" />
         </Shape>
       </ShapeContainer>
