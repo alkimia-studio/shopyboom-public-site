@@ -1,9 +1,15 @@
 <script setup lang="ts">
 import { useSizeStore, sizeType } from '@/helper/widthHandler'
+import { useScrollStore } from '@/helper/scrollHandler'
 import { useHead } from '@unhead/vue'
 import { ChevronRightIcon, ArrowLongDownIcon } from '@heroicons/vue/24/solid'
 import data from '@/helper/data.json'
+import { onBeforeMount, ref } from 'vue'
 const size = useSizeStore()
+const scroll = useScrollStore()
+onBeforeMount(()=>{
+  scroll.enablePrint()
+})
 useHead({
   title: 'this is title',
   meta: [
@@ -13,6 +19,7 @@ useHead({
     }
   ]
 })
+
 const shapeContainerMinHeight = {
   xlh: 1,
   lgh: 1,
@@ -50,8 +57,10 @@ const shapeContainerMinHeight = {
     <Grid class="mt20" container :xl=2 :lg=1>
       <Grid :xl=1 :lg=1>
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Txt :font=1 :color=1 :lg=74 :md=50 :xs=30>{{ data.home.part2.left.title1 }}</Txt>
-          <Txt :font=2 :color=3 :lg=80 :md=64 :xs=42>{{ data.header.sitename }}</Txt>
+          <Anim page="home" part="part2" comp="title1">
+            <Txt :font=1 :color=1 :lg=74 :md=50 :xs=30>{{ data.home.part2.left.title1 }}</Txt>
+          </Anim>
+            <Txt :font=2 :color=3 :lg=80 :md=64 :xs=42>{{ data.header.sitename }}</Txt>
         </Stack>
       </Grid>
       <Grid :xl=1 :lg=1>
@@ -63,6 +72,7 @@ const shapeContainerMinHeight = {
             justifyContent="flex-start" alignItems="flex-start">
             <a class="pt4 pb4 width-100p" :href="item.url">
             <Stack direction="row" justifyContent="space-between" alignItems="center">
+              
               <Txt :font=1 :color=1 :md=24 :xs=18 bold>{{ item.text }}</Txt>
                 <Appsvg :color=3 :xsw=35>
                   <ChevronRightIcon />
@@ -74,7 +84,7 @@ const shapeContainerMinHeight = {
         </Stack>
       </Grid>
     </Grid>
-    <Stack :direction="size.biggerThan(sizeType.sm) ? 'row' : 'column'" class="width-100p pt30 pb30"
+    <Stack :direction="size.biggerThan(sizeType.sm) ? 'row' : 'column'" :class="enableScroll ? 'fade-in' : 'opacity-0'" class="width-100p pt30 pb30"
       justifyContent="center" alignItems="center">
       <Txt class="pr2 word-no-break" :text-align="size.biggerThan(sizeType.sm) ? 'right' : 'center'" :font=1 :color=1
         :lg=48 :md=30 :sm=30 :xs=24>{{

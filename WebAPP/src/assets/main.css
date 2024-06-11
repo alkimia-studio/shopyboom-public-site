@@ -73,7 +73,35 @@ button.button1 {
   70% { opacity: 1;  margin-top:60px;}
   100% { opacity: 0; margin-top:60px;}
 }
-
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+@keyframes fadeOutAnimation {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+.opacity-0{
+  opacity: 0;
+}
+.fade-in{
+  animation: fadeInAnimation ease-in 0.6s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.fade-out{
+  animation: fadeOutAnimation ease-in 0.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 .openBar {
   position: fixed;
   z-index: 10;

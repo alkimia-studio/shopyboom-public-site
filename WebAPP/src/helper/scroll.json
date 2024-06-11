@@ -1,0 +1,16 @@
+{
+    "home": {
+        "part2": {
+            "title1":{
+                "utb": "fade-in",
+                "btu": "fade-out",
+                "onetime": false,
+                "xly": 120,
+                "lgy": 133,
+                "mdy": -1,
+                "smy": -1,
+                "xsy": -1
+            }
+        }
+    }
+}

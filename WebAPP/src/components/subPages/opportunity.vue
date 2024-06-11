@@ -67,7 +67,7 @@ const onSubmit = () => {
           <Txt class="mt10" :font=1 :color=1 :xs="18" :lg="24">
             {{ data.opportunity.right.body1 }}
           </Txt>
-          <input v-model="formData.email.value" :class="{'error': formData.email.error}" class="input1 textapp-color-1 font-1 borderapp-color-5 mt6"
+          <input @keyup="()=>{ formData.email.error = false}" v-model="formData.email.value" :class="{'error': formData.email.error}" class="input1 textapp-color-1 font-1 borderapp-color-5 mt6"
             :placeholder="data.opportunity.right.placeholder" />
           <div>
             <Button1 @click="()=>{onSubmit()}" :border=0 :color="2" :background="3" :hover-color="3" :hover-background="7"

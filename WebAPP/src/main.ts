@@ -17,6 +17,7 @@ import appsvg from '@/components/subComponents/appsvg.vue'
 import accordion1 from '@/components/subComponents/accordion1.vue'
 import shape from '@/components/subComponents/shape.vue'
 import shapeContainer from '@/components/subComponents/shapeContainer.vue'
+import anim from '@/components/subComponents/anim.vue'
 
 import iconArrowDown from '@/components/icons/iconArrowDown.vue'
 import iconShopyBoom from '@/components/icons/iconShopyBoom.vue'
@@ -69,6 +70,7 @@ app.component('Appsvg', appsvg)
 app.component('Accordion1', accordion1)
 app.component('Shape', shape)
 app.component('ShapeContainer', shapeContainer)
+app.component('Anim', anim)
 
 app.component('IArrowDown', iconArrowDown)
 app.component('IShopyBoom', iconShopyBoom)
