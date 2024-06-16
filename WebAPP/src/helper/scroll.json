@@ -10,6 +10,16 @@
                 "mdy": -1,
                 "smy": -1,
                 "xsy": -1
+            },
+            "title2":{
+                "utb": "animate__animated animate__bounce",
+                "btu": "opacity-0",
+                "onetime": false,
+                "xly": 120,
+                "lgy": 133,
+                "mdy": -1,
+                "smy": -1,
+                "xsy": -1
             }
         }
     }
