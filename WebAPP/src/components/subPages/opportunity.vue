@@ -47,7 +47,7 @@ const onSubmit = () => {
 <template>
   <Stack :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pt40 pb40' : 'pr5 pl5 pt20 pb20'" direction="column"
     justifyContent="flex-start" class="backgroundapp-color-2" alignItems="flex-start">
-    <Grid container :lg=2 :md=1>
+    <Grid class="width-100p" container :lg=2 :md=1>
       <Grid :lg=1 :md=1>
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
           <Txt :font=1 :color=1 :xs="30" :lg="73">

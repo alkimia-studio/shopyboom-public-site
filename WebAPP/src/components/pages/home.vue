@@ -54,7 +54,7 @@ const shapeContainerMinHeight = {
   </Banner1>
   <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5'" direction="column" justifyContent="flex-start"
     alignItems="flex-start">
-    <Grid class="mt20" container :xl=2 :lg=1>
+    <Grid class="mt20 width-100p" container :xl=2 :lg=1>
       <Grid :xl=1 :lg=1>
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
           <Anim when="scroll" scroll-page="home" scroll-part="part2" scroll-comp="title1">

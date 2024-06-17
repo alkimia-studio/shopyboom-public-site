@@ -21,7 +21,7 @@ useHead({
     </Stack>
     <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35 pt20' : 'pr5 pl5 pt20'" direction="column"
         justifyContent="flex-start" class="backgroundapp-color-2" alignItems="flex-start">
-        <Grid :class="size.biggerThan(sizeType.lg) ? 'mt40' : ''" container :lg="2" :xs="1">
+        <Grid class="width-100p" :class="size.biggerThan(sizeType.lg) ? 'mt40' : ''" container :lg="2" :xs="1">
             <Grid :lg="1" :xs="1">
                 <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
                     <Txt bold :font=1 :color=1 :xs="35" :lg="60">
@@ -37,7 +37,7 @@ useHead({
                 </Stack>
             </Grid>
         </Grid>
-        <Grid class="mt34 pb20" v-if="size.biggerThan(sizeType.md)" :gap="10" container :lg="4" :xs="1">
+        <Grid class="mt34 pb20 width-100p" v-if="size.biggerThan(sizeType.md)" :gap="10" container :lg="4" :xs="1">
             <Grid v-for="(item, index) in data.shoppingAcademy.part2.items" :key="index" :lg="1" :xs="1">
                 <div class="position-relative">
                     <div class="backgroundapp-color-1 image2-border-radius">
@@ -80,7 +80,7 @@ useHead({
     </swiper-container>
     <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5 '" direction="column"
         justifyContent="flex-start" class="backgroundapp-color-2" alignItems="flex-start">
-        <Grid class="mt40" container :lg="2" :xs="1">
+        <Grid class="mt40 width-100p" container :lg="2" :xs="1">
             <Grid :lg="1" :xs="1">
                 <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
                     <Txt bold :font=1 :color=1 :xs="35" :lg="60">
@@ -96,7 +96,7 @@ useHead({
                 </Stack>
             </Grid>
         </Grid>
-        <Grid class="mt34" v-if="size.biggerThan(sizeType.md)" :gap="10" container :lg="4" :xs="1">
+        <Grid class="mt34 width-100p" v-if="size.biggerThan(sizeType.md)" :gap="10" container :lg="4" :xs="1">
             <Grid v-for="(item, index) in data.shoppingAcademy.part3.items" :key="index" :lg="1" :xs="1">
                 <div class="position-relative">
                     <div class="backgroundapp-color-1 image2-border-radius">
@@ -139,7 +139,7 @@ useHead({
     </swiper-container>
     <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5 '" direction="column"
         justifyContent="flex-start" class="backgroundapp-color-2" alignItems="flex-start">
-        <Grid class="mt40" container :lg="2" :xs="1">
+        <Grid class="mt40 width-100p" container :lg="2" :xs="1">
             <Grid :lg="1" :xs="1">
                 <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
                     <Txt bold :font=1 :color=1 :xs="35" :lg="60">
@@ -155,7 +155,7 @@ useHead({
                 </Stack>
             </Grid>
         </Grid>
-        <Grid class="mt34 pb20" v-if="size.biggerThan(sizeType.md)" :gap="10" container :lg="4" :xs="1">
+        <Grid class="mt34 pb20 width-100p" v-if="size.biggerThan(sizeType.md)" :gap="10" container :lg="4" :xs="1">
             <Grid v-for="(item, index) in data.shoppingAcademy.part4.items" :key="index" :lg="1" :xs="1">
                 <div class="position-relative">
                     <div class="backgroundapp-color-1 image2-border-radius">

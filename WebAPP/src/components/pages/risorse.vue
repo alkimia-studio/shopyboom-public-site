@@ -21,7 +21,7 @@ useHead({
     </Stack>
     <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35 pt20' : 'pr5 pl5 pt20 '" direction="column"
         justifyContent="flex-start" class="backgroundapp-color-2" alignItems="flex-start">
-        <Grid class="height-100p" container :gap="20" :lg="3" :xs="1">
+        <Grid class="height-100p width-100p" container :gap="20" :lg="3" :xs="1">
             <Grid :lg="1" :xs="1">
                 <Stack class="height-100p" direction="column" justifyContent="flex-start" alignItems="flex-start">
                     <Stack class="pb8 width-100p" direction="column" justifyContent="space-between" alignItems="flex-start">
@@ -107,7 +107,7 @@ useHead({
                 </Stack>
             </Grid>
         </Grid>
-        <Grid class="mt40 mb20" container :lg="2" :xs="1">
+        <Grid class="mt40 mb20 width-100p" container :lg="2" :xs="1">
             <Grid :lg="1" :xs="1">
                 <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
                     <Txt :font=1 :color=1 :xs="25" :lg="40">
@@ -126,7 +126,7 @@ useHead({
                 </Stack>
             </Grid>
         </Grid>
-        <Grid v-if="size.biggerThan(sizeType.md)" class="mb20" :gap="10" container :lg="4" :xs="1">
+        <Grid v-if="size.biggerThan(sizeType.md)" class="mb20 width-100p" :gap="10" container :lg="4" :xs="1">
             <Grid v-for="(item, index) in data.risorse.part4.items" :key="index" :lg="1" :xs="1">
                 <div class="position-relative">
                     <div class="backgroundapp-color-1 image2-border-radius">

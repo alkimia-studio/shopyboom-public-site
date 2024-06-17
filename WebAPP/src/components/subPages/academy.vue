@@ -6,7 +6,7 @@ const size = useSizeStore()
 <template>
       <Stack :class="size.biggerThan(sizeType.md) ? 'pr35 pl35 pt50 pb50' : 'pr5 pl5'" direction="column"
     justifyContent="flex-start" class="backgroundapp-color-2" alignItems="flex-start">
-    <Grid container :lg=2 :md=1>
+    <Grid class="width-100p" container :lg=2 :md=1>
       <Grid :lg=1 :md=1>
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
           <Appsvg class="fillapp-color-3" :class="size.biggerThan(sizeType.lg) ? 'mb8' : 'mt10 mb4'" :xsw=60 :lgw=80>
