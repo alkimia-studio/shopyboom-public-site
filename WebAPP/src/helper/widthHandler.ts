@@ -41,6 +41,16 @@ export const useSizeStore = defineStore('size', () => {
       return sizeType.unk
     }
   }
+  function chooseCorrect(xl: number | undefined, lg: number | undefined, md: number | undefined, sm: number | undefined, xs: number | undefined) : number | undefined {
+    switch (size.value) {
+      case sizeType.xl: return xl
+      case sizeType.lg: return lg
+      case sizeType.md: return md
+      case sizeType.sm: return sm
+      case sizeType.xs: return xs
+      default: return undefined
+    }
+  }
   function chooseCorrectUp(xl: number | undefined, lg: number | undefined, md: number | undefined, sm: number | undefined, xs: number) : number{
     let result : number = xs
     if(biggerThan(sizeType.lg)){
@@ -105,5 +115,5 @@ export const useSizeStore = defineStore('size', () => {
     size.value = deviceSize()
     sizePX.value = window.innerWidth
   }
-  return { biggerThan , chooseCorrectUp }
+  return { biggerThan , chooseCorrectUp , chooseCorrect }
 })

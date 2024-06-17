@@ -11329,6 +11329,12 @@ hr.hr1,
 .round-3{
   border-radius: 12px;
 }
+.opacity-0{
+  opacity: 0;
+}
+.opacity-1{
+  opacity: 1;
+}
 
 .anim-loop{
   animation-iteration-count: infinite !important;

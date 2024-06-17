@@ -8,7 +8,7 @@ import { onBeforeMount, ref } from 'vue'
 const size = useSizeStore()
 const scroll = useScrollStore()
 onBeforeMount(()=>{
-  scroll.enablePrint()
+
 })
 useHead({
   title: 'this is title',
@@ -57,10 +57,10 @@ const shapeContainerMinHeight = {
     <Grid class="mt20 width-100p" container :xl=2 :lg=1>
       <Grid :xl=1 :lg=1>
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Anim when="scroll" scroll-page="home" scroll-part="part2" scroll-comp="title1">
+          <Anim when="scroll" in="fade-in" out="fade-out" count="inf" scroll-xl="120" scroll-lg="130">
             <Txt :font=1 :color=1 :lg=74 :md=50 :xs=30>{{ data.home.part2.left.title1 }}</Txt>
           </Anim>
-          <Anim when="loop" class="animate__animated animate__rubberBand">
+          <Anim when="pageload" in="animate__rubberBand">
             <Txt :font=2 :color=3 :lg=80 :md=64 :xs=42>{{ data.header.sitename }}</Txt>
           </Anim>
         </Stack>
@@ -69,19 +69,20 @@ const shapeContainerMinHeight = {
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
           <Txt :font=1 :color=1 :md=24 :xs=18>{{ data.home.part2.right.title1 }}</Txt>
           <Stack class="mt8 hr1 width-100p" direction="column" justifyContent="flex-start" alignItems="flex-start">
-          </Stack>
-          <Stack class="width-100p" v-for="(item, index) in data.home.part2.right.links" :key="index"  direction="column"
-            justifyContent="flex-start" alignItems="flex-start">
-            <a class="pt4 pb4 width-100p" :href="item.url">
-            <Stack direction="row" justifyContent="space-between" alignItems="center">
-              
-              <Txt :font=1 :color=1 :md=24 :xs=18 bold>{{ item.text }}</Txt>
-                <Appsvg :color=3 :xsw=35>
-                  <ChevronRightIcon />
-                </Appsvg>
-              </Stack>
-            </a>
-            <hr class="width-100p" />
+            <Stack class="width-100p" v-for="(item, index) in data.home.part2.right.links" :key="index"  direction="column"
+              justifyContent="flex-start" alignItems="flex-start">
+              <a class="pt4 pb4 width-100p" :href="item.url">
+              <Stack direction="row" justifyContent="space-between" alignItems="center">
+                <Txt :font=1 :color=1 :md=24 :xs=18 bold>{{ item.text }}</Txt>
+                <Anim when="hover" in="animate__fadeIn" out="" count="inf">
+                  <Appsvg :color=3 :xsw=35>
+                    <ChevronRightIcon />
+                  </Appsvg>
+                </Anim>
+                </Stack>
+              </a>
+              <hr class="width-100p" />
+            </Stack>
           </Stack>
         </Stack>
       </Grid>
