@@ -16,7 +16,6 @@ useHead({
   ]
 })
 onBeforeMount(() => {
-  scroll.enablePrint()
 })
 </script>
 <template>
