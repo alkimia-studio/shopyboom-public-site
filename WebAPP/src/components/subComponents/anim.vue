@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { useScrollStore } from '@/helper/scrollHandler'
 import { isNotEmpty, isPositiveNumber } from '@/helper/validation';
-import { triggerAsyncId } from 'async_hooks';
-import { count } from 'console';
-import { onBeforeMount, ref } from 'vue';
+import { onBeforeMount, ref, watch } from 'vue';
 enum animTypeEnum { in, out }
 const scroll = useScrollStore()
 const props = defineProps({
@@ -11,7 +9,7 @@ const props = defineProps({
   when: { type: String as () => 'scroll' | 'hover' | 'pageload' , default: "scroll"},
   in: { type: String, default: '' },
   out: { type: String, default: '' },
-  count: { type: [Number, String ] , default: 'inf' },
+  count: { type: [Number, String] , default: 'inf' },
   scrollXl: Number,
   scrollLg: Number,
   scrollMd: Number,
@@ -34,14 +32,14 @@ const doAnimCount = (animType: animTypeEnum) : boolean => {
 }
 onBeforeMount(()=>{
   if(props.when === 'pageload'){
-    animClasses.value.push('anim-loop')
+    if(props.count === 'inf')
+      animClasses.value.push('anim-loop')
     doAnim(animTypeEnum.in)
   }
   if(props.in.startsWith('animate__') || props.out.startsWith('animate__')){
     animClasses.value.push('animate__animated')
   }
 })
-
 const doAnim = (animType: animTypeEnum) => {
   if(doAnimCount(animType)){
     switch (animType) {
@@ -67,7 +65,11 @@ onBeforeMount(()=>{
 })
 </script>
 <template>
-  <div @mouseover="doAnim(animTypeEnum.in)" @mouseleave="doAnim(animTypeEnum.out)" :class="[props.class,animClasses]" class="anim">
+  <div 
+  @mouseover="props.when === 'hover' ? doAnim(animTypeEnum.in) : null" 
+  @mouseleave="props.when === 'hover' ? doAnim(animTypeEnum.out) : null"
+  :style="props.when === 'pageload' && props.count !== 'inf' ? { animationIterationCount : props.count } : ''"
+  :class="[props.class,animClasses]" class="anim">
     <slot></slot>
   </div>
 </template>
