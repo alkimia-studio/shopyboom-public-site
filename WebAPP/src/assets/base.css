@@ -18,7 +18,7 @@ html {
   overflow-x: hidden;
 }
 ::-webkit-scrollbar {
-  width: 0; 
+  width: 0;
   background: transparent;
 }
 html::-webkit-scrollbar {
@@ -34,7 +34,6 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 
 :root {
   --color-def-1: #333333;
@@ -81,7 +80,7 @@ body {
   --shadow-def-3: 0px 3px 99px rgba(255, 96, 0, 0.24);
 
   --font-def-1: 'Plus Jakarta Sans', sans-serif;
-  --font-def-2: "fields-display",sans-serif;
+  --font-def-2: 'fields-display', sans-serif;
 }
 
 .default-theme {
@@ -142,10 +141,10 @@ body {
 .shadow-3 {
   box-shadow: var(--shadow-3);
 }
-.textapp-color--1{
+.textapp-color--1 {
   color: inherit !important;
 }
-.textapp-color-0{
+.textapp-color-0 {
   color: transparent !important;
 }
 .textapp-color-1 {
@@ -460,109 +459,144 @@ body {
   border-color: var(--color-55) !important;
 }
 
-.fillapp-color--1 , .fillapp-color--1 svg{
+.fillapp-color--1,
+.fillapp-color--1 svg {
   fill: inherit !important;
 }
-.fillapp-color-0 , .fillapp-color-0 svg{
+.fillapp-color-0,
+.fillapp-color-0 svg {
   fill: transparent !important;
 }
-.fillapp-color-1 , .fillapp-color-1 svg {
+.fillapp-color-1,
+.fillapp-color-1 svg {
   fill: var(--color-1) !important;
 }
-.fillapp-color-2 , .fillapp-color-2 svg {
+.fillapp-color-2,
+.fillapp-color-2 svg {
   fill: var(--color-2) !important;
 }
-.fillapp-color-3 , .fillapp-color-3 svg {
+.fillapp-color-3,
+.fillapp-color-3 svg {
   fill: var(--color-3) !important;
 }
-.fillapp-color-4 , .fillapp-color-4 svg {
+.fillapp-color-4,
+.fillapp-color-4 svg {
   fill: var(--color-4) !important;
 }
-.fillapp-color-5 , .fillapp-color-5 svg {
+.fillapp-color-5,
+.fillapp-color-5 svg {
   fill: var(--color-5) !important;
 }
-.fillapp-color-6 , .fillapp-color-6 svg {
+.fillapp-color-6,
+.fillapp-color-6 svg {
   fill: var(--color-6) !important;
 }
-.fillapp-color-7 , .fillapp-color-7 svg {
+.fillapp-color-7,
+.fillapp-color-7 svg {
   fill: var(--color-7) !important;
 }
-.fillapp-color-8 , .fillapp-color-8 svg {
+.fillapp-color-8,
+.fillapp-color-8 svg {
   fill: var(--color-8) !important;
 }
-.fillapp-color-11 , .fillapp-color-11 svg {
+.fillapp-color-11,
+.fillapp-color-11 svg {
   fill: var(--color-11) !important;
 }
-.fillapp-color-12 , .fillapp-color-12 svg {
+.fillapp-color-12,
+.fillapp-color-12 svg {
   fill: var(--color-12) !important;
 }
-.fillapp-color-13 , .fillapp-color-13 svg {
+.fillapp-color-13,
+.fillapp-color-13 svg {
   fill: var(--color-13) !important;
 }
-.fillapp-color-14 , .fillapp-color-14 svg {
+.fillapp-color-14,
+.fillapp-color-14 svg {
   fill: var(--color-14) !important;
 }
-.fillapp-color-15 , .fillapp-color-15 svg {
+.fillapp-color-15,
+.fillapp-color-15 svg {
   fill: var(--color-15) !important;
 }
-.fillapp-color-21 , .fillapp-color-21 svg {
+.fillapp-color-21,
+.fillapp-color-21 svg {
   fill: var(--color-21) !important;
 }
-.fillapp-color-22 , .fillapp-color-22 svg {
+.fillapp-color-22,
+.fillapp-color-22 svg {
   fill: var(--color-22) !important;
 }
-.fillapp-color-23 , .fillapp-color-23 svg {
+.fillapp-color-23,
+.fillapp-color-23 svg {
   fill: var(--color-23) !important;
 }
-.fillapp-color-24 , .fillapp-color-24 svg {
+.fillapp-color-24,
+.fillapp-color-24 svg {
   fill: var(--color-24) !important;
 }
-.fillapp-color-25 , .fillapp-color-25 svg {
+.fillapp-color-25,
+.fillapp-color-25 svg {
   fill: var(--color-25) !important;
 }
-.fillapp-color-31 , .fillapp-color-31 svg {
+.fillapp-color-31,
+.fillapp-color-31 svg {
   fill: var(--color-31) !important;
 }
-.fillapp-color-32 , .fillapp-color-32 svg {
+.fillapp-color-32,
+.fillapp-color-32 svg {
   fill: var(--color-32) !important;
 }
-.fillapp-color-33 , .fillapp-color-33 svg {
+.fillapp-color-33,
+.fillapp-color-33 svg {
   fill: var(--color-33) !important;
 }
-.fillapp-color-34 , .fillapp-color-34 svg {
+.fillapp-color-34,
+.fillapp-color-34 svg {
   fill: var(--color-34) !important;
 }
-.fillapp-color-35 , .fillapp-color-35 svg {
+.fillapp-color-35,
+.fillapp-color-35 svg {
   fill: var(--color-35) !important;
 }
-.fillapp-color-41 , .fillapp-color-41 svg {
+.fillapp-color-41,
+.fillapp-color-41 svg {
   fill: var(--color-41) !important;
 }
-.fillapp-color-42 , .fillapp-color-42 svg {
+.fillapp-color-42,
+.fillapp-color-42 svg {
   fill: var(--color-42) !important;
 }
-.fillapp-color-43 , .fillapp-color-43 svg {
+.fillapp-color-43,
+.fillapp-color-43 svg {
   fill: var(--color-43) !important;
 }
-.fillapp-color-44 , .fillapp-color-44 svg {
+.fillapp-color-44,
+.fillapp-color-44 svg {
   fill: var(--color-44) !important;
 }
-.fillapp-color-45 , .fillapp-color-45 svg {
+.fillapp-color-45,
+.fillapp-color-45 svg {
   fill: var(--color-45) !important;
 }
-.fillapp-color-51 , .fillapp-color-51 svg {
+.fillapp-color-51,
+.fillapp-color-51 svg {
   fill: var(--color-51) !important;
 }
-.fillapp-color-52 , .fillapp-color-52 svg {
+.fillapp-color-52,
+.fillapp-color-52 svg {
   fill: var(--color-52) !important;
 }
-.fillapp-color-53 , .fillapp-color-53 svg {
+.fillapp-color-53,
+.fillapp-color-53 svg {
   fill: var(--color-53) !important;
 }
-.fillapp-color-54 , .fillapp-color-54 svg {
+.fillapp-color-54,
+.fillapp-color-54 svg {
   fill: var(--color-54) !important;
 }
-.fillapp-color-55 , .fillapp-color-55 svg {
+.fillapp-color-55,
+.fillapp-color-55 svg {
   fill: var(--color-55) !important;
 }
 
@@ -11083,12 +11117,12 @@ body {
   height: 100%;
   width: 100%;
 }
-.image-fitparent-width{
+.image-fitparent-width {
   background-size: cover;
   background-position: center;
   width: 100%;
 }
-.image-fitparent-height{
+.image-fitparent-height {
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -11241,59 +11275,61 @@ button:active {
   outline: none !important;
   border-style: solid !important;
 }
-.word-no-break{
+.word-no-break {
   white-space: nowrap;
 }
 
-.svgapp{
+.svgapp {
   height: auto;
 }
-.svgapp svg,.svgapp img{
+.svgapp svg,
+.svgapp img {
   width: inherit;
   height: inherit;
 }
 
 hr.hr1,
 .hr1 hr {
-    margin: 0;
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #333333;
-    padding: 0;
-    opacity: 0.15;
+  margin: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #333333;
+  padding: 0;
+  opacity: 0.15;
 }
 
-.shape{
+.shape {
   position: absolute;
 }
-.shape svg,.shape img{
+.shape svg,
+.shape img {
   position: inherit;
   width: inherit;
   height: auto;
 }
-.shape.right{
+.shape.right {
   right: 0px;
 }
-.shape.left{
+.shape.left {
   left: 0px;
 }
-.shape.top{
+.shape.top {
   top: 0px;
 }
-.shape.bottom{
+.shape.bottom {
   bottom: 0px;
 }
-.shape.center-left{
+.shape.center-left {
   left: 50%;
 }
-.shape.center-top{
+.shape.center-top {
   top: 50%;
 }
-.shape.container{
+.shape.container {
   position: relative;
 }
-.absolute-center{
+.absolute-center {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -11302,40 +11338,35 @@ hr.hr1,
 @media (max-width: 480px) {
 }
 @media (min-width: 480px) {
-
 }
 @media (min-width: 568px) {
-
 }
 @media (min-width: 768px) {
-
 }
 @media (min-width: 1024px) {
-
 }
 @media (min-width: 1200px) {
-
 }
-.disabled{
+.disabled {
   pointer-events: none;
   opacity: 0.4;
 }
-.round-1{
+.round-1 {
   border-radius: 4px;
 }
-.round-2{
+.round-2 {
   border-radius: 8px;
 }
-.round-3{
+.round-3 {
   border-radius: 12px;
 }
-.opacity-0{
+.opacity-0 {
   opacity: 0;
 }
-.opacity-1{
+.opacity-1 {
   opacity: 1;
 }
 
-.anim-loop{
+.anim-loop {
   animation-iteration-count: infinite !important;
 }

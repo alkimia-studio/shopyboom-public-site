@@ -1,23 +1,23 @@
-import { useNotification } from "@kyvg/vue3-notification";
-const { notify }  = useNotification()
+import { useNotification } from '@kyvg/vue3-notification'
+const { notify } = useNotification()
 export function info(msg: string, title: string = 'Info') {
-    notify({
-        type: 'info',
-        title: title,
-        text: msg,
-    });
+  notify({
+    type: 'info',
+    title: title,
+    text: msg
+  })
 }
 export function error(msg: string, title: string = 'Error') {
   notify({
-      type: 'error',
-      title: title,
-      text: msg,
-  });
+    type: 'error',
+    title: title,
+    text: msg
+  })
 }
 export function success(msg: string, title: string = 'Success') {
   notify({
-      type: 'success',
-      title: title,
-      text: msg,
-  });
+    type: 'success',
+    title: title,
+    text: msg
+  })
 }

@@ -1,881 +1,863 @@
 {
-    "home": {
-        "part1": {
-            "title1": "Tutto inizia da un gesto semplice.",
-            "title2": "Tutto inizia da qui.",
-            "title3": "Apri il tuo negozio",
-            "title4": "online",
-            "title5": "Ti bastano 5 minuti",
-            "button1": "Inizia"
-        },
-        "part2": {
-            "left": {
-                "title1": "Cos'è "
-            },
-            "right": {
-                "title1": "Shopyboom è la piattaforma che ti permette di creare il tuo negozio online, in pochi e semplici passi. Non ti servirà avere nessuna competenza tecnica, sarai seguito passo a passo, dalla creazione alla gestione del tuo e-commerce e ad un costo davvero accessibile a tutti!",
-                "links": [
-                    {
-                        "url": "/caratteristiche-piattaforma-ecommerce",
-                        "text": "Come funziona Shopyboom"
-                    },
-                    {
-                        "url": "/piani",
-                        "text": "Scopri i nostri piani e le loro funzionalità"
-                    },
-                    {
-                        "url": "/supporto",
-                        "text": "Approfitta del supporto a tua disposizione"
-                    }
-                ]
-            }
-        },
-        "part3": {
-            "title1": "Perché scegliere"
-        },
-        "part4": {
-            "left": {
-                "title1": "Il tuo shop",
-                "title2": "online",
-                "title3": "in pochi",
-                "title4": "minuti!",
-                "body1": "I passaggi per ottenere il tuo negozio online sono davvero pochi, semplici ed intuitivi... ed in attimo il tuo e-commerce sarà attivo!"
-            },
-            "right": {
-                "buttonRound": "Attivo in 5 min"
-            }
-        },
-        "part5": {
-            "left": {
-                "buttonRound": "IA al tuo servizio"
-            },
-            "right": {
-                "title1": "Carica i tuoi",
-                "title2": "prodotti in un ",
-                "title3": "lampo",
-                "body1": "Con l'aiuto dell'intelligenza artificiale integrata sarà ancora più semplice di quanto potessi immaginare, le immagini e le descrizioni saranno migliorate automaticamente per ottenere un risultato ottimale!"
-            }
-        },
-        "part6": {
-            "left": {
-                "title1": "Personalizza",
-                "title2": "il",
-                "title3": "tuo negozio",
-                "title4": "senza sforzi",
-                "body1": "Scegli il tema che preferisci e personalizza il tuo negozio secondo lo stile che ti piace. Mettiamo a tua disposizione tutto ciò che serve per ottenere il risultato desiderato."
-            },
-            "right": {
-                "buttonRound": "Crea il tuo stile"
-            }
-        },
-        "part7": {
-            "right": {
-                "title1": "Gestire il negozio",
-                "title2": "è",
-                "title3": "semplicissimo",
-                "body1": "Gestire gli ordini, i pagamenti, le spedizioni... non preoccuparti di nulla, abbiamo pensato a come rendere tutto questo semplice ed automatico. Ricorda, il nostro supporto è sempre a tua disposizione!"
-            },
-            "left": {
-                "buttonRound": "Impostazioni automatiche"
-            }
-        },
-        "part8": {
-            "left": {
-                "title1": "Promuovi",
-                "title2": "il",
-                "title3": "negozio come un",
-                "title4": "professionista!",
-                "body1": "Marketing, pubblicità, promozioni, newsletter... tutto ciò che serve per promuovere il tuo e-commerce e le tue vendite lo puoi fare all'interno di Shopyboom."
-            },
-            "right": {
-                "buttonRound": "Strumenti marketing",
-                "text1": "Promo!"
-            }
-        }
+  "home": {
+    "part1": {
+      "title1": "Tutto inizia da un gesto semplice.",
+      "title2": "Tutto inizia da qui.",
+      "title3": "Apri il tuo negozio",
+      "title4": "online",
+      "title5": "Ti bastano 5 minuti",
+      "button1": "Inizia"
     },
-    "eCommerce": {
-        "part1": {
-            "title1": "shopyboom",
-            "title2": "fai esplodere",
-            "title3": "le tue vendite"
-        },
-        "part2": {
-            "title1": "Tutto ciò che ti serve per creare e gestire in modo semplice e veloce il tuo negozio online"
-        },
-        "part3": {
-            "left": {
-                "title1": "Un e-commerce",
-                "title2": "Semplice",
-                "body1": "Vogliamo rendere la creazione del tuo e-shop semplice, veloce ed intuitiva. Il tuo negozio online sarà attivo in 4 semplici mosse, aggiungere i prodotti sarà facile e Shopyboom, con l'aiuto dell'intelligenza artificiale integrata, migliorerà le foto ed i testi. Non dovrai preoccuparti dei pagamenti e delle spedizioni, abbiamo automatizzato la loro gestione per rendere l'esperienza a portata di tutti."
-            }
-        },
-        "part4": {
-            "right": {
-                "title1": "L'unione",
-                "title2": "Fa la forza",
-                "body1": "Abbiamo creato questa piattaforma per dare a tutti la possibilità di avere un negozio online, anche a chi non è pratico di tecnologia. Abbiamo analizzato tutto quello che poteva essere un ostacolo e lo abbiamo reso semplice. Abbiamo messo a tua disposizione strumenti di facile utilizzo e un supporto esaustivo e costante, dalla creazione alla gestione del tuo e-commerce. Aprire un e-shop ora è alla portata di tutti!"
-            }
-        },
-        "part5": {
-            "left": {
-                "title1": "Alta tecnologia",
-                "title2": "Per tutti",
-                "body1": "Vendita online, gestione dei prodotti, pagamenti, spedizioni, ma anche attività promozionale, marketing dedicato, potrai gestire tutto all'interno di Shopyboom e sarà semplice farlo, perchè questa piattaforma è stata creata proprio per portare queste tecnologie alla portata di tutti, anche con il supporto dell'intelligenza artificiale integrata. Tu non dovrai fare altro che goderti i risultati!"
-            }
-        }
-    },
-    "risorse":{
-        "part1":{
-            "title1": "Supporto",
-            "title2": "Tutto ciò che ti serve per diventare un mago dell'e-commerce"
-        },
-        "part2":{
-            "items":[
-                {
-                    "title1":"Shopping",
-                    "title2":"Academy",
-                    "body1":"Scopri i tutorial video sull’utilizzo di Shopyboom e su come promuovere il tuo negozio.",
-                    "buttonRound":"Vai",
-                    "url": "/shopping-academy"
-                },
-                {
-                    "title1":"Domande frequenti",
-                    "title2":"FAQ",
-                    "body1":"Trova le risposte alle domande più frequenti nella sezione dedicata.",
-                    "buttonRound":"Vai",
-                    "url": "/faq"
-                },
-                {
-                    "title1":"Centro",
-                    "title2":"Supporto",
-                    "body1":"Hai bisogno di supporto? Leggi la documentazione che abbiamo preparato o chiedi direttamente alla nostra chat AI.",
-                    "buttonRound":"Vai",
-                    "url": "/supporto"
-
-                }
-            ]
-        },
-        "part3":{
-            "left":{
-                "title1":"Academy",
-                "title2":"Per iniziare..."
-            },
-            "right":{
-                "body1":"Scopri tutti i video tutorial che abbiamo preparato per te: seguili ad ogni passo, dalla creazione del negozio alla sua promozione."
-            }
-        },
-        "part4":{
-            "items":[
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Crea il tuo sito",
-                    "body1": "4 semplici passaggi per creare il tuo e-commerce online, inserisci i tuoi dati, scegli lo stile che preferisci e personalizzalo. Iniziamo!"
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Gestisci il catalogo",
-                    "body1": "Inserisci i prodotti che vuoi vendere nel tuo e-shop, carica foto e descrizioni, l'intelligenza artificiale ti aiuterà a mostrarli al meglio ai tuoi clienti."
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Gestisci gli ordini",
-                    "body1": "Ora inizia la parte migliore: la vendita! Shopyboom gestisce i tuoi ordini ed i clienti in modo semplice ed organizzato, scopri come!"
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Promuovi il tuo sito",
-                    "body1": "È importante promuovere il tuo negozio online, per farlo conoscere a nuovi clienti ed aumentare le vendite e potrai fare tutto attraverso la piattaforma."
-                }
-            ]
-        }
-    },
-    "piani":{
-        "part1":{
-            "title1": "Piani",
-            "title2": "Scopri tutti i nostri pacchetti"
-        },
-        "part2":{
-            "items":[
-                {
-                    "title1":"Standard",
-                    "title2":"",
-                    "title3":"",
-                    "title4":"",
-                    "title5":"",
-                    "list":[
-                        "Gestione negozio da qualsiasi dispositivo",
-                        "Numero di prodotti illimitati",
-                        "Assistenza mail Standard",
-                        "Assistenza chatbot",
-                        "Reportistica standard",
-                        "1 Magazzino",
-                        "Modulo Newsletter",
-                        "Strumenti Marketing Standard",
-                        "Suggerimenti per attività di comunicazione",
-                        "Accesso collaboratori esterni",
-                        "Free Hosting"
-                    ],
-                    "price1": "€",
-                    "price2": "15",
-                    "price3": "/mese", 
-                    "buttonRound": "Attiva"
-                },
-                {
-                    "title1":"Avanzato",
-                    "title2":"Tutto ciò che è incluso nel piano",
-                    "title3":"Standard",
-                    "title4":"",
-                    "title5": "Più popolare",
-                    "list":[
-                        "3 account collaboratori aziendali con ruoli diversi",
-                        "Assistenza mail Premium",
-                        "5 magazzini",
-                        "Strumenti Marketing Avanzati",
-                        "Mail per recupero del carrello",
-                        "Codici sconto",
-                        "Buoni regalo",
-                        "Prodotti a tempo",
-                        "Promozioni a tempo",
-                        "Intregrazione Instagram, Facebook e Google Shopping"
-                    ],
-                    "price1": "€",
-                    "price2": "23",
-                    "price3": "/mese", 
-                    "buttonRound": "Attiva"
-                },
-                {
-                    "title1":"Pro",
-                    "title2":"Tutto ciò che è incluso nel piano",
-                    "title3":"Avanzato",
-                    "title4":"e in più...",
-                    "title5":"",
-                    "list":[
-                        "Account collaboratori aziendali illimitati",
-                        "Assistenza mail Pro",
-                        "Reportistica Avanzata",
-                        "20 Magazzini",
-                        "Strumenti Marketing Pro",
-                        "Abbonamenti acquisti ricorrenti",
-                        "WhatsApp per comunicazioni con cliente (a pagamento)",
-                        "Possibilità di personalizzare il sito su richiesta"
-                    ],
-                    "price1": "€",
-                    "price2": "45",
-                    "price3": "/mese", 
-                    "buttonRound": "Attiva"
-                }
-            ]
-        },
-        "part3":{
-            "title1": "Non sai quale piano possa fare al caso tuo?",
-            "title2": "Hai bisogno di qualche informazione?",
-            "title3": "Contattaci, saremo felici di darti un consiglio!",
-            "buttonRound": "Contattaci",
-            "title4": "Funzionalità",
-            "title5": "Tutto ciò che ti serve per gestire in modo semplice e veloce il tuo negozio online"
-        },
-        "part4":{
-            "headers":[
-                "",
-                "Standard",
-                "Avanzato",
-                "Pro"
-            ],
-            "items":[
-                {
-                    "headerItem": "Negozio online",
-                    "list":[
-                        {
-                            "title1": "Numero di prodotti Illiminati",
-                            "body1": "Potrai caricare sul tuo e-commerce tutti i prodotti che vorrai, senza alcun limite di quantità.",
-                            "item1": true,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Account collaboratori esterni",
-                            "body1": "Creazione account per collaboratori esterni con accesso gratuito",
-                            "item1": true,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Account collaboratori aziendali",
-                            "body1": "Creazione account collaboratori aziendali con differenti ruoli",
-                            "item1": false,
-                            "item2": "3",
-                            "item3": "Illimitati"
-                        },
-                        {
-                            "title1": "Reportistica",
-                            "body1": "Report sugli andamenti del fatturato, degli ordini, dei prodotti e dei clienti",
-                            "item1": "Standard",
-                            "item2": "Standard",
-                            "item3": "Avanzata"
-                        },
-                        {
-                            "title1": "Magazzino",
-                            "body1": "Possibilità di gestire ordini da magazzini in località diverse",
-                            "item1": "1",
-                            "item2": "5",
-                            "item3": "20"
-                        },
-                        {
-                            "title1": "Free Hosting",
-                            "body1": "Il canone di hosting per pubblicare il tuo sito è incluso",
-                            "item1": true,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Account dei clienti",
-                            "body1": "Creazione account illimitato",
-                            "item1": true,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Gestione negozio da qualsiasi dispositivo",
-                            "body1": "",
-                            "item1": true,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Modulo di registrazione alla Newsletter",
-                            "body1": "Potrai raccogliere le email degli utenti del tuo sito per l’invio di comunicazioni commerciali",
-                            "item1": true,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Powered by Shopyboom",
-                            "body1": "Link al sito Shopyboom.it nel piè di pagina del negozio",
-                            "item1": "Obbligatorio",
-                            "item2": "Rimovibile",
-                            "item3": "Rimovibile"
-                        },
-                        {
-                            "title1": "Prodotti a tempo",
-                            "body1": "Possibilità di mostrare alcuni prodotti solo per un limitato periodo di tempo",
-                            "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Personalizzazione del sito su richiesta",
-                            "body1": "Possibilità di richiedere personalizzazione dello stile e delle funzionalità del negozio (a pagamento)",
-                            "item1": false,
-                            "item2": false,
-                            "item3": true
-                        }
-                    ]	
-                },
-                {
-                    "headerItem": "Promozione",
-                    "list":[
-                        {
-                            "title1": "Campagna promozionale Standard",
-                            "body1": "Possibilità di inviare mail promozionale ad una lista di clienti personalizzabile: 100 email/mese",
-                            "item1": true,
-                            "item2": false,
-                            "item3": false
-                        },
-                        {
-                            "title1": "Campagna promozionale Avanzata",
-                            "body1": "Possibilità di inviare mail promozionale ad una lista di clienti personalizzabile: 500 email/mese, Contenuti per email più ricchi e generati tramite AI",
-                            "item1": false,
-                            "item2": true,
-                            "item3": false
-                        },
-                        {
-                            "title1": "Campagna promozionale Pro",
-                            "body1": "Possibilità di inviare mail promozionale ad una lista di clienti personalizzabile: 10000 email/mese, Contenuti per email più ricchi e generati tramite AI",
-                            "item1": false,
-                            "item2": false,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Suggerimenti comunicazione ai clienti",
-                            "body1": "Suggerimenti di best practice per le attività di comunicazione ai clienti",
-                            "item1": true,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Mail di recupero del Carrello",
-                            "body1": "Mail automatica che arriverà al cliente dopo 1 ora, 1 giorno e 3 giorni dall’abbandono del carrello, nel caso in cui l’acquisto sia stato interrotto",
-                            "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Codici sconto",
-                            "body1": "Possibilità di creare codici sconto per promozioni su prodotti, categorie e importo dell’ordine",
-                            "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Buoni regalo",
-                            "body1": "Possibilità di vendita di buoni regalo di diversi importi",
-                            "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Promozioni a tempo",
-                            "body1": "Possibilità di creare promozioni su prodotti, categorie, importo dell’ordine con scadenza temporale",
-                            "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Abbonamenti acquisti ricorrenti",
-                            "body1": "Possibilità di impostare abbonamenti per acquisti ricorrenti con differenti cadenze temporali",
-                            "item1": false,
-                            "item2": false,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Integrazione Instagram, Facebook e Google Shopping",
-                            "body1": "Il tuo catalogo prodotti verrà automaticamente pubblicato nei marketplace Instagram, Facebook e nella sezione gratuita Google Shopping",
-                            "item1": false,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Possibilità di integrare WhatsApp",
-                            "body1": "Integrazione di WhatsApp per gestire le comunicazioni con i clienti",
-                            "item1": false,
-                            "item2": false,
-                            "item3": true
-                        }
-                    ]	
-                },
-                {
-                    "headerItem": "Supporto",
-                    "list":[
-                        {
-                            "title1": "Assistenza email Standard",
-                            "body1": "Risposta in 48 ore lavorative (esclusi giorni festivi), Massimo 10 Mail al mese",
-                            "item1": true,
-                            "item2": false,
-                            "item3": false
-                        },
-                        {
-                            "title1": "Assistenza email Avanzata",
-                            "body1": "Risposta in 24 ore lavorative (esclusi giorni festivi), Assistenza telefonica a pagamento in orari prefissati",
-                            "item1": false,
-                            "item2": true,
-                            "item3": false
-                        },
-                        {
-                            "title1": "Assistenza email Pro",
-                            "body1": "Assistenza mail  prioritaria (esclusi giorni festivi), Assistenza telefonica a pagamento in orari prefissati",
-                            "item1": false,
-                            "item2": false,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Assistenza Chatbot",
-                            "body1": "Assistenza tramite Chatbot integrato con Intelligenza Artificiale sempre a tua disposizione",
-                            "item1": true,
-                            "item2": true,
-                            "item3": true
-                        },
-                        {
-                            "title1": "Shopping Academy",
-                            "body1": "Accesso a tutti i contenti della Shopping Academy, dove potrai trovare tutorial video sull’utilizzo di Shopyboom e su come promuovere il tuo negozio",
-                            "item1": true,
-                            "item2": true,
-                            "item3": true
-                        }
-                    ]	
-                }
-            ]
-        }
-    },
-    "shoppingAcademy":{
-        "part1":{
-            "title1": "Shopping Academy",
-            "title2": "Impara come sfruttare al meglio il tuo negozio on-line"
-        },
-        "part2":{
-            "left":{
-                "title1":"Apri il tuo negozio"
-            },
-            "right":{
-                "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            },
-            "items":[
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Crea il tuo sito",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Gestisci il catalogo",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Gestisci gli ordini",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Promuovi il tuo sito",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                }
-            ]
-        },
-        "part3":{
-            "left":{
-                "title1":"Gestisci il tuo negozio"
-            },
-            "right":{
-                "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            },
-            "items":[
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Crea il tuo sito",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Gestisci il catalogo",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Gestisci gli ordini",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Promuovi il tuo sito",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                }
-            ]
-        },
-        "part4":{
-            "left":{
-                "title1":"Analizza e Promuovi"
-            },
-            "right":{
-                "body1":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            },
-            "items":[
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Crea il tuo sito",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Gestisci il catalogo",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Gestisci gli ordini",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "img": "/images/girl.png",
-                    "url": "/",
-                    "title1": "Promuovi il tuo sito",
-                    "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                }
-            ]
-        }
-    },
-    "faq":{
-        "part1":{
-            "title1": "FAQ",
-            "title2": "Trova le risposte alle domande più comuni"
-        },
-        "part2":{
-            "title1": "Ottieni rapidamente risposte alle domande più frequenti sulla configurazione del tuo negozio.",
-            "items":[
-                {
-                    "question":"Come posso creare un account sul sito?",
-                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "question":"Come posso gestire gli ordini?",
-                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "question":"Come posso creare un codice sconto?",
-                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "question":"Come posso aggiornare le informazioni del mio account?",
-                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "question":"Come posso contattare il servizio clienti?",
-                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "question":"Quanto tempo ci vuole per la spedizione e quali sono i costi?",
-                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "question":"Cosa devo fare se ricevo un prodotto danneggiato o sbagliato?",
-                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "question":"Come posso creare un account sul sito?",
-                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "question":"Come posso gestire gli ordini?",
-                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                },
-                {
-                    "question":"Come posso contattare il servizio clienti?",
-                    "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                }
-            ]
-        }
-    },
-    "header": {
-        "sitename": "shopyboom",
-        "login": "Inizia",
-        "items": [
-            {
-                "url": "/",
-                "text": "Accedi"
-            },
-            {
-                "url": "/supporto",
-                "text": "Supporto"
-            },
-            {
-                "url": "/shopping-academy",
-                "text": "Academy"
-            },
-            {
-                "url": "/piani",
-                "text": "Piani"
-            },
-            {
-                "url": "/caratteristiche-piattaforma-ecommerce",
-                "text": "Cos'è"
-            }
+    "part2": {
+      "left": {
+        "title1": "Cos'è "
+      },
+      "right": {
+        "title1": "Shopyboom è la piattaforma che ti permette di creare il tuo negozio online, in pochi e semplici passi. Non ti servirà avere nessuna competenza tecnica, sarai seguito passo a passo, dalla creazione alla gestione del tuo e-commerce e ad un costo davvero accessibile a tutti!",
+        "links": [
+          {
+            "url": "/caratteristiche-piattaforma-ecommerce",
+            "text": "Come funziona Shopyboom"
+          },
+          {
+            "url": "/piani",
+            "text": "Scopri i nostri piani e le loro funzionalità"
+          },
+          {
+            "url": "/supporto",
+            "text": "Approfitta del supporto a tua disposizione"
+          }
         ]
+      }
     },
-    "footer": {
-        "column1": {
-            "part1": [
-                {
-                    "url": "/",
-                    "text": "shopyboom"
-                },
-                {
-                    "url": "/",
-                    "text": "è un marchio di proprietà di"
-                }
-            ],
-            "part2": [
-                {
-                    "url": "/",
-                    "text": "Alkimia srl"
-                },
-                {
-                    "url": "/",
-                    "text": "P.IVA 012345678987"
-                },
-                {
-                    "url": "/",
-                    "text": "info@alkimia.shopping"
-                }
-            ]
-        },
-        "column2": [
-            {
-                "url": "/",
-                "text": "Chi siamo"
-            },
-            {
-                "url": "/",
-                "text": "Manifesto"
-            },
-            {
-                "url": "/",
-                "text": "Blog"
-            },
-            {
-                "url": "/",
-                "text": "Lavora con noi"
-            },
-            {
-                "url": "/",
-                "text": "Aggiornamenti e novità"
-            },
-            {
-                "url": "/",
-                "text": "Termini e condizioni"
-            },
-            {
-                "url": "/",
-                "text": "Informativa Privacy"
-            }
-        ],
-        "column3": [
-            {
-                "url": "/",
-                "text": "Contatti"
-            },
-            {
-                "url": "/",
-                "text": "Richiedi appuntamento"
-            },
-            {
-                "url": "/",
-                "text": "Accademia"
-            },
-            {
-                "url": "/",
-                "text": "Apri Richiesta supporto"
-            },
-            {
-                "url": "/",
-                "text": "Domande frequenti"
-            }
-        ],
-        "column4": {
-            "part1": [
-                {
-                    "url": "/",
-                    "text": "Accedi al tuo negozio"
-                },
-                {
-                    "url": "/",
-                    "text": "Crea il tuo negozio"
-                }
-            ],
-            "part2": [
-                {
-                    "url": "/",
-                    "text": "Home page"
-                },
-                {
-                    "url": "/",
-                    "text": "Funzionalità"
-                },
-                {
-                    "url": "/",
-                    "text": "Prezzi"
-                },
-                {
-                    "url": "/",
-                    "text": "Supporto"
-                }
-            ]
-        }
+    "part3": {
+      "title1": "Perché scegliere"
     },
-    "bellStars": {
-        "title1": "Scopri di più",
-        "body1": "Scopri tutte le funzionalità della piattaforma",
-        "buttonRound": "Inizia"
+    "part4": {
+      "left": {
+        "title1": "Il tuo shop",
+        "title2": "online",
+        "title3": "in pochi",
+        "title4": "minuti!",
+        "body1": "I passaggi per ottenere il tuo negozio online sono davvero pochi, semplici ed intuitivi... ed in attimo il tuo e-commerce sarà attivo!"
+      },
+      "right": {
+        "buttonRound": "Attivo in 5 min"
+      }
     },
-    "academy": {
-        "left": {
-            "title1": "Shopping",
-            "title2": "Academy"
-        },
-        "right": {
-            "body1": "Vuoi sapere come utilizzare al meglio tutte le funzionalità a tua disposizione? Abbiamo creato una sezione per spiegarti tutto, proprio tutto.",
-            "buttonRound": "Scopri ogni segreto"
-        }
+    "part5": {
+      "left": {
+        "buttonRound": "IA al tuo servizio"
+      },
+      "right": {
+        "title1": "Carica i tuoi",
+        "title2": "prodotti in un ",
+        "title3": "lampo",
+        "body1": "Con l'aiuto dell'intelligenza artificiale integrata sarà ancora più semplice di quanto potessi immaginare, le immagini e le descrizioni saranno migliorate automaticamente per ottenere un risultato ottimale!"
+      }
     },
-    "people": {
-        "title1": "Testimonianze",
-        "items": [
-            {
-                "id": 1,
-                "img": "/images/people/1.jpg",
-                "body1": "Shopyboom è davvero la soluzione per tutti, compreso chi, come me, non ha dimestichezza con la tecnologia. Ho aperto il mio negozio online in maniera semplice e veloce, è esteticamente come lo volevo ed anche la gestione è facile e chiara. Supporto efficiente ed affidabile",
-                "body2": "Valentina",
-                "body3": "Sogni di Pietra",
-                "starCount": 5,
-                "disabled": false
-            },
-            {
-                "id": 2,
-                "img": "/images/people/2.jpg",
-                "body1": "Facilissimo da utilizzare: scegli uno dei temi proposti, lo personalizzi se serve e carichi gli articoli, che con il supporto dell’intelligenza artificiale avranno un aspetto ed una descrizione ottimi! I primi mesi sono gratis ed i piani offerti per il futuro sono più che abbordabili, da provare senza dubbio!",
-                "body2": "Marco e Sara",
-                "body3": "La Cerretta",
-                "starCount": 5,
-                "disabled": true
-            },
-            {
-                "id": 3,
-                "img": "/images/people/3.jpg",
-                "body1": "Proprio quello di cui avevo bisogno! Semplice, chiaro, veloce, con assistenza pronta ed in italiano... e ad un prezzo ottimo! Per ora sono davvero soddisfatta di quello che ottenuto, il mio negozio online, fatto da sola e come lo avrei sempre voluto!",
-                "body2": "Jacopo",
-                "body3": "Jacopo Bike",
-                "starCount": 5,
-                "disabled": true
-            },
-            {
-                "id": 4,
-                "img": "/images/people/4.jpg",
-                "body1": "Sembra esserci davvero tutto quello che cercavo! Ho seguito il tutorial e senza intoppi ho aperto il mio negozio, è bello e soprattutto semplice da organizzare. La gestione degli ordini, i pagamenti, le spedizioni, tutto integrato senza alcuna difficoltà",
-                "body2": "Federica",
-                "body3": "Aromatica Naturale",
-                "starCount": 5,
-                "disabled": true
-            }
-        ]
+    "part6": {
+      "left": {
+        "title1": "Personalizza",
+        "title2": "il",
+        "title3": "tuo negozio",
+        "title4": "senza sforzi",
+        "body1": "Scegli il tema che preferisci e personalizza il tuo negozio secondo lo stile che ti piace. Mettiamo a tua disposizione tutto ciò che serve per ottenere il risultato desiderato."
+      },
+      "right": {
+        "buttonRound": "Crea il tuo stile"
+      }
     },
-    "openShop": {
-        "title1": "Apri il tuo negozio",
-        "body1": "I primi",
-        "body2": "3 mesi",
-        "body3": "sono gratis!",
-        "buttonRound": "Inizia"
+    "part7": {
+      "right": {
+        "title1": "Gestire il negozio",
+        "title2": "è",
+        "title3": "semplicissimo",
+        "body1": "Gestire gli ordini, i pagamenti, le spedizioni... non preoccuparti di nulla, abbiamo pensato a come rendere tutto questo semplice ed automatico. Ricorda, il nostro supporto è sempre a tua disposizione!"
+      },
+      "left": {
+        "buttonRound": "Impostazioni automatiche"
+      }
     },
-    "opportunity": {
-        "left": {
-            "title1": "Non perdere",
-            "title2": "questa",
-            "title3": "opportunità"
-        },
-        "right": {
-            "body1": "Rimani aggiornato per tutte le offerte, nuove funzionalità, tutorial… inserisci qui la tua mail",
-            "placeholder": "Scrivi la tua mail",
-            "buttonRound": "Iscriviti"
-        }
-    },
-    "errorMessages" : {
-        "required":"this field is required",
-        "email": "email format is wrong!",
-        "sendRequest": "sorry, there is an error in proceding your request. try again later"
-    },
-    "successMessages" : {
-        "sendRequest": "your request has been sent successfully"
+    "part8": {
+      "left": {
+        "title1": "Promuovi",
+        "title2": "il",
+        "title3": "negozio come un",
+        "title4": "professionista!",
+        "body1": "Marketing, pubblicità, promozioni, newsletter... tutto ciò che serve per promuovere il tuo e-commerce e le tue vendite lo puoi fare all'interno di Shopyboom."
+      },
+      "right": {
+        "buttonRound": "Strumenti marketing",
+        "text1": "Promo!"
+      }
     }
+  },
+  "eCommerce": {
+    "part1": {
+      "title1": "shopyboom",
+      "title2": "fai esplodere",
+      "title3": "le tue vendite"
+    },
+    "part2": {
+      "title1": "Tutto ciò che ti serve per creare e gestire in modo semplice e veloce il tuo negozio online"
+    },
+    "part3": {
+      "left": {
+        "title1": "Un e-commerce",
+        "title2": "Semplice",
+        "body1": "Vogliamo rendere la creazione del tuo e-shop semplice, veloce ed intuitiva. Il tuo negozio online sarà attivo in 4 semplici mosse, aggiungere i prodotti sarà facile e Shopyboom, con l'aiuto dell'intelligenza artificiale integrata, migliorerà le foto ed i testi. Non dovrai preoccuparti dei pagamenti e delle spedizioni, abbiamo automatizzato la loro gestione per rendere l'esperienza a portata di tutti."
+      }
+    },
+    "part4": {
+      "right": {
+        "title1": "L'unione",
+        "title2": "Fa la forza",
+        "body1": "Abbiamo creato questa piattaforma per dare a tutti la possibilità di avere un negozio online, anche a chi non è pratico di tecnologia. Abbiamo analizzato tutto quello che poteva essere un ostacolo e lo abbiamo reso semplice. Abbiamo messo a tua disposizione strumenti di facile utilizzo e un supporto esaustivo e costante, dalla creazione alla gestione del tuo e-commerce. Aprire un e-shop ora è alla portata di tutti!"
+      }
+    },
+    "part5": {
+      "left": {
+        "title1": "Alta tecnologia",
+        "title2": "Per tutti",
+        "body1": "Vendita online, gestione dei prodotti, pagamenti, spedizioni, ma anche attività promozionale, marketing dedicato, potrai gestire tutto all'interno di Shopyboom e sarà semplice farlo, perchè questa piattaforma è stata creata proprio per portare queste tecnologie alla portata di tutti, anche con il supporto dell'intelligenza artificiale integrata. Tu non dovrai fare altro che goderti i risultati!"
+      }
+    }
+  },
+  "risorse": {
+    "part1": {
+      "title1": "Supporto",
+      "title2": "Tutto ciò che ti serve per diventare un mago dell'e-commerce"
+    },
+    "part2": {
+      "items": [
+        {
+          "title1": "Shopping",
+          "title2": "Academy",
+          "body1": "Scopri i tutorial video sull’utilizzo di Shopyboom e su come promuovere il tuo negozio.",
+          "buttonRound": "Vai",
+          "url": "/shopping-academy"
+        },
+        {
+          "title1": "Domande frequenti",
+          "title2": "FAQ",
+          "body1": "Trova le risposte alle domande più frequenti nella sezione dedicata.",
+          "buttonRound": "Vai",
+          "url": "/faq"
+        },
+        {
+          "title1": "Centro",
+          "title2": "Supporto",
+          "body1": "Hai bisogno di supporto? Leggi la documentazione che abbiamo preparato o chiedi direttamente alla nostra chat AI.",
+          "buttonRound": "Vai",
+          "url": "/supporto"
+        }
+      ]
+    },
+    "part3": {
+      "left": {
+        "title1": "Academy",
+        "title2": "Per iniziare..."
+      },
+      "right": {
+        "body1": "Scopri tutti i video tutorial che abbiamo preparato per te: seguili ad ogni passo, dalla creazione del negozio alla sua promozione."
+      }
+    },
+    "part4": {
+      "items": [
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Crea il tuo sito",
+          "body1": "4 semplici passaggi per creare il tuo e-commerce online, inserisci i tuoi dati, scegli lo stile che preferisci e personalizzalo. Iniziamo!"
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Gestisci il catalogo",
+          "body1": "Inserisci i prodotti che vuoi vendere nel tuo e-shop, carica foto e descrizioni, l'intelligenza artificiale ti aiuterà a mostrarli al meglio ai tuoi clienti."
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Gestisci gli ordini",
+          "body1": "Ora inizia la parte migliore: la vendita! Shopyboom gestisce i tuoi ordini ed i clienti in modo semplice ed organizzato, scopri come!"
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Promuovi il tuo sito",
+          "body1": "È importante promuovere il tuo negozio online, per farlo conoscere a nuovi clienti ed aumentare le vendite e potrai fare tutto attraverso la piattaforma."
+        }
+      ]
+    }
+  },
+  "piani": {
+    "part1": {
+      "title1": "Piani",
+      "title2": "Scopri tutti i nostri pacchetti"
+    },
+    "part2": {
+      "items": [
+        {
+          "title1": "Standard",
+          "title2": "",
+          "title3": "",
+          "title4": "",
+          "title5": "",
+          "list": [
+            "Gestione negozio da qualsiasi dispositivo",
+            "Numero di prodotti illimitati",
+            "Assistenza mail Standard",
+            "Reportistica standard",
+            "Strumenti Marketing Standard",
+            "Suggerimenti per attività di comunicazione"
+          ],
+          "price1": "€",
+          "price2": "15",
+          "price3": "/mese",
+          "buttonRound": "Attiva"
+        },
+        {
+          "title1": "Avanzato",
+          "title2": "Tutto ciò che è incluso nel piano",
+          "title3": "Standard",
+          "title4": "",
+          "title5": "Più popolare",
+          "list": [
+            "3 account collaboratori aziendali con ruoli diversi",
+            "Assistenza mail Premium",
+            "Strumenti Marketing Avanzati",
+            "Codici sconto",
+            "Promozioni a tempo",
+            "Intregrazione Instagram, Facebook e Google Shopping"
+          ],
+          "price1": "€",
+          "price2": "23",
+          "price3": "/mese",
+          "buttonRound": "Attiva"
+        },
+        {
+          "title1": "Pro",
+          "title2": "Tutto ciò che è incluso nel piano",
+          "title3": "Avanzato",
+          "title4": "e in più...",
+          "title5": "",
+          "list": [
+            "Account collaboratori aziendali illimitati",
+            "Assistenza mail Pro",
+            "Reportistica Avanzata",
+            "Strumenti Marketing Pro",
+            "Abbonamenti acquisti ricorrenti"
+          ],
+          "price1": "€",
+          "price2": "45",
+          "price3": "/mese",
+          "buttonRound": "Attiva"
+        }
+      ]
+    },
+    "part3": {
+      "title1": "Non sai quale piano possa fare al caso tuo?",
+      "title2": "Hai bisogno di qualche informazione?",
+      "title3": "Contattaci, saremo felici di darti un consiglio!",
+      "buttonRound": "Contattaci",
+      "title4": "Funzionalità",
+      "title5": "Tutto ciò che ti serve per gestire in modo semplice e veloce il tuo negozio online"
+    },
+    "part4": {
+      "headers": ["", "Standard", "Avanzato", "Pro"],
+      "items": [
+        {
+          "headerItem": "Negozio online",
+          "list": [
+            {
+              "title1": "Numero di prodotti Illiminati",
+              "body1": "Potrai caricare sul tuo e-commerce tutti i prodotti che vorrai, senza alcun limite di quantità.",
+              "item1": true,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Account collaboratori esterni",
+              "body1": "Creazione account per collaboratori esterni con accesso gratuito",
+              "item1": true,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Account collaboratori aziendali",
+              "body1": "Creazione account collaboratori aziendali con differenti ruoli",
+              "item1": false,
+              "item2": "3",
+              "item3": "Illimitati"
+            },
+            {
+              "title1": "Reportistica",
+              "body1": "Report sugli andamenti del fatturato, degli ordini, dei prodotti e dei clienti",
+              "item1": "Standard",
+              "item2": "Standard",
+              "item3": "Avanzata"
+            },
+            {
+              "title1": "Magazzino",
+              "body1": "Possibilità di gestire ordini da magazzini in località diverse",
+              "item1": "1",
+              "item2": "5",
+              "item3": "20"
+            },
+            {
+              "title1": "Free Hosting",
+              "body1": "Il canone di hosting per pubblicare il tuo sito è incluso",
+              "item1": true,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Account dei clienti",
+              "body1": "Creazione account illimitato",
+              "item1": true,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Gestione negozio da qualsiasi dispositivo",
+              "body1": "",
+              "item1": true,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Modulo di registrazione alla Newsletter",
+              "body1": "Potrai raccogliere le email degli utenti del tuo sito per l’invio di comunicazioni commerciali",
+              "item1": true,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Powered by Shopyboom",
+              "body1": "Link al sito Shopyboom.it nel piè di pagina del negozio",
+              "item1": "Obbligatorio",
+              "item2": "Rimovibile",
+              "item3": "Rimovibile"
+            },
+            {
+              "title1": "Prodotti a tempo",
+              "body1": "Possibilità di mostrare alcuni prodotti solo per un limitato periodo di tempo",
+              "item1": false,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Personalizzazione del sito su richiesta",
+              "body1": "Possibilità di richiedere personalizzazione dello stile e delle funzionalità del negozio (a pagamento)",
+              "item1": false,
+              "item2": false,
+              "item3": true
+            }
+          ]
+        },
+        {
+          "headerItem": "Promozione",
+          "list": [
+            {
+              "title1": "Campagna promozionale Standard",
+              "body1": "Possibilità di inviare mail promozionale ad una lista di clienti personalizzabile: 100 email/mese",
+              "item1": true,
+              "item2": false,
+              "item3": false
+            },
+            {
+              "title1": "Campagna promozionale Avanzata",
+              "body1": "Possibilità di inviare mail promozionale ad una lista di clienti personalizzabile: 500 email/mese, Contenuti per email più ricchi e generati tramite AI",
+              "item1": false,
+              "item2": true,
+              "item3": false
+            },
+            {
+              "title1": "Campagna promozionale Pro",
+              "body1": "Possibilità di inviare mail promozionale ad una lista di clienti personalizzabile: 10000 email/mese, Contenuti per email più ricchi e generati tramite AI",
+              "item1": false,
+              "item2": false,
+              "item3": true
+            },
+            {
+              "title1": "Suggerimenti comunicazione ai clienti",
+              "body1": "Suggerimenti di best practice per le attività di comunicazione ai clienti",
+              "item1": true,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Mail di recupero del Carrello",
+              "body1": "Mail automatica che arriverà al cliente dopo 1 ora, 1 giorno e 3 giorni dall’abbandono del carrello, nel caso in cui l’acquisto sia stato interrotto",
+              "item1": false,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Codici sconto",
+              "body1": "Possibilità di creare codici sconto per promozioni su prodotti, categorie e importo dell’ordine",
+              "item1": false,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Buoni regalo",
+              "body1": "Possibilità di vendita di buoni regalo di diversi importi",
+              "item1": false,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Promozioni a tempo",
+              "body1": "Possibilità di creare promozioni su prodotti, categorie, importo dell’ordine con scadenza temporale",
+              "item1": false,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Abbonamenti acquisti ricorrenti",
+              "body1": "Possibilità di impostare abbonamenti per acquisti ricorrenti con differenti cadenze temporali",
+              "item1": false,
+              "item2": false,
+              "item3": true
+            },
+            {
+              "title1": "Integrazione Instagram, Facebook e Google Shopping",
+              "body1": "Il tuo catalogo prodotti verrà automaticamente pubblicato nei marketplace Instagram, Facebook e nella sezione gratuita Google Shopping",
+              "item1": false,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Possibilità di integrare WhatsApp",
+              "body1": "Integrazione di WhatsApp per gestire le comunicazioni con i clienti",
+              "item1": false,
+              "item2": false,
+              "item3": true
+            }
+          ]
+        },
+        {
+          "headerItem": "Supporto",
+          "list": [
+            {
+              "title1": "Assistenza email Standard",
+              "body1": "Risposta in 48 ore lavorative (esclusi giorni festivi), Massimo 10 Mail al mese",
+              "item1": true,
+              "item2": false,
+              "item3": false
+            },
+            {
+              "title1": "Assistenza email Avanzata",
+              "body1": "Risposta in 24 ore lavorative (esclusi giorni festivi), Assistenza telefonica a pagamento in orari prefissati",
+              "item1": false,
+              "item2": true,
+              "item3": false
+            },
+            {
+              "title1": "Assistenza email Pro",
+              "body1": "Assistenza mail  prioritaria (esclusi giorni festivi), Assistenza telefonica a pagamento in orari prefissati",
+              "item1": false,
+              "item2": false,
+              "item3": true
+            },
+            {
+              "title1": "Assistenza Chatbot",
+              "body1": "Assistenza tramite Chatbot integrato con Intelligenza Artificiale sempre a tua disposizione",
+              "item1": true,
+              "item2": true,
+              "item3": true
+            },
+            {
+              "title1": "Shopping Academy",
+              "body1": "Accesso a tutti i contenti della Shopping Academy, dove potrai trovare tutorial video sull’utilizzo di Shopyboom e su come promuovere il tuo negozio",
+              "item1": true,
+              "item2": true,
+              "item3": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "shoppingAcademy": {
+    "part1": {
+      "title1": "Shopping Academy",
+      "title2": "Impara come sfruttare al meglio il tuo negozio on-line"
+    },
+    "part2": {
+      "left": {
+        "title1": "Apri il tuo negozio"
+      },
+      "right": {
+        "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "items": [
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Crea il tuo sito",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Gestisci il catalogo",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Gestisci gli ordini",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Promuovi il tuo sito",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      ]
+    },
+    "part3": {
+      "left": {
+        "title1": "Gestisci il tuo negozio"
+      },
+      "right": {
+        "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "items": [
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Crea il tuo sito",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Gestisci il catalogo",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Gestisci gli ordini",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Promuovi il tuo sito",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      ]
+    },
+    "part4": {
+      "left": {
+        "title1": "Analizza e Promuovi"
+      },
+      "right": {
+        "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      },
+      "items": [
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Crea il tuo sito",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Gestisci il catalogo",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Gestisci gli ordini",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "img": "/images/girl.png",
+          "url": "/",
+          "title1": "Promuovi il tuo sito",
+          "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      ]
+    }
+  },
+  "faq": {
+    "part1": {
+      "title1": "FAQ",
+      "title2": "Trova le risposte alle domande più comuni"
+    },
+    "part2": {
+      "title1": "Ottieni rapidamente risposte alle domande più frequenti sulla configurazione del tuo negozio.",
+      "items": [
+        {
+          "question": "Come posso creare un account sul sito?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "question": "Come posso gestire gli ordini?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "question": "Come posso creare un codice sconto?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "question": "Come posso aggiornare le informazioni del mio account?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "question": "Come posso contattare il servizio clienti?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "question": "Quanto tempo ci vuole per la spedizione e quali sono i costi?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "question": "Cosa devo fare se ricevo un prodotto danneggiato o sbagliato?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "question": "Come posso creare un account sul sito?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "question": "Come posso gestire gli ordini?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+          "question": "Come posso contattare il servizio clienti?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
+      ]
+    }
+  },
+  "header": {
+    "sitename": "shopyboom",
+    "login": "Inizia",
+    "items": [
+      {
+        "url": "/",
+        "text": "Accedi"
+      },
+      {
+        "url": "/supporto",
+        "text": "Supporto"
+      },
+      {
+        "url": "/shopping-academy",
+        "text": "Academy"
+      },
+      {
+        "url": "/piani",
+        "text": "Piani"
+      },
+      {
+        "url": "/caratteristiche-piattaforma-ecommerce",
+        "text": "Cos'è"
+      }
+    ]
+  },
+  "footer": {
+    "column1": {
+      "part1": [
+        {
+          "url": "/",
+          "text": "shopyboom"
+        },
+        {
+          "url": "/",
+          "text": "è un marchio di proprietà di"
+        }
+      ],
+      "part2": [
+        {
+          "url": "/",
+          "text": "Alkimia srl"
+        },
+        {
+          "url": "/",
+          "text": "P.IVA 012345678987"
+        },
+        {
+          "url": "/",
+          "text": "info@alkimia.shopping"
+        }
+      ]
+    },
+    "column2": [
+      {
+        "url": "/",
+        "text": "Chi siamo"
+      },
+      {
+        "url": "/",
+        "text": "Manifesto"
+      },
+      {
+        "url": "/",
+        "text": "Blog"
+      },
+      {
+        "url": "/",
+        "text": "Lavora con noi"
+      },
+      {
+        "url": "/",
+        "text": "Aggiornamenti e novità"
+      },
+      {
+        "url": "/",
+        "text": "Termini e condizioni"
+      },
+      {
+        "url": "/",
+        "text": "Informativa Privacy"
+      }
+    ],
+    "column3": [
+      {
+        "url": "/",
+        "text": "Contatti"
+      },
+      {
+        "url": "/",
+        "text": "Richiedi appuntamento"
+      },
+      {
+        "url": "/",
+        "text": "Accademia"
+      },
+      {
+        "url": "/",
+        "text": "Apri Richiesta supporto"
+      },
+      {
+        "url": "/",
+        "text": "Domande frequenti"
+      }
+    ],
+    "column4": {
+      "part1": [
+        {
+          "url": "/",
+          "text": "Accedi al tuo negozio"
+        },
+        {
+          "url": "/",
+          "text": "Crea il tuo negozio"
+        }
+      ],
+      "part2": [
+        {
+          "url": "/",
+          "text": "Home page"
+        },
+        {
+          "url": "/",
+          "text": "Funzionalità"
+        },
+        {
+          "url": "/",
+          "text": "Prezzi"
+        },
+        {
+          "url": "/",
+          "text": "Supporto"
+        }
+      ]
+    }
+  },
+  "bellStars": {
+    "title1": "Scopri di più",
+    "body1": "Scopri tutte le funzionalità della piattaforma",
+    "buttonRound": "Inizia"
+  },
+  "academy": {
+    "left": {
+      "title1": "Shopping",
+      "title2": "Academy"
+    },
+    "right": {
+      "body1": "Vuoi sapere come utilizzare al meglio tutte le funzionalità a tua disposizione? Abbiamo creato una sezione per spiegarti tutto, proprio tutto.",
+      "buttonRound": "Scopri ogni segreto"
+    }
+  },
+  "people": {
+    "title1": "Testimonianze",
+    "items": [
+      {
+        "id": 1,
+        "img": "/images/people/1.jpg",
+        "body1": "Shopyboom è davvero la soluzione per tutti, compreso chi, come me, non ha dimestichezza con la tecnologia. Ho aperto il mio negozio online in maniera semplice e veloce, è esteticamente come lo volevo ed anche la gestione è facile e chiara. Supporto efficiente ed affidabile",
+        "body2": "Valentina",
+        "body3": "Sogni di Pietra",
+        "starCount": 5,
+        "disabled": false
+      },
+      {
+        "id": 2,
+        "img": "/images/people/2.jpg",
+        "body1": "Facilissimo da utilizzare: scegli uno dei temi proposti, lo personalizzi se serve e carichi gli articoli, che con il supporto dell’intelligenza artificiale avranno un aspetto ed una descrizione ottimi! I primi mesi sono gratis ed i piani offerti per il futuro sono più che abbordabili, da provare senza dubbio!",
+        "body2": "Marco e Sara",
+        "body3": "La Cerretta",
+        "starCount": 5,
+        "disabled": true
+      },
+      {
+        "id": 3,
+        "img": "/images/people/3.jpg",
+        "body1": "Proprio quello di cui avevo bisogno! Semplice, chiaro, veloce, con assistenza pronta ed in italiano... e ad un prezzo ottimo! Per ora sono davvero soddisfatta di quello che ottenuto, il mio negozio online, fatto da sola e come lo avrei sempre voluto!",
+        "body2": "Jacopo",
+        "body3": "Jacopo Bike",
+        "starCount": 5,
+        "disabled": true
+      },
+      {
+        "id": 4,
+        "img": "/images/people/4.jpg",
+        "body1": "Sembra esserci davvero tutto quello che cercavo! Ho seguito il tutorial e senza intoppi ho aperto il mio negozio, è bello e soprattutto semplice da organizzare. La gestione degli ordini, i pagamenti, le spedizioni, tutto integrato senza alcuna difficoltà",
+        "body2": "Federica",
+        "body3": "Aromatica Naturale",
+        "starCount": 5,
+        "disabled": true
+      }
+    ]
+  },
+  "openShop": {
+    "title1": "Apri il tuo negozio",
+    "body1": "I primi",
+    "body2": "3 mesi",
+    "body3": "sono gratis!",
+    "buttonRound": "Inizia"
+  },
+  "opportunity": {
+    "left": {
+      "title1": "Non perdere",
+      "title2": "questa",
+      "title3": "opportunità"
+    },
+    "right": {
+      "body1": "Rimani aggiornato per tutte le offerte, nuove funzionalità, tutorial… inserisci qui la tua mail",
+      "placeholder": "Scrivi la tua mail",
+      "buttonRound": "Iscriviti"
+    }
+  },
+  "errorMessages": {
+    "required": "this field is required",
+    "email": "email format is wrong!",
+    "sendRequest": "sorry, there is an error in proceding your request. try again later"
+  },
+  "successMessages": {
+    "sendRequest": "your request has been sent successfully"
+  }
 }

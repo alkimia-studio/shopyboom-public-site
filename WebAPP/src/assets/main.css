@@ -8,7 +8,7 @@
 }
 
 button.button1 {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-style: solid !important;
   text-align: center;
   align-items: center;
@@ -19,17 +19,17 @@ button.button1 {
   border-radius: 28px;
 }
 
-.image1{
+.image1 {
   border-radius: 12px;
 }
-.image2-border-radius{
+.image2-border-radius {
   border-radius: 12px;
 }
-.image2{
+.image2 {
   opacity: 0.5;
 }
 
-.input1{
+.input1 {
   background-color: transparent;
   height: 42px;
   width: 100%;
@@ -45,34 +45,42 @@ button.button1 {
   display: block;
 }
 
-.input1.error{
+.input1.error {
   border: 4px solid;
   border-color: var(--color-51) !important;
   border-radius: 8px;
 }
 
-.piniacard{
+.piniacard {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
-.border-top-12{
+.border-top-12 {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 
-.piniacard.active{
+.piniacard.active {
   border: 3px solid;
 }
 .arrow {
   opacity: 0;
   animation: arrow-animation 1s 2s infinite;
-  
 }
 
 @keyframes arrow-animation {
-  0% { opacity: 0; margin-top:0px; }
-  70% { opacity: 1;  margin-top:60px;}
-  100% { opacity: 0; margin-top:60px;}
+  0% {
+    opacity: 0;
+    margin-top: 0px;
+  }
+  70% {
+    opacity: 1;
+    margin-top: 60px;
+  }
+  100% {
+    opacity: 0;
+    margin-top: 60px;
+  }
 }
 .openBar {
   position: fixed;
@@ -103,10 +111,10 @@ button.button1 {
   .banner1 {
     height: 400px;
   }
-  .image1{
+  .image1 {
     min-height: 400px;
   }
-  .image2{
+  .image2 {
     min-height: 200px;
   }
 }
@@ -114,10 +122,10 @@ button.button1 {
   .banner1 {
     height: 400px;
   }
-  .image1{
+  .image1 {
     min-height: 400px;
   }
-  .image2{
+  .image2 {
     min-height: 200px;
   }
 }
@@ -125,10 +133,10 @@ button.button1 {
   .banner1 {
     height: 500px;
   }
-  .image1{
+  .image1 {
     min-height: 400px;
   }
-  .image2{
+  .image2 {
     min-height: 160px;
   }
 }
@@ -136,10 +144,10 @@ button.button1 {
   .banner1 {
     height: 600px;
   }
-  .image1{
+  .image1 {
     min-height: 750px;
   }
-  .image2{
+  .image2 {
     min-height: 160px;
   }
 }
@@ -147,10 +155,10 @@ button.button1 {
   .banner1 {
     height: 100vh;
   }
-  .image1{
+  .image1 {
     min-height: 300px;
   }
-  .image2{
+  .image2 {
     min-height: 140px;
   }
 }
@@ -158,10 +166,10 @@ button.button1 {
   .banner1 {
     height: 100vh;
   }
-  .image1{
+  .image1 {
     min-height: 300px;
   }
-  .image2{
+  .image2 {
     min-height: 200px;
   }
 }

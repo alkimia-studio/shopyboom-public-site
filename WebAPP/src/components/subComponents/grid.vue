@@ -9,7 +9,7 @@ const props = defineProps({
   md: Number,
   sm: Number,
   xs: Number,
-  direction: { type: String as () => 'rtl' | 'ltr' , default: 'ltr' },
+  direction: { type: String as () => 'rtl' | 'ltr', default: 'ltr' }
 })
 const containerClasses = ref([''])
 const itemClasses = ref<string[]>([])

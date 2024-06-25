@@ -20,7 +20,38 @@ const onClick = () => {
 </script>
 <template>
   <a v-if="props.href" :href="props.href" class="cursor-pointer width-inherit">
-    <button @mouseover="hover = true" @mouseleave="hover = false" class="button1" :class="[
+    <button
+      @mouseover="hover = true"
+      @mouseleave="hover = false"
+      class="button1"
+      :class="[
+        ...props.class.split(' '),
+        `borderapp-color-${props.border}`,
+        hover && props.hoverBackground !== undefined
+          ? `backgroundapp-color-${props.hoverBackground}`
+          : `backgroundapp-color-${props.background}`,
+        hover && props.hoverColor !== undefined
+          ? `textapp-color-${props.hoverColor}`
+          : `textapp-color-${props.color}`
+      ]"
+      :type="props.type"
+      @click="
+        () => {
+          onClick()
+        }
+      "
+    >
+      <Stack direction="row" justifyContent="center" alignItems="center">
+        <slot></slot>
+      </Stack>
+    </button>
+  </a>
+  <button
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    class="button1"
+    v-else
+    :class="[
       ...props.class.split(' '),
       `borderapp-color-${props.border}`,
       hover && props.hoverBackground !== undefined
@@ -29,28 +60,14 @@ const onClick = () => {
       hover && props.hoverColor !== undefined
         ? `textapp-color-${props.hoverColor}`
         : `textapp-color-${props.color}`
-    ]" :type="props.type" @click="() => {
-          onClick()
-        }
-        ">
-      <Stack direction="row" justifyContent="center" alignItems="center">
-        <slot></slot>
-      </Stack>
-    </button>
-  </a>
-  <button @mouseover="hover = true" @mouseleave="hover = false" class="button1" v-else :class="[
-    ...props.class.split(' '),
-    `borderapp-color-${props.border}`,
-    hover && props.hoverBackground !== undefined
-      ? `backgroundapp-color-${props.hoverBackground}`
-      : `backgroundapp-color-${props.background}`,
-    hover && props.hoverColor !== undefined
-      ? `textapp-color-${props.hoverColor}`
-      : `textapp-color-${props.color}`
-  ]" :type="props.type" @click="() => {
+    ]"
+    :type="props.type"
+    @click="
+      () => {
         onClick()
       }
-      ">
+    "
+  >
     <Stack direction="row" justifyContent="center" alignItems="center">
       <slot></slot>
     </Stack>

@@ -18,7 +18,7 @@ export enum sizeType {
 
 export const useSizeStore = defineStore('size', () => {
   const size = ref(sizeType.lg)
-  const sizePX = ref<number>(window.innerWidth);
+  const sizePX = ref<number>(window.innerWidth)
   window.addEventListener('resize', () => {
     updateSize()
   })
@@ -41,41 +41,59 @@ export const useSizeStore = defineStore('size', () => {
       return sizeType.unk
     }
   }
-  function chooseCorrect(xl: number | undefined, lg: number | undefined, md: number | undefined, sm: number | undefined, xs: number | undefined) : number | undefined {
+  function chooseCorrect(
+    xl: number | undefined,
+    lg: number | undefined,
+    md: number | undefined,
+    sm: number | undefined,
+    xs: number | undefined
+  ): number | undefined {
     switch (size.value) {
-      case sizeType.xl: return xl
-      case sizeType.lg: return lg
-      case sizeType.md: return md
-      case sizeType.sm: return sm
-      case sizeType.xs: return xs
-      default: return undefined
+      case sizeType.xl:
+        return xl
+      case sizeType.lg:
+        return lg
+      case sizeType.md:
+        return md
+      case sizeType.sm:
+        return sm
+      case sizeType.xs:
+        return xs
+      default:
+        return undefined
     }
   }
-  function chooseCorrectUp(xl: number | undefined, lg: number | undefined, md: number | undefined, sm: number | undefined, xs: number) : number{
-    let result : number = xs
-    if(biggerThan(sizeType.lg)){
-      xl !== undefined ? result = xl :
-      lg !== undefined ? result = lg :
-      md !== undefined ? result = md :
-      sm !== undefined ? result = sm :
-      result = xs
-    } 
-    else if(biggerThan(sizeType.md)){
-      lg !== undefined ? result = lg :
-      md !== undefined ? result = md :
-      sm !== undefined ? result = sm :
-      result = xs
-    }
-    else if(biggerThan(sizeType.sm)){
-      md !== undefined ? result = md :
-      sm !== undefined ? result = sm :
-      result = xs
-    }
-    else if(biggerThan(sizeType.xs)){
-      sm !== undefined ? result = sm :
-      result = xs
-    }
-    else {
+  function chooseCorrectUp(
+    xl: number | undefined,
+    lg: number | undefined,
+    md: number | undefined,
+    sm: number | undefined,
+    xs: number
+  ): number {
+    let result: number = xs
+    if (biggerThan(sizeType.lg)) {
+      xl !== undefined
+        ? (result = xl)
+        : lg !== undefined
+          ? (result = lg)
+          : md !== undefined
+            ? (result = md)
+            : sm !== undefined
+              ? (result = sm)
+              : (result = xs)
+    } else if (biggerThan(sizeType.md)) {
+      lg !== undefined
+        ? (result = lg)
+        : md !== undefined
+          ? (result = md)
+          : sm !== undefined
+            ? (result = sm)
+            : (result = xs)
+    } else if (biggerThan(sizeType.sm)) {
+      md !== undefined ? (result = md) : sm !== undefined ? (result = sm) : (result = xs)
+    } else if (biggerThan(sizeType.xs)) {
+      sm !== undefined ? (result = sm) : (result = xs)
+    } else {
       result = xs
     }
     return result
@@ -115,5 +133,5 @@ export const useSizeStore = defineStore('size', () => {
     size.value = deviceSize()
     sizePX.value = window.innerWidth
   }
-  return { biggerThan , chooseCorrectUp , chooseCorrect }
+  return { biggerThan, chooseCorrectUp, chooseCorrect }
 })

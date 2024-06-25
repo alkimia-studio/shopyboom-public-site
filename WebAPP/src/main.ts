@@ -51,15 +51,15 @@ import opportunity from '@/components/subPages/opportunity.vue'
 
 import Vue3Lottie from 'vue3-lottie'
 import Notifications from '@kyvg/vue3-notification'
-import { register } from 'swiper/element/bundle';
+import { register } from 'swiper/element/bundle'
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(createHead())
 app.use(router)
 app.use(Notifications)
-app.use(Vue3Lottie, { name: "Vue3Lottie" })
-register();
+app.use(Vue3Lottie, { name: 'Vue3Lottie' })
+register()
 
 app.component('Txt', txt)
 app.component('Stack', stack)
@@ -88,11 +88,11 @@ app.component('IQuestion', iconQuestion)
 
 app.component('ShapeCircle', shapeCircle)
 app.component('ShapeButtonRoundClock', shapeButtonRoundClock)
-app.component('ShapeButtonRoundPipe',shapeButtonRoundPipe)
-app.component('ShapeButtonRoundPipe2',shapeButtonRoundPipe2)
-app.component('ShapeButtonRoundBrush',shapeButtonRoundBrush)
-app.component('ShapeButtonRoundSpeaker',shapeButtonRoundSpeaker)
-app.component('ShapeText',shapeText)
+app.component('ShapeButtonRoundPipe', shapeButtonRoundPipe)
+app.component('ShapeButtonRoundPipe2', shapeButtonRoundPipe2)
+app.component('ShapeButtonRoundBrush', shapeButtonRoundBrush)
+app.component('ShapeButtonRoundSpeaker', shapeButtonRoundSpeaker)
+app.component('ShapeText', shapeText)
 
 app.component('Header', header)
 app.component('Footer', footer)
