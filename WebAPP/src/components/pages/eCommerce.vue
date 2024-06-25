@@ -22,17 +22,23 @@ const shapeContainerMinHeight = {
 </script>
 <template>
     <Banner1 src="/images/image2.jpg" class="backgroundapp-color-7">
-        <Txt :class="
-          size.biggerThan(sizeType.md) ? 'pt40' : size.biggerThan(sizeType.sm) ? 'pt30' : size.biggerThan(sizeType.xs) ? 'pt35' : 'pt25'
-        " :font="2" :color="3" :xl="134" :lg="110" :md="80"
-            :sm="70" :xs="45" text-align="center" bold>{{
-            data.eCommerce.part1.title1 }}</Txt>
-        <Txt class="mt6" :font="2" :color="2" :xl="93" :lg="81" :md="60"
-            :sm="40" :xs="30" text-align="center" bold>{{
-            data.eCommerce.part1.title2 }}</Txt>
-        <Txt class="mt6" :font="2" :color="2" :xl="93" :lg="81" :md="60"
-            :sm="40" :xs="30" text-align="center" bold>{{
-            data.eCommerce.part1.title3 }}</Txt>
+        <Anim delay="500" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
+            <Txt :class="
+            size.biggerThan(sizeType.md) ? 'pt40' : size.biggerThan(sizeType.sm) ? 'pt30' : size.biggerThan(sizeType.xs) ? 'pt35' : 'pt25'
+            " :font="2" :color="3" :xl="134" :lg="110" :md="80"
+                :sm="70" :xs="45" text-align="center" bold>{{
+                data.eCommerce.part1.title1 }}</Txt>
+                </Anim>
+                <Anim delay="1000" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
+            <Txt class="mt6" :font="2" :color="2" :xl="93" :lg="81" :md="60"
+                :sm="40" :xs="30" text-align="center" bold>{{
+                data.eCommerce.part1.title2 }}</Txt>
+                </Anim>
+                <Anim delay="1500" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
+            <Txt class="mt6" :font="2" :color="2" :xl="93" :lg="81" :md="60"
+                :sm="40" :xs="30" text-align="center" bold>{{
+                data.eCommerce.part1.title3 }}</Txt>
+                </Anim>
     </Banner1>
     <Stack direction="row" class="width-100p p10" justifyContent="center" alignItems="center">
         <Txt class="pr2" text-align="center" :font=1 :color=1 :lg=30 :md=20 :sm=20 :xs=18>{{

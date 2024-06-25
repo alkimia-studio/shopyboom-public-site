@@ -73,7 +73,7 @@
                 "title1": "Gestire il negozio",
                 "title2": "è",
                 "title3": "semplicissimo",
-                "body1": "Gestire gli ordini, i pagamenti, le spedizioni... non preoccuparti di nulla, abbiamo pensato a come rendere tutto questo semplice ed automatico. E ricorda, il nostro supporto è sempre a tua disposizione!"
+                "body1": "Gestire gli ordini, i pagamenti, le spedizioni... non preoccuparti di nulla, abbiamo pensato a come rendere tutto questo semplice ed automatico. Ricorda, il nostro supporto è sempre a tua disposizione!"
             },
             "left": {
                 "buttonRound": "Impostazioni automatiche"
@@ -96,17 +96,17 @@
     "eCommerce": {
         "part1": {
             "title1": "shopyboom",
-            "title2": "e-commerce,",
-            "title3": "per tutti!"
+            "title2": "fai esplodere",
+            "title3": "le tue vendite"
         },
         "part2": {
-            "title1": "Tutto ciò che ti serve per gestire in modo semplice e veloce il tuo negozio online"
+            "title1": "Tutto ciò che ti serve per creare e gestire in modo semplice e veloce il tuo negozio online"
         },
         "part3": {
             "left": {
                 "title1": "Un e-commerce",
                 "title2": "Semplice",
-                "body1": "Volevamo rendere la creazione del tuo e-shop semplice, veloce ed intuitiva. Il tuo negozio online sarà attivo in 4 semplici mosse, aggiungere i prodotti sarà facile e Shopyboom, con l'aiuto dell'intelligenza artificiale integrata, migliorerà le foto ed i testi. Non dovrai preoccuparti dei pagamenti e delle spedizioni, abbiamo automatizzato la loro gestione per rendere l'esperienza a portata di tutti."
+                "body1": "Vogliamo rendere la creazione del tuo e-shop semplice, veloce ed intuitiva. Il tuo negozio online sarà attivo in 4 semplici mosse, aggiungere i prodotti sarà facile e Shopyboom, con l'aiuto dell'intelligenza artificiale integrata, migliorerà le foto ed i testi. Non dovrai preoccuparti dei pagamenti e delle spedizioni, abbiamo automatizzato la loro gestione per rendere l'esperienza a portata di tutti."
             }
         },
         "part4": {
@@ -228,7 +228,7 @@
                     "title1":"Avanzato",
                     "title2":"Tutto ciò che è incluso nel piano",
                     "title3":"Standard",
-                    "title4":"ed inoltre...",
+                    "title4":"",
                     "title5": "Più popolare",
                     "list":[
                         "3 account collaboratori aziendali con ruoli diversi",
@@ -670,6 +670,10 @@
             {
                 "url": "/supporto",
                 "text": "Supporto"
+            },
+            {
+                "url": "/shopping-academy",
+                "text": "Academy"
             },
             {
                 "url": "/piani",

@@ -66,6 +66,7 @@ button.button1 {
 .arrow {
   opacity: 0;
   animation: arrow-animation 1s 2s infinite;
+  
 }
 
 @keyframes arrow-animation {

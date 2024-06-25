@@ -10,6 +10,7 @@ const props = defineProps({
   in: { type: String, default: '' },
   out: { type: String, default: '' },
   count: { type: [Number, String] , default: 'inf' },
+  delay: { type: [Number, String] , default: '0' },
   scrollXl: Number,
   scrollLg: Number,
   scrollMd: Number,
@@ -68,7 +69,7 @@ onBeforeMount(()=>{
   <div 
   @mouseover="props.when === 'hover' ? doAnim(animTypeEnum.in) : null" 
   @mouseleave="props.when === 'hover' ? doAnim(animTypeEnum.out) : null"
-  :style="props.when === 'pageload' && props.count !== 'inf' ? { animationIterationCount : props.count } : ''"
+  :style="[props.when === 'pageload' && props.count !== 'inf' ? { animationIterationCount : props.count } : '', { animationDelay: `${props.delay ?? 0}ms` } ]"
   :class="[props.class,animClasses]" class="anim">
     <slot></slot>
   </div>
