@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useScrollStore } from '@/helper/scrollHandler'
 import { isNotEmpty, isPositiveNumber } from '@/helper/validation'
-import { onBeforeMount, ref, watch } from 'vue'
+import { computed, onBeforeMount, onMounted, ref } from 'vue'
 enum animTypeEnum {
   in,
   out
@@ -14,14 +14,11 @@ const props = defineProps({
   out: { type: String, default: '' },
   count: { type: [Number, String], default: 'inf' },
   delay: { type: [Number, String], default: '0' },
-  scrollXl: Number,
-  scrollLg: Number,
-  scrollMd: Number,
-  scrollSm: Number,
-  scrollXs: Number
+  autoScrollOffset: { type: [Number,String], default: 0 },
 })
 const animClasses = ref<string[]>([])
 const countPassed = ref(0)
+const autoScrollOffsetNumber = computed(()=> typeof(props.autoScrollOffset) === "string" ? +props.autoScrollOffset as number : props.autoScrollOffset as number)
 const doAnimCount = (animType: animTypeEnum): boolean => {
   if (props.count === 'inf') return true
   const cnt =
@@ -38,15 +35,6 @@ const doAnimCount = (animType: animTypeEnum): boolean => {
   }
   return false
 }
-onBeforeMount(() => {
-  if (props.when === 'pageload') {
-    if (props.count === 'inf') animClasses.value.push('anim-loop')
-    doAnim(animTypeEnum.in)
-  }
-  if (props.in.startsWith('animate__') || props.out.startsWith('animate__')) {
-    animClasses.value.push('animate__animated')
-  }
-})
 const doAnim = (animType: animTypeEnum) => {
   if (doAnimCount(animType)) {
     switch (animType) {
@@ -63,40 +51,27 @@ const doAnim = (animType: animTypeEnum) => {
   }
 }
 onBeforeMount(() => {
-  if (props.when === 'scroll') {
+  if (props.when === 'pageload') {
+    if (props.count === 'inf') animClasses.value.push('anim-loop')
+    doAnim(animTypeEnum.in)
+  }
+  if (props.in.startsWith('animate__') || props.out.startsWith('animate__')) {
+    animClasses.value.push('animate__animated')
+  }
+})
+const animElement = ref()
+onMounted(()=>{
+  if(props.when === 'scroll'){
+    const elem = animElement.value as HTMLElement
     if (isNotEmpty(props.in))
-      scroll.register(
-        {
-          xl: props.scrollXl,
-          lg: props.scrollLg,
-          md: props.scrollMd,
-          sm: props.scrollSm,
-          xs: props.scrollXs
-        },
-        () => {
-          doAnim(animTypeEnum.in)
-        },
-        'utb'
-      )
+      scroll.registerAuto(elem,autoScrollOffsetNumber.value,() => {doAnim(animTypeEnum.in)},'utb')
     if (isNotEmpty(props.out))
-      scroll.register(
-        {
-          xl: props.scrollXl,
-          lg: props.scrollLg,
-          md: props.scrollMd,
-          sm: props.scrollSm,
-          xs: props.scrollXs
-        },
-        () => {
-          doAnim(animTypeEnum.out)
-        },
-        'btu'
-      )
+      scroll.registerAuto(elem,autoScrollOffsetNumber.value,() => {doAnim(animTypeEnum.out)},'btu')
   }
 })
 </script>
 <template>
-  <div
+  <div ref="animElement"
     @mouseover="props.when === 'hover' ? doAnim(animTypeEnum.in) : null"
     @mouseleave="props.when === 'hover' ? doAnim(animTypeEnum.out) : null"
     :style="[
@@ -106,8 +81,7 @@ onBeforeMount(() => {
       { animationDelay: `${props.delay ?? 0}ms` }
     ]"
     :class="[props.class, animClasses]"
-    class="anim"
-  >
+    class="anim">
     <slot></slot>
   </div>
 </template>

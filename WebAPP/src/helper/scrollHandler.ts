@@ -11,31 +11,43 @@ type scrollFunctionType = {
   func: Function
   direction: 'utb' | 'btu' | 'both'
 }
+type scrollAutoFunctionType = {
+  y: number,
+  func: Function
+  direction: 'utb' | 'btu' | 'both'
+}
 export const useScrollStore = defineStore('scroll', () => {
   const size = useSizeStore()
   const scrollY = ref(window.scrollY)
   const print = ref(false)
   const scrollList = ref<scrollFunctionType[]>([])
+  const scrollAutoList = ref<scrollAutoFunctionType[]>([])
   const enablePrint = () => (print.value = true)
   window.addEventListener('scroll', () => {
     handleScroll()
   })
+  const checkScrollDo = (y: number | undefined, scrollRealY: number, direction: 'utb' | 'btu' | 'both', scrollUpToBottom: boolean) => 
+    y !== undefined &&
+  ((direction === 'utb' && scrollUpToBottom && y >= scrollY.value && y <= scrollRealY) ||
+    (direction === 'btu' &&
+      !scrollUpToBottom &&
+      y <= scrollY.value &&
+      y >= scrollRealY) ||
+    (direction === 'both' &&
+      ((y >= scrollY.value && y <= scrollRealY) || (y <= scrollY.value && y >= scrollRealY))))
+
   const handleScroll = () => {
     const scrollRealY = window.scrollY
     if (print.value) console.log(scrollRealY)
     const scrollUpToBottom = scrollRealY > scrollY.value
     scrollList.value.forEach((item) => {
       const y = size.chooseCorrect(item.xly, item.lgy, item.mdy, item.smy, item.xsy)
-      if (
-        y !== undefined &&
-        ((item.direction === 'utb' && scrollUpToBottom && y >= scrollY.value && y <= scrollRealY) ||
-          (item.direction === 'btu' &&
-            !scrollUpToBottom &&
-            y <= scrollY.value &&
-            y >= scrollRealY) ||
-          (item.direction === 'both' &&
-            ((y >= scrollY.value && y <= scrollRealY) || (y <= scrollY.value && y >= scrollRealY))))
-      ) {
+      if (checkScrollDo(y,scrollRealY,item.direction,scrollUpToBottom)) {
+        item.func()
+      }
+    })
+    scrollAutoList.value.forEach((item) => {
+      if (checkScrollDo(item.y,scrollRealY,item.direction,scrollUpToBottom)) {
         item.func()
       }
     })
@@ -55,6 +67,12 @@ export const useScrollStore = defineStore('scroll', () => {
       func: func,
       direction: direction
     })
-
-  return { register, enablePrint }
+    const registerAuto = (elem: HTMLElement, offsetY: number, func: Function, direction: 'utb' | 'btu' | 'both' = 'utb' ) =>{
+      scrollAutoList.value.push({
+          y: elem.offsetTop - window.innerHeight + offsetY,
+          func: func,
+          direction: direction
+      })
+    }
+  return {  registerAuto, enablePrint } //  register
 })

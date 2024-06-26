@@ -1,13 +1,9 @@
 <script setup lang="ts">
 import { useSizeStore, sizeType } from '@/helper/widthHandler'
-import { useScrollStore } from '@/helper/scrollHandler'
 import { useHead } from '@unhead/vue'
 import { ChevronRightIcon, ArrowLongDownIcon } from '@heroicons/vue/24/solid'
 import data from '@/helper/data.json'
-import { onBeforeMount, ref } from 'vue'
 const size = useSizeStore()
-const scroll = useScrollStore()
-onBeforeMount(() => {  })
 useHead({
   title: 'this is title',
   meta: [
@@ -70,10 +66,8 @@ const shapeContainerMinHeight = {
   </Banner1>
   <Stack :class="size.biggerThan(sizeType.sm) ? 'pr35 pl35' : 'pr5 pl5'" direction="column" justifyContent="flex-start"
     alignItems="flex-start">
-    <Anim :when="size.biggerThan(sizeType.md) ? 'scroll' : 'pageload'"
-      :class="size.biggerThan(sizeType.md) ? 'opacity-0' : ''"
-      :in="size.biggerThan(sizeType.md) ? 'animate__fadeInUp opacity-1' : 'animate__fadeInUp'" out="" count="1"
-      scroll-xl="120" scroll-lg="130" scroll-xs="0">
+    <Anim auto-scroll-offset="100" :when="size.biggerThan(sizeType.md) ? 'scroll' : 'pageload'" in="animate__fadeInUp  opacity-1" out="" count="1"
+      :class="size.biggerThan(sizeType.md) ? 'opacity-0' : ''">
       <Grid class="mt20 width-100p" container :xl="2" :lg="1">
         <Grid :xl="1" :lg="1">
           <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
@@ -104,8 +98,7 @@ const shapeContainerMinHeight = {
         </Grid>
       </Grid>
     </Anim>
-    <Anim when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p" scroll-xl="655"
-      scroll-lg="845" scroll-md="646" scroll-sm="439" scroll-xs="386">
+    <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p">
       <Stack :direction="size.biggerThan(sizeType.sm) ? 'row' : 'column'" class="width-100p pt30 pb30"
         justifyContent="center" alignItems="center">
         <Txt class="pr2 word-no-break" :text-align="size.biggerThan(sizeType.sm) ? 'right' : 'center'" :font="1"
@@ -153,8 +146,7 @@ const shapeContainerMinHeight = {
         </ShapeContainer>
       </Grid>
       <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
-        <Anim when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0" scroll-xl="1013"
-          scroll-lg="1192" scroll-md="1446" scroll-sm="1244" scroll-xs="983">
+        <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
           <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
             <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{
@@ -218,8 +210,7 @@ const shapeContainerMinHeight = {
         </ShapeContainer>
       </Grid>
       <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
-        <Anim when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0" scroll-xl="1654"
-        scroll-lg="1956" scroll-md="2435" scroll-sm="2174" scroll-xs="1712">
+        <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
           <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
             <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{
@@ -292,8 +283,7 @@ const shapeContainerMinHeight = {
         </ShapeContainer>
       </Grid>
       <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
-        <Anim when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0" 
-        scroll-xl="2268" scroll-lg="2596" scroll-md="3400" scroll-sm="3076" scroll-xs="2526">
+        <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
           <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
             <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
               :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
@@ -354,22 +344,24 @@ const shapeContainerMinHeight = {
         </ShapeContainer>
       </Grid>
       <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
-        <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
-            class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{
-    data.home.part7.right.title1 }}</Txt>
-          <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
-            :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
-            :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-            <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font="1" :color="1"
-              :xl="72" :lg="46" :md="50" :xs="30" bold>{{ data.home.part7.right.title2 }}</Txt>
-            <Txt line-height="normal" class="ml2 word-no-break" :xl="72" :font="2" :color="3" :lg="46" :md="50"
-              :xs="30">{{ data.home.part7.right.title3 }}</Txt>
+        <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
+          <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
+            <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+              class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{
+      data.home.part7.right.title1 }}</Txt>
+            <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
+              :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
+              :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
+              <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font="1" :color="1"
+                :xl="72" :lg="46" :md="50" :xs="30" bold>{{ data.home.part7.right.title2 }}</Txt>
+              <Txt line-height="normal" class="ml2 word-no-break" :xl="72" :font="2" :color="3" :lg="46" :md="50"
+                :xs="30">{{ data.home.part7.right.title3 }}</Txt>
+            </Stack>
+            <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font="1" :color="1" :md="24"
+              :xs="18">
+              {{ data.home.part7.right.body1 }}</Txt>
           </Stack>
-          <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font="1" :color="1" :md="24"
-            :xs="18">
-            {{ data.home.part7.right.body1 }}</Txt>
-        </Stack>
+        </Anim>
       </Grid>
     </Grid>
     <Grid :gap="0" class="mt60 width-100p" direction="rtl" container :lg="8" :md="1">
@@ -407,6 +399,7 @@ const shapeContainerMinHeight = {
         </ShapeContainer>
       </Grid>
       <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
+        <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
@@ -425,12 +418,21 @@ const shapeContainerMinHeight = {
             :xs="18">
             {{ data.home.part8.left.body1 }}</Txt>
         </Stack>
+        </Anim>
       </Grid>
     </Grid>
   </Stack>
-  <BellStars />
-  <Academy />
+  <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
+    <BellStars />
+  </Anim>
+  <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
+    <Academy />
+  </Anim>
   <People />
-  <OpenShop />
-  <Opportunity />
+  <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
+    <OpenShop />
+  </Anim>
+  <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
+    <Opportunity />
+  </Anim>
 </template>
