@@ -2,10 +2,7 @@
 import { useScrollStore } from '@/helper/scrollHandler'
 import { isNotEmpty, isPositiveNumber } from '@/helper/validation'
 import { computed, onBeforeMount, onMounted, ref } from 'vue'
-enum animTypeEnum {
-  in,
-  out
-}
+enum animTypeEnum {in,out}
 const scroll = useScrollStore()
 const props = defineProps({
   class: { type: String, default: '' },
