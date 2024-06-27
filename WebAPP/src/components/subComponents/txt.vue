@@ -7,6 +7,7 @@ const props = defineProps({
   lineHeight: { type: [Number, String], default: 'normal' },
   hover: { type: Number },
   textAlign: { type: String as () => 'left' | 'right' | 'center' | 'justify', default: 'left' },
+  tag: { type: String as () => 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'span', default: 'left' },
   bold: Boolean,
   uppercase: Boolean,
   underline: Boolean,
@@ -42,7 +43,7 @@ onBeforeUpdate(txtChange)
     class="txt"
     @mouseover="hover = true"
     @mouseleave="hover = false"
-    v-if="props.href === undefined"
+    v-if="props.href === undefined && props.tag === 'span'"
     :class="[
       classes,
       hover && props.hover !== undefined
@@ -52,6 +53,90 @@ onBeforeUpdate(txtChange)
   >
     <slot></slot>
   </span>
+  <h1
+    class="txt"
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    v-else-if="props.href === undefined && props.tag === 'h1'"
+    :class="[
+      classes,
+      hover && props.hover !== undefined
+        ? `textapp-color-${props.hover}`
+        : `textapp-color-${props.color}`
+    ]"
+  >
+    <slot></slot>
+  </h1>
+  <h2
+    class="txt"
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    v-else-if="props.href === undefined && props.tag === 'h2'"
+    :class="[
+      classes,
+      hover && props.hover !== undefined
+        ? `textapp-color-${props.hover}`
+        : `textapp-color-${props.color}`
+    ]"
+  >
+    <slot></slot>
+  </h2>
+  <h3
+    class="txt"
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    v-else-if="props.href === undefined && props.tag === 'h3'"
+    :class="[
+      classes,
+      hover && props.hover !== undefined
+        ? `textapp-color-${props.hover}`
+        : `textapp-color-${props.color}`
+    ]"
+  >
+    <slot></slot>
+  </h3>
+  <h4
+    class="txt"
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    v-else-if="props.href === undefined && props.tag === 'h4'"
+    :class="[
+      classes,
+      hover && props.hover !== undefined
+        ? `textapp-color-${props.hover}`
+        : `textapp-color-${props.color}`
+    ]"
+  >
+    <slot></slot>
+  </h4>
+  <h5
+    class="txt"
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    v-else-if="props.href === undefined && props.tag === 'h5'"
+    :class="[
+      classes,
+      hover && props.hover !== undefined
+        ? `textapp-color-${props.hover}`
+        : `textapp-color-${props.color}`
+    ]"
+  >
+    <slot></slot>
+  </h5>
+  <h6
+    class="txt"
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+    v-else-if="props.href === undefined && props.tag === 'h6'"
+    :class="[
+      classes,
+      hover && props.hover !== undefined
+        ? `textapp-color-${props.hover}`
+        : `textapp-color-${props.color}`
+    ]"
+  >
+    <slot></slot>
+  </h6>
   <a
     class="txt"
     @mouseover="hover = true"
@@ -65,6 +150,6 @@ onBeforeUpdate(txtChange)
     ]"
     :href="props.href"
   >
-    <slot></slot>
+  <slot></slot>
   </a>
 </template>
