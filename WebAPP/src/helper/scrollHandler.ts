@@ -74,5 +74,5 @@ export const useScrollStore = defineStore('scroll', () => {
           direction: direction
       })
     }
-  return {  registerAuto, enablePrint } //  register
+  return {  registerAuto, enablePrint, register }  
 })
