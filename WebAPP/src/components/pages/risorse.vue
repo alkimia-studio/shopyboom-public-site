@@ -23,12 +23,12 @@ onBeforeMount(() => {
   <Stack class="backgroundapp-color-1 pt40 pb40 width-100p" direction="column" justifyContent="center"
     alignItems="center">
     <Anim delay="200" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
-      <Txt text-align="center" :font="2" :color="3" :lg="100" :xs="56">{{
+      <Txt tag="h1" text-align="center" :font="2" :color="3" :lg="100" :xs="56">{{
         data.risorse.part1.title1
       }}</Txt>
     </Anim>
     <Anim delay="400" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
-      <Txt text-align="center" :font="1" :color="2" :lg="34" :xs="24">{{
+      <Txt tag="h2" text-align="center" :font="1" :color="2" :lg="34" :xs="24">{{
         data.risorse.part1.title2
       }}</Txt>
     </Anim>
@@ -45,10 +45,10 @@ onBeforeMount(() => {
                   :lgw="60">
                   <IStudyHat />
                 </Appsvg>
-                <Txt class="word-no-break" :font="1" :color="1" :xs="30" :lg="40">
+                <Txt tag="h3" class="word-no-break" :font="1" :color="1" :xs="30" :lg="40">
                   {{ data.risorse.part2.items[0].title1 }}
                 </Txt>
-                <Txt class="mt3" bold :font="2" :color="1" :xs="50" :lg="60">
+                <Txt tag="h3" class="mt3" bold :font="2" :color="1" :xs="50" :lg="60">
                   {{ data.risorse.part2.items[0].title2 }}
                 </Txt>
                 <Txt class="mt3" :font="1" :color="1" :md="24" :xs="18">
@@ -80,10 +80,10 @@ onBeforeMount(() => {
                   :lgw="40">
                   <IQuestion />
                 </Appsvg>
-                <Txt class="word-no-break" :font="1" :color="1" :xs="30" :lg="40">
+                <Txt  tag="h3" class="word-no-break" :font="1" :color="1" :xs="30" :lg="40">
                   {{ data.risorse.part2.items[1].title1 }}
                 </Txt>
-                <Txt class="mt3" bold :font="2" :color="1" :xs="50" :lg="60">
+                <Txt  tag="h3" class="mt3" bold :font="2" :color="1" :xs="50" :lg="60">
                   {{ data.risorse.part2.items[1].title2 }}
                 </Txt>
                 <Txt class="mt3" :font="1" :color="1" :md="24" :xs="18">
@@ -115,10 +115,10 @@ onBeforeMount(() => {
                   :lgw="40">
                   <ISeaBall />
                 </Appsvg>
-                <Txt class="word-no-break" :font="1" :color="1" :xs="30" :lg="40">
+                <Txt tag="h3" class="word-no-break" :font="1" :color="1" :xs="30" :lg="40">
                   {{ data.risorse.part2.items[2].title1 }}
                 </Txt>
-                <Txt class="mt3" bold :font="2" :color="1" :xs="50" :lg="60">
+                <Txt tag="h3" class="mt3" bold :font="2" :color="1" :xs="50" :lg="60">
                   {{ data.risorse.part2.items[2].title2 }}
                 </Txt>
                 <Txt class="mt3" :font="1" :color="1" :md="24" :xs="18">
@@ -142,10 +142,10 @@ onBeforeMount(() => {
     <Grid class="mt40 mb20 width-100p" container :lg="2" :xs="1">
       <Grid :lg="1" :xs="1">
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Txt :font="1" :color="1" :xs="25" :lg="40">
+          <Txt tag="h3" :font="1" :color="1" :xs="25" :lg="40">
             {{ data.risorse.part3.left.title1 }}
           </Txt>
-          <Txt :font="2" :color="3" :xs="50" :lg="80">
+          <Txt tag="h3" :font="2" :color="3" :xs="50" :lg="80">
             {{ data.risorse.part3.left.title2 }}
           </Txt>
         </Stack>

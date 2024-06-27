@@ -23,7 +23,7 @@ const shapeContainerMinHeight = {
 <template>
   <Banner1 src="/images/image2.jpg" class="backgroundapp-color-7">
     <Anim delay="200" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
-      <Txt :class="size.biggerThan(sizeType.md)
+      <Txt tag="h1" :class="size.biggerThan(sizeType.md)
           ? 'pt40'
           : size.biggerThan(sizeType.sm)
             ? 'pt30'
@@ -34,11 +34,11 @@ const shapeContainerMinHeight = {
         data.eCommerce.part1.title1 }}</Txt>
     </Anim>
     <Anim delay="400" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
-      <Txt class="mt6" :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center" bold>{{
+      <Txt tag="h1" class="mt6" :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center" bold>{{
         data.eCommerce.part1.title2 }}</Txt>
     </Anim>
     <Anim delay="600" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
-      <Txt class="mt6" :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center" bold>{{
+      <Txt tag="h1" class="mt6" :font="2" :color="2" :xl="93" :lg="81" :md="60" :sm="40" :xs="30" text-align="center" bold>{{
         data.eCommerce.part1.title3 }}</Txt>
     </Anim>
   </Banner1>
@@ -74,9 +74,9 @@ const shapeContainerMinHeight = {
       <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
         <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p">
           <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-            <Txt class="width-100p" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            <Txt tag="h2" class="width-100p" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               :font="1" :color="1" :xl="40" :lg="38" :md="40" :xs="24">{{ data.eCommerce.part3.left.title1 }}</Txt>
-            <Txt class="width-100p" line-height="120" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            <Txt tag="h2" class="width-100p" line-height="120" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               :font="2" :color="3" :xl="100" :lg="80" :md="100" :xs="48">{{ data.eCommerce.part3.left.title2 }}</Txt>
             <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font="1" :color="1" :md="24"
               :xs="18">
@@ -103,9 +103,9 @@ const shapeContainerMinHeight = {
       <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
         <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p">
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Txt class="width-100p" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+          <Txt tag="h2" class="width-100p" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             :font="1" :color="1" :xl="40" :lg="38" :md="40" :xs="24">{{ data.eCommerce.part4.right.title1 }}</Txt>
-          <Txt class="word-no-break width-100p" line-height="120"
+          <Txt tag="h2" class="word-no-break width-100p" line-height="120"
             :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font="2" :color="3" :xl="100" :lg="80"
             :md="100" :xs="48">{{ data.eCommerce.part4.right.title2 }}</Txt>
           <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font="1" :color="1" :md="24"
@@ -137,9 +137,9 @@ const shapeContainerMinHeight = {
       <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
         <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p">
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-          <Txt class="width-100p" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+          <Txt tag="h2" class="width-100p" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             :font="1" :color="1" :xl="40" :lg="38" :md="40" :xs="24">{{ data.eCommerce.part5.left.title1 }}</Txt>
-          <Txt class="width-100p" line-height="120" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+          <Txt tag="h2" class="width-100p" line-height="120" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             :font="2" :color="3" :xl="100" :lg="80" :md="100" :xs="48">{{ data.eCommerce.part5.left.title2 }}</Txt>
           <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font="1" :color="1" :md="24"
             :xs="18">

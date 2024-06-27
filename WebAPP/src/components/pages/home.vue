@@ -40,10 +40,10 @@ const shapeContainerMinHeight = {
         data.home.part1.title2 }}</Txt>
     </Anim>
     <Anim delay="600" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
-    <Txt class="mt2" :class="size.biggerThan(sizeType.sm) ? '' : 'pt20'" :font="2" :color="2" :xl="93" :lg="81" :md="60"
+    <Txt tag="h1" class="mt2" :class="size.biggerThan(sizeType.sm) ? '' : 'pt20'" :font="2" :color="2" :xl="93" :lg="81" :md="60"
       :sm="40" :xs="30" text-align="center" bold>{{ data.home.part1.title3 }}</Txt>
     </Anim>
-    <Anim delay="800" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
+    <Anim tag="h1" delay="800" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
       <Txt :class="size.biggerThan(sizeType.sm) ? '' : 'pt5'" :font="2" :color="3" :xl="134" :lg="110" :md="80" :sm="70"
       :xs="60" text-align="center" bold>{{ data.home.part1.title4 }}</Txt>
     </Anim>
@@ -71,8 +71,8 @@ const shapeContainerMinHeight = {
       <Grid class="mt20 width-100p" container :xl="2" :lg="1">
         <Grid :xl="1" :lg="1">
           <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-            <Txt :font="1" :color="1" :lg="74" :md="50" :xs="30">{{data.home.part2.left.title1}}</Txt>
-            <Txt :font="2" :color="3" :lg="80" :md="64" :xs="42">{{ data.header.sitename }}</Txt>
+            <Txt tag="h2" :font="1" :color="1" :lg="74" :md="50" :xs="30">{{data.home.part2.left.title1}}</Txt>
+            <Txt tag="h2" :font="2" :color="3" :lg="80" :md="64" :xs="42">{{ data.header.sitename }}</Txt>
           </Stack>
         </Grid>
         <Grid :xl="1" :lg="1">
@@ -148,18 +148,18 @@ const shapeContainerMinHeight = {
       <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
         <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
           <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-            <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            <Txt tag="h3" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{
     data.home.part4.left.title1 }}</Txt>
             <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
               :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
               :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-              <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font="2"
+              <Txt tag="h3" line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font="2"
                 :color="3" :xl="72" :lg="46" :md="50" :xs="30">{{ data.home.part4.left.title2 }}</Txt>
-              <Txt bold line-height="48" class="ml2 word-no-break" :font="1" :color="1" :xl="72" :lg="46" :md="50"
+              <Txt tag="h3" bold line-height="48" class="ml2 word-no-break" :font="1" :color="1" :xl="72" :lg="46" :md="50"
                 :xs="30">{{ data.home.part4.left.title3 }}</Txt>
             </Stack>
-            <Txt bold line-height="80" class="width-100p" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            <Txt tag="h3" bold line-height="80" class="width-100p" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{ data.home.part4.left.title4 }}</Txt>
             <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font="1" :color="1"
               :md="24" :xs="18">
@@ -212,13 +212,13 @@ const shapeContainerMinHeight = {
       <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
         <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
           <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-            <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            <Txt tag="h3" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{
       data.home.part5.right.title1 }}</Txt>
-            <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            <Txt tag="h3" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{
       data.home.part5.right.title2 }}</Txt>
-            <Txt line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            <Txt tag="h3" line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               class="word-no-break width-100p" :font="2" :color="3" :xl="72" :lg="46" :md="50" :xs="30">{{
       data.home.part5.right.title3 }}</Txt>
             <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font="1" :color="1" :md="24"
@@ -288,15 +288,15 @@ const shapeContainerMinHeight = {
             <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
               :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
               :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-              <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font="2" :color="3"
+              <Txt tag="h3" line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font="2" :color="3"
                 :xl="72" :lg="46" :md="50" :xs="30">{{ data.home.part6.left.title1 }}</Txt>
-              <Txt bold line-height="48" class="ml2 word-no-break" :font="1" :color="1" :xl="72" :lg="46" :md="50"
+              <Txt tag="h3" bold line-height="48" class="ml2 word-no-break" :font="1" :color="1" :xl="72" :lg="46" :md="50"
                 :xs="30">{{ data.home.part6.left.title2 }}</Txt>
             </Stack>
-            <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            <Txt tag="h3" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{
       data.home.part6.left.title3 }}</Txt>
-            <Txt class="width-100p" bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            <Txt tag="h3" class="width-100p" bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{ data.home.part6.left.title4 }}</Txt>
             <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font="1" :color="1" :md="24"
               :xs="18">
@@ -346,15 +346,15 @@ const shapeContainerMinHeight = {
       <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
         <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
           <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-            <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+            <Txt tag="h3" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
               class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{
       data.home.part7.right.title1 }}</Txt>
             <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
               :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
               :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-              <Txt line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font="1" :color="1"
+              <Txt tag="h3" line-height="48" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font="1" :color="1"
                 :xl="72" :lg="46" :md="50" :xs="30" bold>{{ data.home.part7.right.title2 }}</Txt>
-              <Txt line-height="normal" class="ml2 word-no-break" :xl="72" :font="2" :color="3" :lg="46" :md="50"
+              <Txt tag="h3" line-height="normal" class="ml2 word-no-break" :xl="72" :font="2" :color="3" :lg="46" :md="50"
                 :xs="30">{{ data.home.part7.right.title3 }}</Txt>
             </Stack>
             <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font="1" :color="1" :md="24"
@@ -404,15 +404,15 @@ const shapeContainerMinHeight = {
           <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
             :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
             :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
-            <Txt line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font="2" :color="3"
+            <Txt tag="h3" line-height="normal" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'right'" :font="2" :color="3"
               :xl="72" :lg="46" :md="50" :xs="30">{{ data.home.part8.left.title1 }}</Txt>
-            <Txt bold line-height="48" class="ml2 word-no-break" :font="1" :color="1" :xl="72" :lg="46" :md="50"
+            <Txt tag="h3" bold line-height="48" class="ml2 word-no-break" :font="1" :color="1" :xl="72" :lg="46" :md="50"
               :xs="30">{{ data.home.part8.left.title2 }}</Txt>
           </Stack>
-          <Txt bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+          <Txt tag="h3" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{
     data.home.part8.left.title3 }}</Txt>
-          <Txt class="width-100p" bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
+          <Txt tag="h3" class="width-100p" bold line-height="80" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
             :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="24">{{ data.home.part8.left.title4 }}</Txt>
           <Txt class="mt2" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'" :font="1" :color="1" :md="24"
             :xs="18">

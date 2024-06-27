@@ -21,12 +21,12 @@ useHead({
   <Stack class="backgroundapp-color-1 pt40 pb40 width-100p" direction="column" justifyContent="center"
     alignItems="center">
     <Anim delay="200" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
-      <Txt text-align="center" :font="2" :color="3" :lg="100" :xs="56">{{
+      <Txt tag="h1" text-align="center" :font="2" :color="3" :lg="100" :xs="56">{{
         data.piani.part1.title1
         }}</Txt>
     </Anim>
     <Anim delay="400" when="pageload" class="opacity-0" in="animate__fadeIn opacity-1" out="" count="1">
-      <Txt text-align="center" :font="1" :color="2" :lg="34" :xs="24">{{
+      <Txt tag="h2" text-align="center" :font="1" :color="2" :lg="34" :xs="24">{{
         data.piani.part1.title2
         }}</Txt>
     </Anim>
@@ -97,16 +97,16 @@ useHead({
       </Grid>
     </Grid>
     <Stack direction="column" justifyContent="flex-start" class="mt20 mb25 width-100p" alignItems="center">
-      <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p text-align-center">
+      <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="mt3 opacity-0 width-100p text-align-center">
         <Txt text-align="center" :font="1" :color="1" :xs="30" bold>{{data.piani.part3.title1 }}</Txt>
       </Anim>
-      <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p text-align-center">
+      <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="mt3 opacity-0 width-100p text-align-center">
         <Txt text-align="center" :font="1" :color="1" :xs="30" bold>{{data.piani.part3.title2 }}</Txt>
       </Anim>
-      <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p text-align-center">
+      <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="mt3 opacity-0 width-100p text-align-center">
       <Txt text-align="center" :font="1" :color="1" :xs="30">{{ data.piani.part3.title3 }}</Txt>
       </Anim>
-      <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p text-align-center">
+      <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="mt5 opacity-0 width-100p text-align-center">
       <div>
         <Button1 :border="0" :color="2" :background="8" :hover-color="3" :hover-background="7" class="pr10 pl10">
           <Txt bold :font="1" :color="-1" :xs="16">{{ data.piani.part3.buttonRound }}</Txt>
@@ -114,7 +114,7 @@ useHead({
       </div>
       </Anim>
       <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p text-align-center mt40">
-        <Txt text-align="center" :font="2" :color="3" :lg="100" :md="70" :sm="50" :xs="50">{{ data.piani.part3.title4 }}</Txt>
+        <Txt  tag="h3" text-align="center" :font="2" :color="3" :lg="100" :md="70" :sm="50" :xs="50">{{ data.piani.part3.title4 }}</Txt>
       </Anim>
       <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p text-align-center">
         <Txt text-align="center" :font="1" :color="1" :xs="30">{{ data.piani.part3.title5 }}</Txt>
