@@ -8,11 +8,11 @@ const size = useSizeStore()
 const scroll = useScrollStore()
 onBeforeMount(() => { scroll.enablePrint() })
 useHead({
-  title: 'this is title',
+  title: data.piani.head.title,
   meta: [
     {
       name: 'description',
-      content: 'My page description'
+      content: data.piani.head.description,
     }
   ]
 })

@@ -1,5 +1,9 @@
 {
   "home": {
+    "head":{
+      "title": "Shopyboom e-commerce per tutti",
+      "description": "Shopyboom è la piattaforma italiana che ti consente di creare il tuo negozio online in modo semplice e veloce, supportato anche dall'intelligenza artificiale"
+    },
     "part1": {
       "title1": "Tutto inizia da un gesto semplice.",
       "title2": "Tutto inizia da qui.",
@@ -94,6 +98,10 @@
     }
   },
   "eCommerce": {
+    "head":{
+      "title": "Cos'è Shopyboom",
+      "description": "Shopyboom è la piattaforma italiana per il tuo e-commerce, creata per portare la tecnologia alla portata di tutti. Tutto ciò che ti serve per gestire il tuo negozio online."
+    },
     "part1": {
       "title1": "shopyboom",
       "title2": "fai esplodere",
@@ -125,6 +133,10 @@
     }
   },
   "risorse": {
+    "head":{
+      "title": "Supporto Shopyboom",
+      "description": "Il supporto Shopyboom presenta tutto ciò che ti serve per diventare un mago dell'e-commerce, tutorial video, domande frequenti, documentazione e chat di assistenza."
+    },
     "part1": {
       "title1": "Supporto",
       "title2": "Tutto ciò che ti serve per diventare un mago dell'e-commerce"
@@ -193,6 +205,10 @@
     }
   },
   "piani": {
+    "head":{
+      "title": "Piani Shopyboom",
+      "description": "Scopri i pacchetti offerti da Shopyboom, le funzionalità, cosa è incluso e quanto costano, anche i prezzi sono alla portata di tutti e i primi 3 mesi sono gratis!"
+    },
     "part1": {
       "title1": "Piani",
       "title2": "Scopri tutti i nostri pacchetti"
@@ -483,6 +499,10 @@
     }
   },
   "shoppingAcademy": {
+    "head":{
+      "title": "Academy Shopyboom",
+      "description": "Shopyboom Academy è la sezione che abbiamo creato per spiegarti come utilizzare al meglio tutte le funzionalità a tua disposizione, segui i video tutorial!"
+    },
     "part1": {
       "title1": "Shopping Academy",
       "title2": "Impara come sfruttare al meglio il tuo negozio on-line"
@@ -591,6 +611,10 @@
     }
   },
   "faq": {
+    "head":{
+      "title": "",
+      "description": ""
+    },
     "part1": {
       "title1": "FAQ",
       "title2": "Trova le risposte alle domande più comuni"

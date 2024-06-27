@@ -5,11 +5,11 @@ import { ChevronRightIcon, ArrowLongDownIcon } from '@heroicons/vue/24/solid'
 import data from '@/helper/data.json'
 const size = useSizeStore()
 useHead({
-  title: 'this is title',
+  title: data.home.head.title,
   meta: [
     {
       name: 'description',
-      content: 'My page description'
+      content: data.home.head.description,
     }
   ]
 })

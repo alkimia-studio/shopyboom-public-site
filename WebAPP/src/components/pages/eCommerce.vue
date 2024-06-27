@@ -4,11 +4,11 @@ import { useHead } from '@unhead/vue'
 import data from '@/helper/data.json'
 const size = useSizeStore()
 useHead({
-  title: 'this is title',
+  title: data.eCommerce.head.title,
   meta: [
     {
       name: 'description',
-      content: 'My page description'
+      content: data.eCommerce.head.description,
     }
   ]
 })
