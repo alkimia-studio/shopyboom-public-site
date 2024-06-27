@@ -106,7 +106,7 @@ onBeforeMount(() => {
         <Anim :delay="size.biggerThan(sizeType.lg) ? 1000 : 0"
           :when="size.biggerThan(sizeType.lg) ? 'pageload' : 'scroll'" in="animate__fadeInUp opacity-1" out="" count="1"
           class="opacity-0 height-100p"
-          auto-scroll-offset="50"
+          auto-scroll-offset="0"
           >
           <Stack class="height-100p" direction="column" justifyContent="flex-start" alignItems="flex-start">
             <Stack class="pb8 width-100p" direction="column" justifyContent="space-between" alignItems="flex-start">
@@ -138,7 +138,7 @@ onBeforeMount(() => {
         </Anim>
       </Grid>
     </Grid>
-    <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p">
+    <Anim auto-scroll-offset="0" when="pageload" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0 width-100p">
     <Grid class="mt40 mb20 width-100p" container :lg="2" :xs="1">
       <Grid :lg="1" :xs="1">
         <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
