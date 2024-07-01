@@ -13,9 +13,11 @@ const props = defineProps({
   delay: { type: [Number, String], default: '0' },
   autoScrollOffset: { type: [Number,String], default: 0 },
 })
+const emit = defineEmits(['onaniminend','onanimoutend']);
 const animClasses = ref<string[]>([])
 const countPassed = ref(0)
 const autoScrollOffsetNumber = computed(()=> typeof(props.autoScrollOffset) === "string" ? +props.autoScrollOffset as number : props.autoScrollOffset as number)
+const delayNumber = computed(()=> typeof(props.delay) === "string" ? +props.delay as number : props.delay as number)
 const doAnimCount = (animType: animTypeEnum): boolean => {
   if (props.count === 'inf') return true
   const cnt =
@@ -37,13 +39,17 @@ const doAnim = (animType: animTypeEnum) => {
     switch (animType) {
       case animTypeEnum.in:
         animClasses.value = animClasses.value.filter((x) => x !== props.out)
-        if (animClasses.value.find((x) => x === props.in) === undefined)
+        if (animClasses.value.find((x) => x === props.in) === undefined){
           animClasses.value.push(props.in)
+          setTimeout(()=>emit('onaniminend'),delayNumber.value);
+        }
         break
       case animTypeEnum.out:
         animClasses.value = animClasses.value.filter((x) => x !== props.in)
-        if (animClasses.value.find((x) => x === props.out) === undefined)
+        if (animClasses.value.find((x) => x === props.out) === undefined){
           animClasses.value.push(props.out)
+          setTimeout(()=>emit('onanimoutend'),delayNumber.value);
+        }
     }
   }
 }
@@ -75,7 +81,7 @@ onMounted(()=>{
       props.when === 'pageload' && props.count !== 'inf'
         ? { animationIterationCount: props.count }
         : '',
-      { animationDelay: `${props.delay ?? 0}ms` }
+      { animationDelay: `${delayNumber ?? 0}ms` }
     ]"
     :class="[props.class, animClasses]"
     class="anim">

@@ -53,23 +53,18 @@ export const useScrollStore = defineStore('scroll', () => {
     })
     scrollY.value = window.scrollY
   }
+  const getOffsetTop = (e: HTMLElement) : number => e ? (e.offsetTop + getOffsetTop(e.offsetParent as HTMLElement)) : 0;
+
   const register = (
     y: { xl?: number; lg?: number; md?: number; sm?: number; xs?: number },
     func: Function,
-    direction: 'utb' | 'btu' | 'both' = 'utb'
-  ) =>
+    direction: 'utb' | 'btu' | 'both' = 'utb') =>
     scrollList.value.push({
-      xly: y.xl,
-      lgy: y.lg,
-      mdy: y.md,
-      smy: y.sm,
-      xsy: y.xs,
-      func: func,
-      direction: direction
+      xly: y.xl, lgy: y.lg, mdy: y.md, smy: y.sm, xsy: y.xs, func: func, direction: direction
     })
-    const registerAuto = (elem: HTMLElement, offsetY: number, func: Function, direction: 'utb' | 'btu' | 'both' = 'utb' ) =>{
+    const registerAuto = (elem: HTMLElement, offsetY: number, func: Function, direction: 'utb' | 'btu' | 'both' = 'utb' ) => {
       scrollAutoList.value.push({
-          y: elem.offsetTop - window.innerHeight + offsetY,
+          y: getOffsetTop(elem) - window.innerHeight + offsetY,
           func: func,
           direction: direction
       })

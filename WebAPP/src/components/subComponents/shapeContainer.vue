@@ -15,8 +15,7 @@ const size = useSizeStore()
   <div
     :class="props.class"
     class="shape container"
-    :style="{ 'min-height': size.chooseCorrectUp(xlh, lgh, mdh, smh, xsh) + 'px' }"
-  >
+    :style="{ 'min-height': size.chooseCorrectUp(xlh, lgh, mdh, smh, xsh) + 'px' }">
     <slot></slot>
   </div>
 </template>

@@ -3,7 +3,26 @@ import { useSizeStore, sizeType } from '@/helper/widthHandler'
 import { useHead } from '@unhead/vue'
 import { ChevronRightIcon, ArrowLongDownIcon } from '@heroicons/vue/24/solid'
 import data from '@/helper/data.json'
+import { onBeforeMount } from 'vue';
+import { useScrollStore } from '@/helper/scrollHandler';
+import { useShapeStore } from '@/helper/shapeHandler';
 const size = useSizeStore()
+const scroll = useScrollStore()
+const shape = useShapeStore()
+onBeforeMount(()=> {
+  shape.changeLoc('y','home','part4','window',true)
+  shape.changeLoc('y','home','part4','pipeStar',true)
+  shape.changeLoc('x','home','part4','circleNumber1',false)
+  shape.changeLoc('x','home','part4','circleNumber2',false)
+  shape.changeLoc('x','home','part4','circleNumber3',false)
+  shape.changeLoc('x','home','part4','buttonRoundClock',false)
+
+  shape.changeLoc('y','home','part5','window',true)
+  shape.changeLoc('x','home','part5','camera',true)
+  shape.changeLoc('x','home','part5','circleArrowLeft',true)
+  shape.changeLoc('x','home','part5','buttonRoundPipe',true)
+
+})
 useHead({
   title: data.home.head.title,
   meta: [
@@ -71,7 +90,7 @@ const shapeContainerMinHeight = {
       <Grid class="mt20 width-100p" container :xl="2" :lg="1">
         <Grid :xl="1" :lg="1">
           <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
-            <Txt tag="h2" :font="1" :color="1" :lg="74" :md="50" :xs="30">{{data.home.part2.left.title1}}</Txt>
+            <Txt tag="h2" :font="1" :color="1" :lg="74" :md="50" :xs="30">{{ data.home.part2.left.title1 }}</Txt>
             <Txt tag="h2" :font="2" :color="3" :lg="80" :md="64" :xs="42">{{ data.header.sitename }}</Txt>
           </Stack>
         </Grid>
@@ -115,34 +134,55 @@ const shapeContainerMinHeight = {
       <Grid class="direction-ltr" :lg="5" :md="1">
         <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
           :mdh="shapeContainerMinHeight.mdh" :smh="shapeContainerMinHeight.smh" :xsh="shapeContainerMinHeight.xsh">
-          <Shape page="home" part="part4" shape-name="window"
+          <Anim delay="0" @onaniminend="()=>{   shape.changeLoc('y','home','part4','window',false) }" 
+            autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
+            <Shape page="home" part="part4" shape-name="window"
             :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
-            <img src="/svgs/window.svg" />
-          </Shape>
+                <img src="/svgs/window.svg" />
+            </Shape>
+          </Anim>
+          <Anim delay="800" @onaniminend="()=>{ shape.changeLoc('x','home','part4','circleNumber3',true) }" 
+            autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
           <Shape page="home" part="part4" shape-name="circleNumber3"
             :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle text="3" :color="1" />
           </Shape>
+          </Anim>
+          <Anim delay="600" @onaniminend="()=>{ shape.changeLoc('x','home','part4','circleNumber2',true) }" 
+            autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
           <Shape page="home" part="part4" shape-name="circleNumber2"
             :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle text="2" :color="1" style="opacity: 0.59" />
           </Shape>
+          </Anim>
+          <Anim delay="400" @onaniminend="()=>{ shape.changeLoc('x','home','part4','circleNumber1',true) }" 
+            autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
           <Shape page="home" part="part4" shape-name="circleNumber1"
             :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeCircle text="1" :color="1" style="opacity: 0.28" />
           </Shape>
+          </Anim>
+          <Anim delay="200" @onaniminend="()=>{ shape.changeLoc('y','home','part4','pipeStar',false) }" 
+            autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
           <Shape page="home" part="part4" shape-name="pipeStar"
             :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/pipeStar.svg" />
           </Shape>
+          </Anim>
+          <Anim delay="1500" @onaniminend="()=>{ shape.changeLoc('x','home','part4','buttonRoundClock',true) }" 
+            autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
           <Shape page="home" part="part4" shape-name="buttonRoundClock"
             :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <ShapeButtonRoundClock :text="data.home.part4.right.buttonRound" />
           </Shape>
+          </Anim>
+          <Anim delay="1700"
+            autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
           <Shape page="home" part="part4" shape-name="marketBasket"
             :stick-v="size.biggerThan(sizeType.md) ? 'right' : 'center'">
             <img src="/svgs/marketBasket.svg" />
           </Shape>
+          </Anim>
         </ShapeContainer>
       </Grid>
       <Grid class="direction-ltr" :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
@@ -172,41 +212,68 @@ const shapeContainerMinHeight = {
       <Grid :lg="5" :md="1">
         <ShapeContainer :xlh="shapeContainerMinHeight.xlh" :lgh="shapeContainerMinHeight.lgh"
           :mdh="shapeContainerMinHeight.mdh" :smh="shapeContainerMinHeight.smh" :xsh="shapeContainerMinHeight.xsh">
-          <Shape page="home" part="part5" shape-name="window"
-            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-            <img src="/svgs/window.svg" />
-          </Shape>
+          <Anim delay="0" @onaniminend="()=>{ shape.changeLoc('y','home','part5','window',false) }" 
+            autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
+            <Shape page="home" part="part5" shape-name="window"
+              :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+              <img src="/svgs/window.svg" />
+            </Shape>
+          </Anim>
+          <Anim delay="600"
+          autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
           <Shape page="home" part="part5" shape-name="picture"
             :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/picture.svg" />
           </Shape>
+          </Anim>
+          <Anim delay="800"
+          autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
           <Shape page="home" part="part5" shape-name="bars" :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/bars.svg" />
           </Shape>
+          </Anim>
+          <Anim delay="1000"
+          autoScrollOffset="200" when="pageload" in="animate__fadeInUp opacity-1" out="animate__fadeOutUp" count="inf" class="opacity-0">
           <Shape page="home" part="part5" shape-name="star1"
             :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/iCanSeeYourStar.svg" />
           </Shape>
+          </Anim>
+          <Anim delay="1200"
+          autoScrollOffset="200" when="pageload" in="animate__fadeInUp opacity-1" out="animate__fadeOutUp" count="inf" class="opacity-0">
           <Shape page="home" part="part5" shape-name="star2"
             :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/iCanSeeYourStar.svg" />
           </Shape>
+          </Anim>
+          <Anim delay="1400"
+          autoScrollOffset="200" when="pageload" in="animate__fadeInUp opacity-1" out="animate__fadeOutUp" count="inf" class="opacity-0">
           <Shape page="home" part="part5" shape-name="star3"
             :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
             <img src="/svgs/iCanSeeYourStar.svg" />
           </Shape>
-          <Shape page="home" part="part5" shape-name="circleArrowLeft"
-            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-            <img src="/svgs/circleArrowLeft.svg" />
-          </Shape>
-          <Shape page="home" part="part5" shape-name="camera"
-            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-            <img src="/svgs/camera.svg" />
-          </Shape>
-          <Shape page="home" part="part5" shape-name="buttonRoundPipe"
-            :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
-            <ShapeButtonRoundPipe :text="data.home.part5.left.buttonRound" />
-          </Shape>
+          </Anim>
+          <Anim delay="400" @onaniminend="()=>{ shape.changeLoc('x','home','part5','circleArrowLeft',false) }" 
+            autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
+            <Shape page="home" part="part5" shape-name="circleArrowLeft"
+              :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+              <img src="/svgs/circleArrowLeft.svg" />
+            </Shape>
+          </Anim>
+          <Anim delay="200" @onaniminend="()=>{ shape.changeLoc('x','home','part5','camera',false) }" 
+            autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
+            <Shape page="home" part="part5" shape-name="camera"
+              :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+              <img src="/svgs/camera.svg" />
+            </Shape>
+          </Anim>
+          <Anim delay="1200" @onaniminend="()=>{ shape.changeLoc('x','home','part5','buttonRoundPipe',false) }" 
+            autoScrollOffset="200" when="scroll" in="animate__fadeInUp opacity-1" out="" count="1" class="opacity-0">
+            <Shape page="home" part="part5" shape-name="buttonRoundPipe"
+              :stick-v="size.biggerThan(sizeType.md) ? 'left' : 'center'">
+              <ShapeButtonRoundPipe :text="data.home.part5.left.buttonRound" />
+            </Shape>
+          </Anim>
         </ShapeContainer>
       </Grid>
       <Grid :class="size.biggerThan(sizeType.md) ? '' : 'mt4'" :lg="3" :md="1">
@@ -347,8 +414,7 @@ const shapeContainerMinHeight = {
         <Anim auto-scroll-offset="50" when="scroll" in="animate__fadeInUp  opacity-1" out="" count="1" class="opacity-0">
           <Stack direction="column" justifyContent="flex-start" alignItems="flex-start">
             <Txt tag="h3" bold line-height="82" :text-align="size.biggerThan(sizeType.md) ? 'left' : 'center'"
-              class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{
-      data.home.part7.right.title1 }}</Txt>
+              class="word-no-break width-100p" :font="1" :color="1" :xl="72" :lg="46" :md="50" :xs="30">{{ data.home.part7.right.title1 }}</Txt>
             <Stack :class="size.biggerThan(sizeType.md) ? '' : 'width-100p'" direction="row"
               :justifyContent="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'"
               :alignItems="size.biggerThan(sizeType.md) ? 'flex-start' : 'center'">
